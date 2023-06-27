@@ -58,9 +58,10 @@
             background-repeat: no-repeat;
             background-size: cover;
             .about-word{
-                color: white;
+                color: rgb(36, 36, 37);
                 font-size: 2rem;
                 p{
+                    font-weight: 700;
                     br{
                         display: none;
                         @media(max-width:767px){
@@ -69,6 +70,7 @@
                     }
                 }
                 span{
+                    font-weight: 700;
                     display: block;
                     @media(max-width:767px){
                             display: none;

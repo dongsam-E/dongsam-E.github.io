@@ -5,4 +5,4 @@ Font : font-family: 'Montserrat', sans-serif;
        font-family: 'Noto Sans KR', sans-serif;
        font-family: 'Noto Serif KR', serif;
 
-Svg :
+Svg : logo
