@@ -55,7 +55,7 @@ const Portfolio = () => {
                         </div>
                     </div>
             </section>
-            <section id="review" className="bg-light">
+            <section id="review" className="bg-light py-5">
                 <div className="container">
                     <div className="row py-3">
                         <div className="col-md-4 col-12 d-flex justify-content-center py-3"><img className='w-75 h-100' src="img/insta.png" alt="review"/></div>
@@ -64,21 +64,21 @@ const Portfolio = () => {
                     </div>
                 </div>
             </section>
-            <section id='contact' className='py-5 bg-info'>
+            <section id='contact' className='py-5'>
                 <h3 className='d-flex justify-content-center'>contact</h3>
                 <form action="https://github.com/dongsam-E/react-test" method="POST">
-                    <div className='form-box d-flex justify-content-around align-items-center'>
-                        <div>
-                            <label for="name">성명</label>
-                            <input type="text" id="name" required/>
+                    <div className='form-box text-center d-md-flex justify-content-center align-items-center'>
+                        <div className='my-1 mx-2'>
+                            <label for="name"></label>
+                            <input type="text" id="name" placeholder='성명' required/>
                         </div>
-                        <div>
-                            <label for="email">이메일</label>
-                            <input type="email" id="email" required/>
+                        <div className='my-1 mx-2'>
+                            <label for="email"></label>
+                            <input type="email" id="email" placeholder='이메일' required/>
                         </div>
-                        <div className='d-flex align-items-center'>
-                            <label for="message">제안 내용 :</label>
-                            <textarea name="message" id="message" required></textarea>
+                        <div className='my-1 mx-2'>
+                            <label for="message"></label>
+                            <textarea name="message" id="message" placeholder='제안내용' required></textarea>
                         </div>
                     </div>
                     <div className='submit-box d-flex justify-content-center align-items-center'>

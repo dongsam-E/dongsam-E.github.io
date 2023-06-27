@@ -79,6 +79,20 @@
             }
         }
     }
+    #contact{
+        background-color: #b3d2d5;
+        h3{
+            transform: translateY(-90px);
+            font-size: 4rem;
+            font-weight: 700;
+            background: linear-gradient(to right top, #161a86, #90ffed);
+            color: transparent;
+            -webkit-background-clip: text;
+        }
+        form{
+            transform: translateY(-50px);
+        }
+    }
 }
 .vh-100{
     height: 100vh;
