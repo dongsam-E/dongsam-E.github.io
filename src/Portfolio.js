@@ -27,7 +27,7 @@ const Portfolio = () => {
                     </ul>
                 </div>
             </header>
-            <div id="slide" className="bg-light">
+            <section id="slide" className="bg-light">
                 <Swiper className='swiper'
                     autoplay={{
                         delay: 2500,
@@ -42,27 +42,31 @@ const Portfolio = () => {
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
                 >
-                    <SwiperSlide className='bg-danger'></SwiperSlide>
-                    <SwiperSlide className='bg-secondary'></SwiperSlide>
-                    <SwiperSlide className='bg-success'></SwiperSlide>
-                    <SwiperSlide className='bg-primary'></SwiperSlide>
+                    <SwiperSlide className='swiper-slide' style={{ backgroundImage: "url(img/slide1.jpg)" }}></SwiperSlide>
+                    <SwiperSlide className='swiper-slide' style={{ backgroundImage: "url(img/slide2.jpg)" }}></SwiperSlide>
+                    <SwiperSlide className='swiper-slide' style={{ backgroundImage: "url(img/slide3.jpg)" }}></SwiperSlide>
+                    <SwiperSlide className='swiper-slide' style={{ backgroundImage: "url(img/slide4.jpg)" }}></SwiperSlide>
                 </Swiper>
-            </div>
-            <div id="about" className="vh-100 bg-light">
-
-            </div>
-            <div id="review" className="vh-100 bg-danger">
+            </section>
+            <section id="about">
+                    <div className='about-background' style={{backgroundImage: "url(img/about-background.jpg)"}}>
+                        <div className='about-word d-flex align-items-center justify-content-center text-center w-100 h-100'>
+                            <p className='mb-0'>about <br />section</p><span>입니다.</span>
+                        </div>
+                    </div>
+            </section>
+            <section id="review" className="vh-100 bg-light">
                 <div className="container">
                     <div className="row">
-                        <div className="col-4">1</div>
+                        <div className="col-4"></div>
                         <div className="col-4">2</div>
                         <div className="col-4">3</div>
                     </div>
                 </div>
-            </div>
-            <div id="contact" className="vh-100 bg-light">
+            </section>
+            <section id="contact" className="vh-100 bg-success">
 
-            </div>
+            </section>
         </>
 
     )

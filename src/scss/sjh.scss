@@ -5,7 +5,7 @@
         list-style: none;
     }
     body a{
-        color: rgb(237, 232, 232);
+        color: black;
         text-decoration: none;
     }
     #hd{
@@ -39,8 +39,43 @@
             }
         }
     }
-    .swiper{
-        height: 500px;
+    #slide{
+        .swiper{
+            height: 500px;
+            .swiper-slide{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+    }
+    #about{
+        .about-background{
+            height: 300px;
+            width: 100vw;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .about-word{
+                color: white;
+                font-size: 2rem;
+                p{
+                    br{
+                        display: none;
+                        @media(max-width:767px){
+                            display: block;
+                        }
+                    }
+                }
+                span{
+                    display: block;
+                    @media(max-width:767px){
+                            display: none;
+                        }
+                }
+            }
+        }
     }
 }
 .vh-100{
