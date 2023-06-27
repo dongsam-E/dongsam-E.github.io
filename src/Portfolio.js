@@ -64,7 +64,7 @@ const Portfolio = () => {
                     </div>
                 </div>
             </section>
-            <section id='contact' className='py-5'>
+            <section id='contact' className='py-5 bg-info'>
                 <h3 className='d-flex justify-content-center'>contact</h3>
                 <form action="https://github.com/dongsam-E/react-test" method="POST">
                     <div className='form-box d-flex justify-content-around align-items-center'>
