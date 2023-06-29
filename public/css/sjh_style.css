@@ -1,0 +1,16 @@
+body {
+  font-family: "Inter", "Noto Sans KR";
+  font-weight: 400;
+}
+body a {
+  text-decoration: none;
+  color: #070707;
+  font-family: "Noto Sans KR";
+  font-weight: 700;
+}
+body #banner-section .s1 {
+  background-image: url(../img/slide1.jpg);
+}
+body #banner-section .s2 {
+  background-image: url(../img/slide2.jpg);
+}/*# sourceMappingURL=sjh_style.css.map */

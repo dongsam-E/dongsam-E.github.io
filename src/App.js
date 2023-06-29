@@ -1,6 +1,6 @@
-import Hd from './Hd'
-import Content from './Content'
-import Ft from './Ft'
+import Hd from './layout/Hd'
+import Content from './layout/Content'
+import Ft from './layout/Ft'
 
 function App(props) {
     return (
