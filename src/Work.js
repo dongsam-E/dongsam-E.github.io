@@ -9,7 +9,7 @@ import './scss/sjh.scss';
 
 import Logo from './img/SVG/logo.svg';
 
-const Portfolio = () => {
+const Work = () => {
 
     return (
         <>
@@ -94,4 +94,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default Work
