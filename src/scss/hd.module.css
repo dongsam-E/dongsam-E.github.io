@@ -1,0 +1,29 @@
+.navWidth{
+    width: 50vw;
+    max-width: 600px;
+}
+
+.topBannerBg{
+    /* background: linear-gradient(to bottom, #0b0b1e, #191665); */
+    background-color: rgb(68, 73, 71);
+    height: 2.5rem;
+}
+.topadTitle{
+    font-weight: 300;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.topadTitle::after{
+    content: "클릭 시 이동합니다.";
+    font-weight: 400;
+    font-size: .9rem;
+    padding-left: .5rem;
+}
+
+.snsAd i{
+    font-size: 1.5rem;
+}
+.snsAd span{
+    font-size: .8rem;
+}
