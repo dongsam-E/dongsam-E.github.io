@@ -1,7 +1,19 @@
-
 .bgImg{
     background-image: url(https://dummyimage.com/300x400/787078/ffffff);
     background-position: center;
     background-repeat: no-repeat;
     height: 400px;
+}
+
+.iconSize{
+    font-size: 1.5rem;
+    display: inline-block;
+}
+.fontSize{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.iconWidth{
+    width: 25vw;
 }

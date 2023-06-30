@@ -6,13 +6,13 @@ import Interview from '../component/Interview'
 
 function Content(props) {
     return (
-        <>
-            <Banner></Banner>
-            <About></About>
-            <Skills></Skills>
-            <Portfolio></Portfolio>
-            <Interview></Interview>
-        </>
+        <div id={props.id}>
+            <Banner id="banner"></Banner>
+            <About id="about"></About>
+            <Skills id="skills"></Skills>
+            <Portfolio id="portfolio"></Portfolio>
+            <Interview id="interview"></Interview>
+        </div>
     )
 }
 

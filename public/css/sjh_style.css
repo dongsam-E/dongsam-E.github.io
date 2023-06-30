@@ -8,9 +8,22 @@ body a {
   font-family: "Noto Sans KR";
   font-weight: 700;
 }
-body #banner-section .s1 {
+body ul, body li {
+  list-style: none;
+}
+body #banner .s1 {
   background-image: url(../img/slide1.jpg);
 }
-body #banner-section .s2 {
+body #banner .s2 {
   background-image: url(../img/slide2.jpg);
+}
+body #skills .skillbg0 {
+  width: 300px;
+  height: 0;
+  padding-top: 100%;
+}
+body #skills .skillbg0 .feBg {
+  background-image: url(../img/sp_Skill.png);
+  background-size: 800px auto;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=sjh_style.css.map */

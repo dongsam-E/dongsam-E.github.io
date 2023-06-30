@@ -10,7 +10,7 @@ import {Autoplay, Pagination, Navigation} from "swiper";
 
 function Banner(props) {
     return (
-        <section id='banner-section' className={`${banner.bannerH}`}>
+        <section id={props.id} className={`SSwiper ${banner.bannerH}`}>
             <Swiper 
                 modules={[Autoplay, Pagination, Navigation]}
                 navigation={true} 
@@ -26,7 +26,7 @@ function Banner(props) {
                 spaceBetween={30}
                 className={`mySwiper ${banner.bannerH}`}>
                 <SwiperSlide className={`s1 ${banner.slideSt}`}></SwiperSlide>
-                <SwiperSlide className={`s2 ${banner.slideSt}`}>Slide 2</SwiperSlide>
+                <SwiperSlide className={`s2 ${banner.slideSt}`}></SwiperSlide>
             </Swiper>
         </section>
     );

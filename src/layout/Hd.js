@@ -42,7 +42,7 @@ function Hd(props) {
 
     return (
         <>
-            <section id='hd-section' className='fixed-top'>
+            <section id={props.id} className='fixed-top'>
                 <div className={`${hd.topBannerBg} d-flex align-items-center`}>
                     <a href={naviDB.topad.adlink} className={`${hd.topadTitle} d-flex align-items-center justify-content-center text-white`}>
                         <p className={`m-0`}>{naviDB.topad.adtitle}</p>
