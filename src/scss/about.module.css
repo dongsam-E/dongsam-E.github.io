@@ -10,8 +10,9 @@
     display: inline-block;
 }
 .fontSize{
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 300;
+    display: inline-block;
 }
 
 .iconWidth{

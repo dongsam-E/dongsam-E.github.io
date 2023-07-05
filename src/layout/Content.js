@@ -4,11 +4,13 @@ import Skills from '../component/Skills'
 import Portfolio from '../component/Portfolio'
 import Interview from '../component/Interview'
 
+import aboutDB from "../data/about"
+
 function Content(props) {
     return (
         <div id={props.id}>
             <Banner id="banner"></Banner>
-            <About id="about"></About>
+            <About id="about" aboutdb={aboutDB}></About>
             <Skills id="skills"></Skills>
             <Portfolio id="portfolio"></Portfolio>
             <Interview id="interview"></Interview>
