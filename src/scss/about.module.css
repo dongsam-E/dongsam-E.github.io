@@ -1,20 +1,35 @@
-.bgImg{
-    background-image: url(https://dummyimage.com/300x400/787078/ffffff);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 400px;
+.name{
+    font-size: 2.5rem;
+}
+@media(min-width : 1200px){
+    .name{
+        font-size: 3vw;
+    }
 }
 
 .iconSize{
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: inline-block;
 }
-.fontSize{
-    font-size: 1.1rem;
+.titleSize{
+    font-size: 1.3rem;
+    color: rgb(67, 66, 66);
+    font-weight: 500;
+    display: inline-block;
+}
+.contentSize{
+    font-size: 1rem;
     font-weight: 300;
     display: inline-block;
 }
 
 .iconWidth{
     width: 25vw;
+}
+
+.box{
+    display: flex;
+    max-width: 14rem;
+    width: 100%;
+    margin: 0 auto;
 }

@@ -6,9 +6,9 @@ const aboutDB = {
             , content: "선주현"
         }
         , {
-            title: "연락처"
-            , i: "bi bi-telephone-fill"
-            , content: "010-2774-6352"
+            title: "생년월일"
+            , i: "bi bi-calendar-fill"
+            , content: "97.12.15"
         }
         , {
             title: "주소지"
@@ -16,9 +16,9 @@ const aboutDB = {
             , content: "경기도 성남시"
         }
         , {
-            title: "생년월일"
-            , i: "bi bi-calendar-fill"
-            , content: "97.12.15"
+            title: "연락처"
+            , i: "bi bi-telephone-fill"
+            , content: "010-2774-6352"
         }
         , {
             title: "이메일"
