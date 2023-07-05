@@ -2,22 +2,22 @@ const skillDB = {
     skills: [
         {
             title: "FrontEnd"
-            ,boxCls: "mx-auto col-12"
+            ,boxCls: ""
             ,img: "../img/skillFront.png"
         }
         ,{
             title: "Version Control"
-            ,boxCls: "mx-auto col-12"
+            ,boxCls: ""
             ,img: "../img/skillVersion.png"
         }
         ,{
             title: "Communication"
-            ,boxCls: "mx-auto col-12"
+            ,boxCls: ""
             ,img: "../img/skillCommu.png"
         }
         ,{
             title: "Certificate"
-            ,boxCls: "mx-auto col-12"
+            ,boxCls: ""
             ,img: "../img/skillCert.png"
         }
     ]
