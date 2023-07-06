@@ -27,3 +27,17 @@
 .snsAd span{
     font-size: .8rem;
 }
+
+.FirstH{
+        background-color: rgba(0, 0, 0, 0);
+        width: 100%;
+        top: 0;
+}
+.AfterH{
+    position: fixed;
+    background-color: rgb(43, 36, 36);
+    width: 100%;
+    top: 0;
+    border-bottom: 1px solid #EBEBEB;
+    z-index: 2;
+}
