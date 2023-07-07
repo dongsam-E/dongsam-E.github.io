@@ -4,7 +4,7 @@ import skills from '../scss/skills.module.css';
 function Skills(props) {
 
     return (
-        <section id={props.id} className={`pb-5 py-4 bg-primary`}>
+        <section id={props.id} className={`pb-5 py-4 ${skills.sectionBg}`}>
             <div className={`my-4 fw-bolder d-flex justify-content-center ${skills.name}`}>My Skills</div>
             <div className={`container`}>
                 <div className={`${skills.con}`}>

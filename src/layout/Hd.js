@@ -13,12 +13,7 @@ function Hd(props) {
     return (
         <>
             <section id={props.id} className=''>
-                <div className={`${hd.topBannerBg} d-flex align-items-center`}>
-                    <a href={props.hddb.topad.adlink} className={`${hd.topadTitle} d-flex align-items-center justify-content-center`}>
-                        <p className={`m-0`}>{props.hddb.topad.adtitle}</p>
-                    </a>
-                </div>
-                <div className={`d-flex justify-content-around align-items-center ${scrollPosition < 10 ? hd.FirstH : hd.AfterH}`}>
+                <div className={`fixed-top d-flex justify-content-around align-items-center ${scrollPosition < 10 ? hd.FirstH : hd.AfterH}`}>
                     <h1>
                         <a href="">
                             <img src={`${scrollPosition < 10 ? "./img/SVG/logo.svg" : "./img/SVG/logo2.svg"}`} alt="" />
@@ -30,7 +25,7 @@ function Hd(props) {
                                 props.hddb.navi.map((val, idx) => {
                                     return (
                                         <li className={val.cls}>
-                                            <a href={val.nm[1]}>{val.nm[0]}</a>
+                                            <a href={val.nm[1]} className={`${scrollPosition < 10 ? "text-dark" : "text-white"}`}>{val.nm[0]}</a>
                                         </li>
                                     )
                                 })
