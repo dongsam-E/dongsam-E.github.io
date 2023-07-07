@@ -28,11 +28,11 @@ const naviDB = {
             cls: "bi bi-github"
             , adlink: "https://github.com/dongsam-E/react-test"
         }
-        , {
-            adtitle: "Notion",
-            cls: "bi bi-journal"
-            , adlink: "https://www.notion.so/dongsam-e/array-for-for-in-navi-66ed171b2f204f6fa9884aae1e57f9c9?pvs=4"
-        }
+        // , {
+        //     adtitle: "Notion",
+        //     cls: "bi bi-journal"
+        //     , adlink: "https://www.notion.so/dongsam-e/array-for-for-in-navi-66ed171b2f204f6fa9884aae1e57f9c9?pvs=4"
+        // }
     ]
 }
 

@@ -24,7 +24,7 @@ function Hd(props) {
                             {
                                 props.hddb.navi.map((val, idx) => {
                                     return (
-                                        <li className={val.cls}>
+                                        <li className={val.cls} key={`nav`}>
                                             <a href={val.nm[1]} className={`${scrollPosition < 10 ? "text-dark" : "text-white"}`}>{val.nm[0]}</a>
                                         </li>
                                     )
@@ -35,11 +35,11 @@ function Hd(props) {
                     <div>
                         <ul className={`m-0 p-0 d-flex`}>
                             {
-                                props.hddb.navi.map((val, idx) => {
+                                props.hddb.sns.map((val, idx) => {
                                     return (
-                                        <li className={`${val.adtitle} ${hd.snsAd} pe-3`}>
-                                            <a href={val.adlink} className={`d-flex flex-column justify-content-center align-items-center`}>
-                                                <i className={val.cls}></i>
+                                        <li className={`${val.adtitle} ${hd.snsAd} pe-3`} key={`sns`}>
+                                            <a href={val.adlink} className={`d-flex flex-column justify-content-center align-items-center ${scrollPosition < 10 ? "text-dark" : "text-white"}`}>
+                                                <i className={`${val.cls} ${hd.sns}`}></i>
                                                 <span>{val.adtitle}</span>
                                             </a>
                                         </li>
