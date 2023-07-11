@@ -6,7 +6,7 @@ const naviDB = {
     }
     , navi: [
         {
-            nm: ["자기소개", "#aboutMe"]
+            nm: ["About Me", "#aboutMe"]
             , cls: "aboutMe"
         }
         , {
@@ -18,7 +18,7 @@ const naviDB = {
             , cls: "portfolio"
         }
         , {
-            nm: ["모의면접", "#interview"]
+            nm: ["사전 인터뷰", "#interview"]
             , cls: "interview"
         }
     ]

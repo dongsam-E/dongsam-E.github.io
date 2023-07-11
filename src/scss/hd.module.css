@@ -1,15 +1,22 @@
-.toggle{
+.white {
+    fill: white;
+}
+
+.toggle {
     display: none;
 }
-@media(max-width:767px){
-    .toggle{
+
+@media(max-width:767px) {
+    .toggle {
         display: block;
     }
-    #gnb{
+
+    #gnb {
         display: none;
     }
 }
-.hamMenu{
+
+.hamMenu {
     background-color: rgba(19, 19, 19, 0.7);
     width: 100vw;
     height: 50vh;
@@ -17,64 +24,80 @@
     left: 0;
     z-index: 10;
 }
-.hamLi{
+
+.hamLi {
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
 }
-.hamA{
+
+.hamA {
     font-size: 2rem;
     color: white;
 }
-.icon{
-    font-size: 2.5rem;
+
+.hamImg {
     z-index: 20;
 }
 
-.navWidth{
+.navWidth {
     width: 50vw;
     max-width: 600px;
 }
 
-.topBannerBg{
+.topBannerBg {
     /* background: linear-gradient(to bottom, #0b0b1e, #191665); */
     background-color: rgb(219, 236, 255);
     height: 2.5rem;
 }
-.topadTitle{
+
+.topadTitle {
     font-weight: 300;
     font-size: 1.1rem;
     width: 100%;
 }
 
-.topadTitle::after{
+.topadTitle::after {
     content: "클릭 시 이동합니다.";
     font-weight: 400;
     font-size: .9rem;
     padding-left: .5rem;
 }
 
-.snsAd i{
+.snsAd i {
     font-size: 1.5rem;
 }
-.snsAd span{
+
+.snsAd span {
     font-size: .8rem;
 }
-.sns{
+
+.sns {
     height: 2rem;
 }
 
-.FirstH{
-        background-color: rgba(255, 255, 255, 0);
-        width: 100%;
-        top: 0;
-        transition: .5s;
+.FirstH {
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    top: 0;
+    transition: .5s;
 }
-.AfterH{
+
+.AfterH {
     position: fixed;
-    background-color: rgb(37, 37, 37, 0.8);
+    background-color: rgba(124, 121, 115, 0.8);
     width: 100%;
     height: 4rem;
     top: 0;
     z-index: 2;
     transition: .75s;
+}
+
+.AfterH svg path,
+.ulblock svg path {
+    stroke: #fff;
+}
+
+
+.ulnone ul {
+    display: none !important;
 }
