@@ -11,7 +11,7 @@ function Content(props) {
     return (
         <div id={props.id}>
             <Banner id="banner"></Banner>
-            <About id="about" aboutdb={aboutDB}></About>
+            <About id="aboutMe" aboutdb={aboutDB}></About>
             <Skills id="skills" skilldb={skillDB}></Skills>
             <Portfolio id="portfolio"></Portfolio>
             <Interview id="interview"></Interview>
