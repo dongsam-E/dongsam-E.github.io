@@ -1,13 +1,11 @@
 .name{
+    display: flex;
+    color: black;
     font-size: 2.5rem;
-    width: fit-content;
+    font-weight: 600;
     margin: 0 auto;
+    width: fit-content;
     border-bottom: 1px solid black;
-}
-@media(min-width : 1200px){
-    .name{
-        font-size: 3vw;
-    }
 }
 
 .iconSize{

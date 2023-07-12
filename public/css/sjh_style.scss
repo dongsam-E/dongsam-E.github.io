@@ -18,5 +18,14 @@ body{
                 background-image: url(../img/slide2.jpg);
             }
     }
+    #portfolio{
+        .swiper{
+            .swiper-pagination{
+                .swiper-pagination-bullet {background-color: pink !important;}
+                .swiper-pagination-bullet-active { background-color: red !important;}
+
+            }
+        }
+    }
 }
 
