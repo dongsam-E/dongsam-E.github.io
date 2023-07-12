@@ -25,18 +25,18 @@ function Hd(props) {
                     </svg>
                     <ul className={`${hd.hamMenu}  position-absolute d-flex flex-column align-items-center justify-content-center p-0 m-0`}>
                         {
-                            props.hddb.navi.map((val, idx) => {
+                            props.hddb.navi.map((val, x) => {
                                 return (
-                                    <li className={`${val.cls} ${hd.hamLi}`} key={`hamNav`}>
+                                    <li key={x} className={`${val.cls} ${hd.hamLi}`}>
                                         <a href={val.nm[1]} className={`${hd.hamA}`}>{val.nm[0]}</a>
                                     </li>
                                 )
                             })
                         }
                         {
-                            props.hddb.sns.map((val, idx) => {
+                            props.hddb.sns.map((val, x) => {
                                 return (
-                                    <li className={`${val.adtitle} ${hd.snsAd} pt-5`} key={`hamSns`}>
+                                    <li key={x} className={`${val.adtitle} ${hd.snsAd} pt-5`}>
                                         <a href={val.adlink} className={`d-flex flex-column justify-content-center align-items-center ${scrollPosition < 10 ? "text-dark" : "text-white"}`}>
                                             <i className={`${val.cls} ${hd.sns} text-white`}></i>
                                             <span className={`text-white`}>{val.adtitle}</span>
@@ -55,9 +55,9 @@ function Hd(props) {
                 <nav id={`${hd.gnb}`}>
                     <ul className={`m-0 p-0 d-flex ${hd.navWidth} justify-content-around`}>
                         {
-                            props.hddb.navi.map((val, idx) => {
+                            props.hddb.navi.map((val, x) => {
                                 return (
-                                    <li className={val.cls} key={`nav`}>
+                                    <li key={x} className={val.cls}>
                                         <a href={val.nm[1]} className={`${scrollPosition < 10 ? "text-dark" : "text-white"}`}>{val.nm[0]}</a>
                                     </li>
                                 )

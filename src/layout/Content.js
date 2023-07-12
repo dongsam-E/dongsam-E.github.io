@@ -6,6 +6,7 @@ import Interview from '../component/Interview'
 
 import aboutDB from "../data/about"
 import skillDB from "../data/skills"
+import portDB from "../data/portfolio"
 
 function Content(props) {
     return (
@@ -13,7 +14,7 @@ function Content(props) {
             <Banner id="banner"></Banner>
             <About id="aboutMe" aboutdb={aboutDB}></About>
             <Skills id="skills" skilldb={skillDB}></Skills>
-            <Portfolio id="portfolio"></Portfolio>
+            <Portfolio id="portfolio" portdb={portDB}></Portfolio>
             <Interview id="interview"></Interview>
         </div>
     )

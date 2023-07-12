@@ -8,9 +8,9 @@ function About(props) {
             <div className={`d-flex justify-content-center`}>
                 <ul className={`row p-0 m-0`}>
                     {
-                        props.aboutdb.icon.map((v) => {
+                        props.aboutdb.icon.map((v, x) => {
                             return (
-                                <li className={`col-12 col-sm-6 col-lg-4 d-flex align-items-top`}>
+                                <li key={x} className={`col-12 col-sm-6 col-lg-4 d-flex align-items-top`}>
                                     <div className={`${about.box}`}>
                                         <i className={`${v.i} ${about.iconSize}`}></i>
                                         <div className={`d-flex flex-column ms-4`}>

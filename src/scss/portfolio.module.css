@@ -5,3 +5,11 @@
     font-size: 3rem;
     padding-bottom: 0.5rem;
 }
+.box{
+    display: inline-block;
+    max-width: fit-content;
+}
+.cardImg{
+    border-radius: 25px;
+    background-color: transparent;
+}
