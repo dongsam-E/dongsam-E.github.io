@@ -17,12 +17,23 @@ body #banner .s1 {
 body #banner .s2 {
   background-image: url(../img/slide2.jpg);
 }
-body #skills .skillbg0 .feBg {
-  background-image: url(../img/sp_Skill.png);
-  background-size: 700px auto;
-  background-repeat: no-repeat;
-  background-position: 0px 15px;
-  width: 300px;
-  height: 0;
-  padding-top: 120%;
+body #interview .accordion-item {
+  background-color: rgba(170, 210, 201, 0.25);
+}
+body #interview .accordion-button {
+  background-color: #f5f5f5;
+  font-weight: 500;
+}
+body #interview .accordion-button:not(.collapsed) {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: black;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 0 0.25rem rgba(0, 145, 117, 0.25);
+}
+body #interview .accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 145, 117, 0.25);
+}
+body #interview .accordion-button:not(.collapsed)::after {
+  background-image: url(../img/SVG/interviewArrow.svg);
 }/*# sourceMappingURL=sjh_style.css.map */
