@@ -30,9 +30,12 @@ function Portfolio(props) {
                         breakpoints={{
                             768:{
                                 slidesPerView: 1.3
-                            },
-                            992:{
+                            }
+                            ,992:{
                                 slidesPerView:1.8
+                            }
+                            ,1200:{
+                                slidesPerView:3
                             }
                         }
                         }
@@ -80,9 +83,12 @@ function Portfolio(props) {
                         breakpoints={{
                             768:{
                                 slidesPerView: 1.3
-                            },
-                            992:{
+                            }
+                            ,992:{
                                 slidesPerView:1.8
+                            }
+                            ,1200: {
+                                slidesPerView: 3
                             }
                         }
                         }
