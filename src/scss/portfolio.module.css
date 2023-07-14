@@ -17,7 +17,6 @@
 .swiperslide{
     display: flex;
     justify-content: center;
-    width: fit-content;
 }
 @media(min-width:1200px){
     .myswiper{
