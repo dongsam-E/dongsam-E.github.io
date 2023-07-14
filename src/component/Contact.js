@@ -1,9 +1,22 @@
-import React, {useState ,useEffect} from "react";
+import React, {useState ,useEffect, useRef} from "react";
 import contact from '../scss/contact.module.css';
+import emailjs from '@emailjs/browser';
+
 
 function Contact(props) {
+    const form = useRef();
 
-    
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_donge', 'template_o9qtppm', form.current, '0QRf5iVdJ60_KDmIi')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
 
     return (
         <section id={props.id}>
@@ -11,7 +24,7 @@ function Contact(props) {
                 <div className={`my-4 ${contact.name}`}>Contact ME!</div>
                 <div className={`${contact.sub}`}><p className={`mb-3`}>제안 직무를 선택해주세요</p></div>
                 <div>
-                    <form action="" method="POST" name="contact" id={`${contact.form}`}>
+                    <form ref={form} onSubmit={sendEmail} name="contact" id={`${contact.form}`}>
                         <ul id="subform" className={`${contact.checkbox} p-0 row`}>
                             {
                                 props.contactdb.checkbox.map((v, x) =>{
@@ -21,7 +34,7 @@ function Contact(props) {
                                                 <input
                                                     type="checkbox"
                                                     name={v.name}
-                                                    value="job"
+                                                    value={v.value}
                                                     className={`d-none`}
                                                 />
                                                 <div className={`${contact.iconBox}`}>
