@@ -9,7 +9,7 @@ import { Pagination, Keyboard} from "swiper";
 
 function Portfolio(props) {
     return (
-        <section id={props.id} className={portfolio.section}>
+        <section id={props.id} className={`${portfolio.section}`}>
             <div className={`py-5`}>
                 <div className={`my-4 ${portfolio.name}`}>Portfolio</div>
                 <div className={`pb-5`}>
@@ -32,34 +32,35 @@ function Portfolio(props) {
                                 slidesPerView: 1.3
                             }
                             ,992:{
-                                slidesPerView:1.8
+                                slidesPerView:1.5
                             }
                             ,1200:{
-                                slidesPerView:3
+                                slidesPerView:2.5
+                                ,centeredSlides:false
                             }
                         }
                         }
-                        className={`mySwiper`}>
+                        className={`mySwiper ${portfolio.myswiper}`}>
                         {
-                            props.portdb.card.map((v, x) => {
-                                return(
-                                <SwiperSlide className={`${v.slidecls}`}>
-                                    <div key={x} className={`${portfolio.box}`}>
-                                        <div>
-                                            <a href="" className={`d-flex justify-content-center`}>
-                                                <img className={`${v.imgcls} ${portfolio.cardImg}`} src={v.img} alt="dummyImg" />
-                                            </a>
-                                        </div>
-                                        <div className={v.cradcls}>
-                                            <div className={`${portfolio.subtitle}`}>{v.subtitle}</div>
-                                            <div className={`${portfolio.title}`}>{v.title}</div>
-                                            <div className={`${portfolio.hash}`}>{v.hash}</div>
+                            props.portdb.card2.map((v, x) => {
+                                return (
+                                    <SwiperSlide className={`${v.slidecls} ${portfolio.swiperslide}`}>
+                                        <div key={x} className={`${portfolio.box}`}>
+                                            <div>
+                                                <a href="" className={`d-flex justify-content-center`}>
+                                                    <img className={`${v.imgcls} ${portfolio.cardImg}`} src={v.img} alt="dummyImg" />
+                                                </a>
+                                            </div>
+                                            <div className={v.cradcls}>
+                                                <div className={`${portfolio.subtitle}`}>{v.subtitle}</div>
+                                                <div className={`${portfolio.title}`}>{v.title}</div>
+                                                <div className={`${portfolio.hash}`}>{v.hash}</div>
                                                 <div className={`${portfolio.moreDiv}`}>
                                                     <a href="" className={`${portfolio.moreA}`}>{v.more}</a>
                                                 </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
+                                    </SwiperSlide>
                                 )
                             })
                         }
@@ -85,18 +86,19 @@ function Portfolio(props) {
                                 slidesPerView: 1.3
                             }
                             ,992:{
-                                slidesPerView:1.8
+                                slidesPerView:1.5
                             }
                             ,1200: {
-                                slidesPerView: 3
+                                slidesPerView: 2.5
+                                , centeredSlides: false
                             }
                         }
                         }
-                        className={`mySwiper`}>
+                        className={`mySwiper ${portfolio.myswiper}`}>
                         {
                             props.portdb.card2.map((v, x) => {
                                 return(
-                                <SwiperSlide className={`${v.slidecls}`}>
+                                <SwiperSlide className={`${v.slidecls} ${portfolio.swiperslide}`}>
                                     <div key={x} className={`${portfolio.box}`}>
                                         <div>
                                             <a href="" className={`d-flex justify-content-center`}>
