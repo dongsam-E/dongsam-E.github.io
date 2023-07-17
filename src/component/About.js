@@ -4,7 +4,7 @@ import about from '../scss/about.module.css';
 function About(props) {
     return (
         <section id={props.id} className={`container pt-3 pb-5`}>
-            <div className={`my-4 ${about.name}`}>About Me</div>
+            <h2 className={`my-4 ${about.name}`}>About Me</h2>
             <div className={`d-flex justify-content-center`}>
                 <ul className={`row p-0 m-0`}>
                     {

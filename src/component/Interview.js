@@ -6,7 +6,7 @@ function Interview(props) {
     return (
         <section id={props.id} className={`${interview.sectionBg}`}>
             <div className={`py-5 container`}>
-                <div className={`my-4 ${interview.name}`}>Interview</div>
+                <h2 className={`my-4 ${interview.name}`}>Interview</h2>
                 <Accordion defaultActiveKey="0">
                     {
                         props.interviewdb.accordion.map((v, x) => {

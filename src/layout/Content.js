@@ -11,6 +11,9 @@ import portDB from "../data/portfolio"
 import interviewDB from "../data/interview"
 import contactDB from "../data/contact"
 
+import Test from '../component/Test'
+import testDB from "../data/test"
+
 function Content(props) {
     return (
         <div id={props.id}>
@@ -20,6 +23,7 @@ function Content(props) {
             <Portfolio id="portfolio" portdb={portDB}></Portfolio>
             <Interview id="interview" interviewdb={interviewDB}></Interview>
             <Contact id="contact" contactdb={contactDB}></Contact>
+            <Test testdb={testDB}></Test>
         </div>
     )
 }

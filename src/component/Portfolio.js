@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
-import portfolio from '../scss/portfolio.module.css'
 import { Swiper, SwiperSlide} from 'swiper/react';
+import portfolio from '../scss/portfolio.module.css'
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,7 +11,7 @@ function Portfolio(props) {
     return (
         <section id={props.id} className={`${portfolio.section}`}>
             <div className={`py-5`}>
-                <div className={`my-4 ${portfolio.name}`}>Portfolio</div>
+                <h2 className={`my-4 ${portfolio.name}`}>Portfolio</h2>
                 <div className={`pb-5`}>
                     <Swiper
                         modules={[Pagination, Keyboard]}
@@ -36,13 +36,12 @@ function Portfolio(props) {
                             }
                             ,1200:{
                                 slidesPerView:2.5
-                                ,centeredSlides:false
                             }
                         }
                         }
                         className={`mySwiper ${portfolio.myswiper}`}>
                         {
-                            props.portdb.card2.map((v, x) => {
+                            props.portdb.card.map((v, x) => {
                                 return (
                                     <SwiperSlide className={`${v.slidecls} ${portfolio.swiperslide}`}>
                                         <div key={x} className={`${portfolio.box}`}>
@@ -71,7 +70,6 @@ function Portfolio(props) {
                         modules={[Pagination, Keyboard]}
                         slidesPerView={1.3}
                         spaceBetween={10}
-                        // centeredSlides={true}
                         rewind={true}
                         pagination={{
                             clickable: true,
@@ -90,7 +88,6 @@ function Portfolio(props) {
                             }
                             ,1200: {
                                 slidesPerView: 2.5
-                                , centeredSlides: false
                             }
                         }
                         }

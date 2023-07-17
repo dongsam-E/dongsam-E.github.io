@@ -21,7 +21,7 @@ function Contact(props) {
     return (
         <section id={props.id}>
             <div className={`py-5 container`}>
-                <div className={`my-4 ${contact.name}`}>Contact ME!</div>
+                <h2 className={`my-4 ${contact.name}`}>Contact ME!</h2>
                 <div className={`${contact.sub}`}><p className={`mb-3`}>제안 직무를 선택해주세요</p></div>
                 <div>
                     <form ref={form} onSubmit={sendEmail} name="contact" id={`${contact.form}`}>

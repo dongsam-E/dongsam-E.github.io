@@ -12,7 +12,7 @@ const portfolioDB = {
         }
         ,{
             subtitle : "기획"
-            ,title : "신뢰감과 미니멀을 중점으로 기획한 소형가전 광고 페이지입니다."
+            ,title : "신뢰감과 미니멀을 중점으로 기획한\n 소형가전 광고 페이지입니다."
             ,hash : "#pigma #zeplin"
             ,more : "피그마작업 바로가기"
             ,img : "../img/port1.png"

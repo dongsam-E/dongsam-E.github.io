@@ -5,7 +5,7 @@ function Skills(props) {
 
     return (
         <section id={props.id} className={`pb-5 py-4 ${skills.sectionBg}`}>
-            <div className={`my-4 ${skills.name}`}>My Skills</div>
+            <h2 className={`my-4 ${skills.name}`}>My Skills</h2>
             <div className={`container`}>
                 <div className={`${skills.con}`}>
                     {
