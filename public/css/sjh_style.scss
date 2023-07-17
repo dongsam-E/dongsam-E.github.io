@@ -1,11 +1,15 @@
 body{
-    font-family: 'Inter', 'Noto Sans KR';
+    font-family: 'SUITE';
     font-weight: 400;
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'SUITE';
+        font-weight: 400;
+    }
     a{
         text-decoration: none;
         color: #070707;
-        font-family: 'Noto Sans KR';
-        font-weight: 700;
+        font-family: 'SUITE';
+        font-weight: 800;
     }
     ul, li{
         list-style: none;
