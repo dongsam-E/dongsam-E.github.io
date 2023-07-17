@@ -1,0 +1,15 @@
+.section{
+    background-color: rgb(212, 201, 178);
+}
+.box{
+    position: relative;
+}
+.subswiper{
+    position: absolute;
+    bottom: 10%;
+    right: 50%;
+    width: 50%;
+}
+.subswiperbox{
+    float: right;
+}
