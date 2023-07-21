@@ -27,7 +27,7 @@ function Contact(props) {
                     <form ref={form} onSubmit={sendEmail} name="contact" id={`${contact.form}`}>
                         <ul id="subform" className={`${contact.checkbox} p-0 row`}>
                             {
-                                props.contactdb.checkbox.map((v, x) =>{
+                                props.info.contactdb.checkbox.map((v, x) =>{
                                     return(
                                         <li key={x} className={`py-1 col-6 col-md-3 d-flex`}>
                                             <label className={`${contact.checkboxlist}`}>
@@ -48,7 +48,7 @@ function Contact(props) {
                         </ul>
                         <ul id={`${contact.mainform}`} className={`p-0 m-0`}>
                                 {
-                                    props.contactdb.data.map((v, x) =>{
+                                    props.info.contactdb.data.map((v, x) =>{
                                         return(
                                             <li key={x} className={`${contact.formsub}`}>
                                                 <input
@@ -64,7 +64,7 @@ function Contact(props) {
                         </ul>
                         <div id={`${contact.submit}`}>
                             {
-                                props.contactdb.submit.map((v, x) =>{
+                                props.info.contactdb.submit.map((v, x) =>{
                                     return(
                                         <div key={x} className = {`${contact.formsub} ${v.liCls}`}>
                                             <input 

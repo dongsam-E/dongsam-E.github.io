@@ -41,7 +41,7 @@ function Portfolio(props) {
                         }
                         className={`mySwiper ${portfolio.myswiper}`}>
                         {
-                            props.portdb.card.map((v, x) => {
+                            props.info.portdb.card.map((v, x) => {
                                 return (
                                     <SwiperSlide className={`${v.slidecls} ${portfolio.swiperslide}`}>
                                         <div key={x} className={`${portfolio.box}`}>
@@ -93,7 +93,7 @@ function Portfolio(props) {
                         }
                         className={`mySwiper ${portfolio.myswiper}`}>
                         {
-                            props.portdb.card2.map((v, x) => {
+                            props.info.portdb.card2.map((v, x) => {
                                 return(
                                 <SwiperSlide className={`${v.slidecls} ${portfolio.swiperslide}`}>
                                     <div key={x} className={`${portfolio.box}`}>

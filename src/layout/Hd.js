@@ -25,7 +25,7 @@ function Hd(props) {
                     </svg>
                     <ul className={`${hd.hamMenu}  position-absolute d-flex flex-column align-items-center justify-content-center p-0 m-0`}>
                         {
-                            props.hddb.navi.map((val, x) => {
+                            props.info.hddb.navi.map((val, x) => {
                                 return (
                                     <li key={x} className={`${val.cls} ${hd.hamLi}`}>
                                         <a href={val.nm[1]} className={`${hd.hamA}`}>{val.nm[0]}</a>
@@ -34,7 +34,7 @@ function Hd(props) {
                             })
                         }
                         {
-                            props.hddb.sns.map((val, x) => {
+                            props.info.hddb.sns.map((val, x) => {
                                 return (
                                     <li key={x} className={`${val.adtitle} ${hd.snsAd} pt-5`}>
                                         <a href={val.adlink} className={`d-flex flex-column justify-content-center align-items-center ${scrollPosition < 10 ? "text-dark" : "text-white"}`}>
@@ -55,7 +55,7 @@ function Hd(props) {
                 <nav id={`${hd.gnb}`}>
                     <ul className={`m-0 p-0 d-flex ${hd.navWidth} justify-content-around`}>
                         {
-                            props.hddb.navi.map((val, x) => {
+                            props.info.hddb.navi.map((val, x) => {
                                 return (
                                     <li key={x} className={val.cls}>
                                         <a href={val.nm[1]} className={`${scrollPosition < 10 ? "text-dark" : "text-white"}`}>{val.nm[0]}</a>
@@ -68,7 +68,7 @@ function Hd(props) {
                 <div>
                     <ul className={`m-0 p-0 d-flex`}>
                         {
-                            props.hddb.sns.map((val, idx) => {
+                            props.info.hddb.sns.map((val, idx) => {
                                 return (
                                     <li className={`${val.adtitle} ${hd.snsAd}`} key={`sns`}>
                                         <a href={val.adlink} className={`d-flex flex-column justify-content-center align-items-center ${scrollPosition < 10 ? "text-dark" : "text-white"}`}>

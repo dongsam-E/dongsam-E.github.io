@@ -9,7 +9,7 @@ function Skills(props) {
             <div className={`container`}>
                 <div className={`${skills.con}`}>
                     {
-                        props.skilldb.skills.map((v,x) => {
+                        props.info.skillsdb.skills.map((v,x) => {
                             return(
                                 <div key={x} className={`bg-white mx-3 my-2 ${v.boxCls} ${skills.box} ${skills.ani}`}>
                                     <h2 className={`${skills.title}`}>{v.title}</h2>

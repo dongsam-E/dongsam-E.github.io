@@ -2,12 +2,12 @@ import Hd from './layout/Hd'
 import Content from './layout/Content'
 import Ft from './layout/Ft'
 
-import hdDB from './data/hd'
+import info from './data/info'
 
 function App(props) {
     return (
         <>
-        <Hd id="hd" hddb={hdDB}></Hd>
+        <Hd id="hd" info={info}></Hd>
         <Content id="content"></Content>
         <Ft id="ft"></Ft>
         </>

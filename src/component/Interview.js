@@ -9,7 +9,7 @@ function Interview(props) {
                 <h2 className={`my-4 ${interview.name}`}>Interview</h2>
                 <Accordion defaultActiveKey="0">
                     {
-                        props.interviewdb.accordion.map((v, x) => {
+                        props.info.interviewdb.accordion.map((v, x) => {
                             return(
                                 <>
                                     <Accordion.Item eventKey={v.key} key={x}>

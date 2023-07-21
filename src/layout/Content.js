@@ -5,11 +5,7 @@ import Portfolio from '../component/Portfolio'
 import Interview from '../component/Interview'
 import Contact from '../component/Contact'
 
-import aboutDB from "../data/about"
-import skillDB from "../data/skills"
-import portDB from "../data/portfolio"
-import interviewDB from "../data/interview"
-import contactDB from "../data/contact"
+import info from '../data/info'
 
 import Test from '../component/Test'
 import testDB from "../data/test"
@@ -18,11 +14,11 @@ function Content(props) {
     return (
         <div id={props.id}>
             <Banner id="banner"></Banner>
-            <About id="aboutMe" aboutdb={aboutDB}></About>
-            <Skills id="skills" skilldb={skillDB}></Skills>
-            <Portfolio id="portfolio" portdb={portDB}></Portfolio>
-            <Interview id="interview" interviewdb={interviewDB}></Interview>
-            <Contact id="contact" contactdb={contactDB}></Contact>
+            <About id="aboutMe" info={info}></About>
+            <Skills id="skills" info={info}></Skills>
+            <Portfolio id="portfolio" info={info}></Portfolio>
+            <Interview id="interview" info={info}></Interview>
+            <Contact id="contact" info={info}></Contact>
             <Test testdb={testDB}></Test>
         </div>
     )
