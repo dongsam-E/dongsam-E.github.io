@@ -10,7 +10,7 @@ import './scss/sjh.scss';
 import Logo from './img/SVG/logo.svg';
 
 const Work = () => {
-
+ 
     return (
         <>
             <header id="hd" className="fixed-top bg-light">
