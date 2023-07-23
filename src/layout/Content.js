@@ -1,4 +1,3 @@
-import Banner from '../component/Banner'
 import About from '../component/About'
 import Skills from '../component/Skills'
 import Portfolio from '../component/Portfolio'
@@ -13,7 +12,6 @@ import testDB from "../data/test"
 function Content(props) {
     return (
         <div id={props.id}>
-            <Banner id="banner"></Banner>
             <About id="aboutMe" info={info}></About>
             <Skills id="skills" info={info}></Skills>
             <Portfolio id="portfolio" info={info}></Portfolio>
