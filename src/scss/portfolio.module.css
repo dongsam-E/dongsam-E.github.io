@@ -1,5 +1,5 @@
 .section{
-    background-color: rgb(212, 201, 178);
+    background-color: rgb(216, 212, 200);
 }
 .name{
     display: flex;
@@ -30,7 +30,6 @@
     max-width: fit-content;
 }
 .cardImg{
-    border-radius: 10px;
     background-color: transparent;
     width: 70vw;
 }

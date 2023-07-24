@@ -4,8 +4,9 @@ import portfolio from '../scss/portfolio.module.css'
 
 import "swiper/css";
 import "swiper/css/pagination";
+import 'swiper/css/effect-coverflow';
 
-import { Pagination, Keyboard} from "swiper";
+import { EffectCoverflow, Pagination, Keyboard} from "swiper";
 
 function Portfolio(props) {
     return (
@@ -14,9 +15,8 @@ function Portfolio(props) {
                 <h2 className={`my-4 ${portfolio.name}`}>Portfolio</h2>
                 <div className={`pb-5`}>
                     <Swiper
-                        modules={[Pagination, Keyboard]}
+                        modules={[EffectCoverflow, Pagination, Keyboard]}
                         slidesPerView={1.3}
-                        spaceBetween={10}
                         // centeredSlides={true}
                         rewind={true}
                         pagination={{
@@ -27,6 +27,15 @@ function Portfolio(props) {
                         }}
                         centeredSlides={true}
                         autoHeight={true}
+                        effect={'coverflow'}
+                        coverflowEffect={{
+                            rotate: 0,
+                            stretch: 13,
+                            scale: 0.95,
+                            depth: 0,
+                            modifier: 1,
+                            slideShadows: true,
+                        }}
                         breakpoints={{
                             768:{
                                 slidesPerView: 1.3

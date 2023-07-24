@@ -1,5 +1,5 @@
 .sectionBg{
-    background: linear-gradient(to top, rgb(212, 201, 178), white);
+    background: linear-gradient(to top, rgb(216, 212, 200), white);
 }
 .name{
     display: flex;
@@ -35,7 +35,8 @@
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
-        height: 44rem;
+        height: 36rem;
+        max-height: fit-content;
 }
 @media(max-width : 576px){
     .con{

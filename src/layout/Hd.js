@@ -14,7 +14,7 @@ function Hd(props) {
 
     return (
         <header id={props.id} className=''>
-            <div isToggled={isToggled} className={`fixed-top d-flex justify-content-around align-items-end ${scrollPosition < 10 ? hd.FirstH : hd.AfterH}`}>
+            <div isToggled={isToggled} className={`fixed-top d-flex justify-content-around align-items-center ${scrollPosition < 10 ? hd.FirstH : hd.AfterH}`}>
                 <div className={`${hd.toggle} ${!isToggled ? `${hd.ulnone}` : `${hd.ulblock}`}`}
                     onClick={() => {
                         setIsToggled(!isToggled)
@@ -58,7 +58,7 @@ function Hd(props) {
                             props.info.hddb.navi.map((val, x) => {
                                 return (
                                     <li key={x} className={val.cls}>
-                                        <a href={val.nm[1]} className={`${scrollPosition < 10 ? "text-dark" : "text-white"} ${hd.navbar}`}>{val.nm[0]}</a>
+                                        <a href={val.nm[1]} className={`${scrollPosition < 10 ? "text-dark" : "text-white"} ${scrollPosition < 10 ? hd.FirstS : hd.AfterS }`}>{val.nm[0]}</a>
                                     </li>
                                 )
                             })

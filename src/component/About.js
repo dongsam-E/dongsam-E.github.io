@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
-import {  } from 'swiper';
+import { Autoplay } from 'swiper';
 import about from '../scss/about.module.css';
 
 function About(props) {
@@ -10,8 +10,13 @@ function About(props) {
             <div id={`${about.box}`} className={`container`}>
                 <div id={`${about.imgSection}`}>
                     <Swiper
+                        modules={[Autoplay]}
                         slidesPerView={1}
                         loop={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        }}
                         className="mySwiper d-flex align-items-center"
                     >
                         <SwiperSlide>
