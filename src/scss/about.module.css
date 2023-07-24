@@ -1,4 +1,4 @@
-.iconSize{
+/* .iconSize{
     font-size: 2rem;
     display: inline-block;
 }
@@ -24,33 +24,105 @@
     max-width: 14rem;
     width: 100%;
     margin: 0 auto;
+} */
+
+#box{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
 }
-
-
 #imgSection{
-    margin: 0 5rem;
-    max-width: 350px;
-    width: 80vw;
-    height: auto;
+    display: none;
 }
-#imgSection img{
-    width: 100%;
-    height: auto;
+@media(max-width:1399px){
+    #imgSection{
+        display: block;
+        margin: 0 auto;
+        max-width: 350px;
+        width: 80vw;
+        height: auto;
+    }
+    .mySwiper{
+        width: 100%;
+        height: auto;
+    }
+    #imgSection img{
+        width: 100%;
+        height: auto;
+    }
 }
-.icon{
-    width: 30px;
-    height: auto;
+@media(max-width:992px){
+    .section{
+        padding-top: 5rem;
+    }
+    #script {
+            align-items: center;
+            padding-top: 1.5rem;
+            padding-left: 0 !important;
+    }
+    .icon {
+        width: 25px !important;
+        height: auto;
+        margin: 0 auto;
+    }
+    #imgSection{
+        display: block;
+        margin: 0 auto;
+        max-width: 250px;
+        width: 80vw;
+        height: auto;
+    }
+    .mySwiper{
+        width: 100%;
+        height: auto;
+    }
+    #imgSection img{
+        width: 100%;
+        height: auto;
+    }
+    #box{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .nonetext {
+        display: none;
+    }
+    .sub {
+        margin: 0 auto;
+        padding-top: 1.5rem;
+    }
+    .main {
+        text-align: center;
+        line-height: 2rem;
+    }
+    .text0 {
+        font-weight: 600;
+    }
+    .text1 {
+        font-weight: 600;
+    }
+    .text2 {
+        font-weight: 600;
+    }
+}
+
+/* bg img */
+.section{
+    height: calc(100vh - 150px);
+    background-color: #f4f4f4;
 }
 
 /* 자기pr 문구 */
+.icon{
+    width: 30px;
+    height: auto;
+    padding-bottom: 0.5rem;
+}
 #script{
     width: fit-content;
-    max-width: 620px;
-    margin: 0 auto;
-    padding: 4.5vw 0;
-}
-.main{
-    padding: 1rem 0;
+    max-width: 600px;
+    padding-left: 1.5rem;
 }
 .text0{
     font-size: clamp(1.2rem, 3vw, 1.5rem);
@@ -101,28 +173,4 @@
 .sub p i{
     padding-right: 0.75rem;
     color: rgb(199, 206, 202);
-}
-@media(max-width:768px){
-    .nonetext{
-        display: none;
-    }
-    .sub{
-        margin: 0 auto;
-    }
-    .main{
-        text-align: center;
-        line-height: 2rem;
-    }
-    .text0{
-        font-weight: 600;
-    }
-    .text1{
-        font-weight: 600;
-    }
-    .text2{
-        font-weight: 600;
-    }
-    #script{
-        align-items: center;
-    }
 }

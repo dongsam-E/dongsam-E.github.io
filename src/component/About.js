@@ -1,45 +1,37 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
-import 'swiper/css/pagination';
-import { Autoplay, Pagination } from 'swiper';
+import {  } from 'swiper';
 import about from '../scss/about.module.css';
 
 function About(props) {
     return (
-        <section id={props.id} className={`container py-5`}>
-            <div className={`d-xl-flex justify-content-center py-5 mx-auto`}>
-                <div id={`${about.slide}`} className={`d-flex justify-content-center`}>
-                    <Swiper 
-                    id={about.imgSection}
-                    className="mySwiper"
-                    modules={[Autoplay, Pagination]}
-                    pagination={true}
-                    centeredSlides={true}
-                    autoplay={{
-                        delay: 3000,
-                        disableOnInteraction: false,
-                    }}
-                    loop={true}
+        <section id={props.id} className={`${about.section}`}>
+            <div id={`${about.box}`} className={`container`}>
+                <div id={`${about.imgSection}`}>
+                    <Swiper
+                        slidesPerView={1}
+                        loop={true}
+                        className="mySwiper d-flex align-items-center"
                     >
                         <SwiperSlide>
-                            <img src="https://dummyimage.com/350X462/cfcfcf/000000&text=Profile+img" alt="profile0" />
+                            <img src="./img/aboutimg.jpeg" alt="aboutimg" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="./img/aboutimg.jpeg" alt="profile1" />
+                            <img src="https://dummyimage.com/350X462/e0e0e0/000000" alt="aboutimg" />
                         </SwiperSlide>
                     </Swiper>
                 </div>
                 <div id={`${about.script}`} className={`d-flex flex-column justify-content-center`}>
-                    <img className={`${about.icon}`} src="./img/doubleQuote0.png" alt="" />
+                    <img className={`${about.icon}`} src="./img/doubleQuote0.png" alt="icon" />
                     <div className={`${about.main}`}>
                         <p className={`m-0 ${about.text0}`}>안녕하세요.</p>
-                  <br /><div className={`m-0 ${about.highlight}`}>
+                        <br /><div className={`m-0 ${about.highlight}`}>
                             <p className={`m-0 ${about.text1}`}>효율적인 서치능력, 꾸준한 기록, 신속한 속도</p>
                             <div className={`${about.mark}`}></div>
                         </div>
                         <p className={`m-0 ${about.text0}`}>그리고 <span className={`${about.nonetext}`}>열린마음으로</span> <em className={`${about.em}`}>새로운 아이디어를 환영</em>하는 개발자</p>
-                  <br /><p className={`m-0 ${about.text2}`}>선주현입니다.</p>
+                        <br /><p className={`m-0 ${about.text2}`}>선주현입니다.</p>
                     </div>
                     <div className={`${about.sub} d-flex flex-column`}>
                         <p className={`m-0`}><i class="bi bi-record-circle-fill"></i>생년월일 : <span>97.12.15</span></p>

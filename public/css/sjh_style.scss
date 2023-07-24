@@ -16,13 +16,13 @@ ul, li{
     list-style: none;
 }
 body{
-    #banner{
-            .s1 {
-                background-image: url(../img/slide1.jpg);
-            }
-            .s2 {
-                background-image: url(../img/slide2.jpg);
-            }
+    #aboutMe{
+        @media(min-width:1400px){
+            background-image: url(../img/aboutimg2.png);
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            background-position: 15% 0;
+        }
     }
     #interview{
         .accordion-item {
