@@ -3,19 +3,22 @@
   font-weight: 400;
 }
 
-body h1, body h2, body h3, body h4, body h5, body h6 {
+h1, h2, h3, h4, h5, h6, p, span, em {
   font-family: "Pretendard";
   font-weight: 400;
 }
-body a {
+
+a {
   text-decoration: none;
   color: #070707;
   font-family: "Pretendard";
   font-weight: 400;
 }
-body ul, body li {
+
+ul, li {
   list-style: none;
 }
+
 body #banner .s1 {
   background-image: url(../img/slide1.jpg);
 }

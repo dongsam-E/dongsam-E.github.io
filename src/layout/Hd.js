@@ -14,7 +14,7 @@ function Hd(props) {
 
     return (
         <header id={props.id} className=''>
-            <div isToggled={isToggled} className={`fixed-top d-flex justify-content-around align-items-center ${scrollPosition < 10 ? hd.FirstH : hd.AfterH}`}>
+            <div isToggled={isToggled} className={`fixed-top d-flex justify-content-around align-items-end ${scrollPosition < 10 ? hd.FirstH : hd.AfterH}`}>
                 <div className={`${hd.toggle} ${!isToggled ? `${hd.ulnone}` : `${hd.ulblock}`}`}
                     onClick={() => {
                         setIsToggled(!isToggled)
@@ -47,18 +47,18 @@ function Hd(props) {
                         }
                     </ul>
                 </div>
-                <h1>
+                <h1 className={`m-0`}>
                     <a href="">
                         <img src={`${scrollPosition < 10 ? "./img/SVG/logoEn.svg" : "./img/SVG/logoKr.svg"}`} alt="" />
                     </a>
                 </h1>
                 <nav id={`${hd.gnb}`}>
-                    <ul className={`m-0 p-0 d-flex ${hd.navWidth} justify-content-around`}>
+                    <ul className={`m-0 p-0 d-flex`}>
                         {
                             props.info.hddb.navi.map((val, x) => {
                                 return (
                                     <li key={x} className={val.cls}>
-                                        <a href={val.nm[1]} className={`${scrollPosition < 10 ? "text-dark" : "text-white"}`}>{val.nm[0]}</a>
+                                        <a href={val.nm[1]} className={`${scrollPosition < 10 ? "text-dark" : "text-white"} ${hd.navbar}`}>{val.nm[0]}</a>
                                     </li>
                                 )
                             })
@@ -73,7 +73,6 @@ function Hd(props) {
                                     <li className={`${val.adtitle} ${hd.snsAd}`} key={`sns`}>
                                         <a href={val.adlink} className={`d-flex flex-column justify-content-center align-items-center ${scrollPosition < 10 ? "text-dark" : "text-white"}`}>
                                             <i className={`${val.cls} ${hd.sns}`}></i>
-                                            <span>{val.adtitle}</span>
                                         </a>
                                     </li>
                                 )

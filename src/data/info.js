@@ -6,21 +6,21 @@ const info = {
             , adlink: "https://github.com/dongsam-E"
         }
         , navi: [
-            {
-                nm: ["About Me", "#aboutMe"]
-                , cls: "aboutMe"
-            }
             , {
-                nm: ["Skills", "#skills"]
+                nm: ["보유 역량", "#skills"]
                 , cls: "skills"
             }
             , {
-                nm: ["Portfolio", "#portfolio"]
+                nm: ["포트폴리오", "#portfolio"]
                 , cls: "portfolio"
             }
             , {
                 nm: ["사전 인터뷰", "#interview"]
                 , cls: "interview"
+            }
+            , {
+                nm: ["면접 제안", "#contact"]
+                , cls: "contact"
             }
         ]
         , sns: [

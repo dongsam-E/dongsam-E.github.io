@@ -15,7 +15,7 @@
         display: none;
     }
 }
-
+/* 반응형 햄버거메뉴 */
 .hamMenu {
     background-color: rgba(19, 19, 19, 0.7);
     width: 100vw;
@@ -39,10 +39,7 @@
     z-index: 20;
 }
 
-.navWidth {
-    width: 50vw;
-}
-
+/* 공지 시 탑 띠배너 */
 .topBannerBg {
     /* background: linear-gradient(to bottom, #0b0b1e, #191665); */
     background-color: rgb(219, 236, 255);
@@ -62,16 +59,21 @@
     padding-left: .5rem;
 }
 
+/* 메인 네비바 */
+.navbar{
+    font-size: clamp(1.1rem , 2vw, 1.5rem);
+    padding: 0 clamp(1rem, 2vw, 3rem);
+}
+
+
+/* sns */
 .snsAd i {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-top: 0.5rem;
 }
 
 .snsAd span {
     font-size: .8rem;
-}
-
-.sns {
-    height: 2rem;
 }
 
 .FirstH {
