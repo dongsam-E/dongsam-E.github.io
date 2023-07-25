@@ -14,12 +14,6 @@
     display: flex;
     justify-content: center;
 }
-@media(min-width:1200px){
-    .myswiper{
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-}
 
 .box{
     display: inline-block;
@@ -77,19 +71,30 @@
 }
 @media(max-width:1200px){
     .imgtest {
-            width: 90vw;
+            width: 70vw;
     }
 }
 @media(max-width:1000px){
     .subswiper{
-        width: 80vw;
+        width: 50vw;
         top: 80%;
     }
     .subcard{
-        width: 80vw;
+        width: 50vw;
+    }
+}
+@media(max-width:768px){
+    .subswiper{
+        width: 70vw;
+    }
+    .subcard{
+        width: 70vw;
     }
 }
 @media(max-width:576px){
+    .imgtest {
+            width: 90vw;
+        }
     .subswiper{
         height: 60%;
     }

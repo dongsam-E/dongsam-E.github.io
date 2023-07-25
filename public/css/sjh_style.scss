@@ -26,6 +26,12 @@ body{
     }
     #portfolio{
         main{
+            .swiper-scrollbar{
+                display: flex;
+                width: 50%;
+                bottom: 0;
+                right: 0;
+            }
             #more{
                 a{
                     background-image: url(../img/btn_more.png);
