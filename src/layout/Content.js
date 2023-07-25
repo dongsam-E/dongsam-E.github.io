@@ -6,9 +6,6 @@ import Contact from '../component/Contact'
 
 import info from '../data/info'
 
-import Test from '../component/Test'
-import testDB from "../data/test"
-
 function Content(props) {
     return (
         <div id={props.id}>
@@ -17,7 +14,6 @@ function Content(props) {
             <Portfolio id="portfolio" info={info}></Portfolio>
             <Interview id="interview" info={info}></Interview>
             <Contact id="contact" info={info}></Contact>
-            <Test testdb={testDB}></Test>
         </div>
     )
 }
