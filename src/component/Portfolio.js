@@ -59,9 +59,6 @@ function Portfolio(props) {
                             slidesPerView={1}
                             effect={'fade'}
                             cssMode={true}
-                            scrollbar={{
-                                hide: false,
-                            }}
                             className={`mySwiper ${portfolio.subswiper}`}>
                             {
                                 props.info.portdb.card.map((v, x) => {
