@@ -7,6 +7,7 @@ import { Value } from "sass";
 function Contact(props) {
     
     const [company, setCompany] = useState("");
+    const [companyCheck, setCompanyCheck] = useState(false)
     const [name, setName] = useState("");
     const [num, setNum] = useState("");
     const [text, setText] = useState("");
@@ -27,11 +28,11 @@ function Contact(props) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-            if (company !== '' && name !== '' && num !== '' && text !== ''){
-                alert('메일이 전송되었습니다. 빠른 회신 드리겠습니다!')
-            }else{
-                alert('모든 필수 입력값을 채워주세요.')
-            }
+        if (company !== '' && name !== '' && num !== '' && text !== ''){
+            alert('메일이 전송되었습니다. 빠른 회신 드리겠습니다!')
+        }else{
+            alert('모든 필수 입력값을 채워주세요.')
+        }
     }
 
 
@@ -85,10 +86,19 @@ function Contact(props) {
                                     type="text"
                                     placeholder="회사 명"
                                     name="company"
-                                    onChange={handleCompanyChange}
+                                    onChange={(e)=>{
+                                            setCompany(e.target.value)
+                                            setCompanyCheck(e.target.value.length>1)
+                                        }
+                                    }
                                     value={company}
                                     required
                                 />
+                            </li>
+                            <li className={`${companyCheck?contact.formNameExplain2 :contact.formNameExplain}`}>
+                                <p name="companyExplain">
+                                회사명은 앞에 (주)를 붙여주세요.
+                                </p>
                             </li>
                             <li className={`${contact.formsub}`}>
                                 <input
