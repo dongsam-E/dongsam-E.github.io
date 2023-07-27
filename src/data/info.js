@@ -88,12 +88,13 @@ const info = {
         card: [
             {
                 subtitle: "Web-App"
-                , title: `"반응형 최적화" 온가담 광고페이지`
-                , hash: "#jquery #dothome #scss"
+                , title: `"반응형 최적화"`
+                , title2: `온가담 광고페이지`
+                , hash: "#jquery #scss"
                 , more: "홈페이지 바로가기"
                 , img: "https://dummyimage.com/1000X600/a8a8a8/ffffff"
                 , imgcls: ""
-                , cradcls: "py-3 px-5"
+                , cradcls: ""
                 , slidecls: ""
             }
             , {
@@ -103,7 +104,7 @@ const info = {
                 , more: "피그마작업 바로가기"
                 , img: "https://dummyimage.com/1000X600/a8a8a8/ffffff"
                 , imgcls: ""
-                , cradcls: "py-3 px-5"
+                , cradcls: ""
                 , slidecls: ""
             }
             , {

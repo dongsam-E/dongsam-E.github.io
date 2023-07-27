@@ -7,12 +7,14 @@ import { Value } from "sass";
 function Contact(props) {
     
     const [company, setCompany] = useState("");
-    const [companyCheck, setCompanyCheck] = useState(false)
     const [name, setName] = useState("");
     const [num, setNum] = useState("");
     const [text, setText] = useState("");
     const [isFormValid, setIsFormValid] = useState(false);
 
+    const [checkboxCheck, setcheckboxCheck] = useState(false);
+    const [textCheck, setTextCheck] = useState(false);
+    
     const handleCompanyChange = (e) => {
         setCompany(e.target.value);
     }
@@ -54,8 +56,15 @@ function Contact(props) {
     return (
         <section id={props.id}>
             <div className={`py-5 container`}>
-                <h2 className={`my-4 ${contact.name}`}>Contact ME!</h2>
-                <div className={`${contact.sub}`}><p className={`mb-3`}>제안 직무를 선택해주세요</p></div>
+                <div>
+                    <h2 className={`${contact.name}`}>Contact Me!</h2>
+                    <span className={`${contact.sub}`}>아래의 폼을 사용하여 <br/>편리하게 메일을 보내보세요</span>
+                </div>
+                <div className={`${contact.iconlist}`}>
+                    <div className={`${contact.icon0}`}><i class="bi bi-telephone-fill"></i> 010-2774-6352</div>
+                    <div className={`${contact.icon1}`}><i class="bi bi-envelope-at-fill"></i> dong2dong32@gmail.com</div>
+                </div>
+                {/* <div className={`${contact.sub}`}><p className={`mb-3`}>제안 직무를 선택해주세요</p></div> */}
                 <div>
                     <form ref={form} onSubmit={sendEmail && handleSubmit} name="contact" id={`${contact.form}`}>
                         <ul id="subform" className={`${contact.checkbox} p-0 row`}>
@@ -86,19 +95,10 @@ function Contact(props) {
                                     type="text"
                                     placeholder="회사 명"
                                     name="company"
-                                    onChange={(e)=>{
-                                            setCompany(e.target.value)
-                                            setCompanyCheck(e.target.value.length>1)
-                                        }
-                                    }
+                                    onChange={handleCompanyChange}
                                     value={company}
                                     required
                                 />
-                            </li>
-                            <li className={`${companyCheck?contact.formNameExplain2 :contact.formNameExplain}`}>
-                                <p name="companyExplain">
-                                회사명은 앞에 (주)를 붙여주세요.
-                                </p>
                             </li>
                             <li className={`${contact.formsub}`}>
                                 <input
@@ -128,10 +128,16 @@ function Contact(props) {
                                     type="text"
                                     placeholder="제안 내용"
                                     name="text"
-                                    onChange={handleTextChange}
+                                    onChange={(e)=>{
+                                        setText(e.target.value);
+                                        setTextCheck(e.target.value.length>0)
+                                    }}
                                     value={text}
                                     required
                                 />
+                                <span className={`${textCheck ? contact.formNameExplain0 : contact.formNameExplain1}`}>
+                                    간단한 제안 내용을 입력해주세요
+                                </span>
                             </li>
                         </ul>
                         <div id={`submit`} className={`${contact.formsub} d-flex justify-content-end py-3`}>

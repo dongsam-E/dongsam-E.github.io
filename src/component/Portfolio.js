@@ -64,13 +64,15 @@ function Portfolio(props) {
                                 props.info.portdb.card.map((v, x) => {
                                     return (
                                         <SwiperSlide className={`${v.slidecls} ${portfolio.swiperslide} position-relative bg-white`}>
-                                            <div key={x} className={``}>
-                                                <div className={`${v.cradcls} ${portfolio.subcard}`}>
-                                                    <div className={`${portfolio.subtitle}`}>{v.subtitle}</div>
+                                            <div key={x} className={`${v.cradcls} ${portfolio.subcard}`}>
+                                                <div className={`${portfolio.subtitle}`}>{v.subtitle}</div>
+                                                <div className={`${portfolio.titlebox}`}>
                                                     <div className={`${portfolio.title}`}>{v.title}</div>
-                                                    <div className={`${portfolio.hash}`}>{v.hash}</div>
-                                                    <div id='more'><a className={`${portfolio.moreA}`} href=""></a></div>
+                                                    <div className={`${portfolio.title}`}>{v.title2}</div>
                                                 </div>
+                                                <div className={`${portfolio.hash}`}>{v.hash}</div>
+                                                <div className={`${portfolio.explain}`}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                                                <div id='more'><a className={`${portfolio.moreA}`} href=""></a></div>
                                             </div>
                                         </SwiperSlide>
                                     )

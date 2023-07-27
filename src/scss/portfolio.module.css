@@ -45,8 +45,12 @@
     height: 200px;
 }
 .subcard{
-    width: 500px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .subtitle{
     color: #2e2e2e;
@@ -65,7 +69,7 @@
 }
 
 
-/* test */
+/* 반응형 테스트 */
 .imgtest{
     width: 50vw;
 }
@@ -79,26 +83,107 @@
         width: 50vw;
         top: 80%;
     }
-    .subcard{
-        width: 50vw;
-    }
 }
-@media(max-width:768px){
+@media(max-width:765px){
     .subswiper{
         width: 70vw;
-    }
-    .subcard{
-        width: 70vw;
+        height: 60%;
     }
 }
-@media(max-width:576px){
+@media(max-width:600px){
+    .subswiper{
+        width: 70vw;
+        height: 80%;
+    }
+    .subcard {
+        padding: 0 1rem;
+    }
+    .subtitle {
+        font-size: 13px;
+        font-weight: bolder;
+        color: rgb(15, 107, 27);
+        padding-bottom: 0.2rem;
+    }
+
+    .titlebox {
+        padding-bottom: 0;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .explain {
+        font-size: 15px;
+    }
+}
+@media(max-width:450px){
+    .subswiper{
+        height: 100%;
+    }
+    .subtitle {
+        font-size: 15px;
+        font-weight: bolder;
+        color: rgb(15, 107, 27);
+        padding-bottom: 0.2rem;
+    }
+    .titlebox{
+        padding-bottom: 0.2rem;
+    }
+    .title {
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .hash {
+        display: none;
+    }
+}
+@media(max-width:400px){
+    .section{
+        padding-bottom: 2rem;
+    }
     .imgtest {
             width: 90vw;
         }
     .subswiper{
-        height: 60%;
+        height: 100%;
     }
-    .subcard{
-        height: 60%;
+    .subtitle{
+        font-size: 13px;
+        font-weight: bolder;
+        color: rgb(15, 107, 27);
+        padding-bottom: 0.2rem;
+    }
+    .title{
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .hash{
+        padding-bottom: 0.2rem;
+    }
+    .explain {
+        font-size: 15px;
+    }
+}
+@media(max-width:350px){
+    .subtitle{
+        font-size: 15px;
+        font-weight: bolder;
+        color: rgb(15, 107, 27);
+        padding-bottom: 0.2rem;
+    }
+    .titlebox{
+        padding-bottom: 0.2rem;
+    }
+    .title{
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .hash{
+        display: none;
+    }
+    .explain{
+        font-size: 13px;
     }
 }
