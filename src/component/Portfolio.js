@@ -66,8 +66,8 @@ function Portfolio(props) {
                                         <SwiperSlide className={`${v.slidecls} ${portfolio.swiperslide} position-relative bg-white`}>
                                             <div key={x} className={`${v.cradcls} ${portfolio.subcard}`}>
                                                 <div className={`${portfolio.subtitle}`}>{v.subtitle}</div>
-                                                <div className={`${portfolio.titlebox}`}>
-                                                    <div className={`${portfolio.title}`}>{v.title}</div>
+                                                <div className={`${portfolio.titlebox} d-sm-flex`}>
+                                                    <div className={`${portfolio.title}`}>{v.title}&nbsp;</div>
                                                     <div className={`${portfolio.title}`}>{v.title2}</div>
                                                 </div>
                                                 <div className={`${portfolio.hash}`}>{v.hash}</div>
