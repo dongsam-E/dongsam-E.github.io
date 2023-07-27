@@ -47,9 +47,9 @@ function Hd(props) {
                         }
                     </ul>
                 </div>
-                <h1 className={`m-0`}>
+                <h1 className={`m-0`} id={hd.logo}>
                     <a href="">
-                        <img src={`${scrollPosition < 10 ? "./img/SVG/logoEn.svg" : "./img/SVG/logoKr.svg"}`} alt="" />
+                        <img src={`${scrollPosition < 10 ? "./img/SVG/logoEn2.svg" : "./img/SVG/logoKr.svg"}`} alt="" />
                     </a>
                 </h1>
                 <nav id={`${hd.gnb}`}>
@@ -72,7 +72,8 @@ function Hd(props) {
                                 return (
                                     <li className={`${val.adtitle} ${hd.snsAd}`} key={`sns`}>
                                         <a href={val.adlink} className={`d-flex flex-column justify-content-center align-items-center ${scrollPosition < 10 ? "text-dark" : "text-white"}`}>
-                                            <i className={`${val.cls} ${hd.sns}`}></i>
+                                            {/* <i className={`${val.cls} ${hd.sns}`}></i> */}
+                                            <img src={scrollPosition < 10 ? val.src0 : val.src1} alt="icon" />
                                         </a>
                                     </li>
                                 )
