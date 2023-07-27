@@ -14,7 +14,7 @@ function About(props) {
                         slidesPerView={1}
                         loop={true}
                         autoplay={{
-                            delay: 2500,
+                            delay: 3000,
                             disableOnInteraction: false,
                         }}
                         className="mySwiper d-flex align-items-center"
@@ -23,7 +23,7 @@ function About(props) {
                             <img src="./img/aboutimg.jpeg" alt="aboutimg" />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <img src="https://dummyimage.com/350X462/e0e0e0/000000" alt="aboutimg" />
+                            <img src="./img/aboutimgfade.jpeg" alt="aboutimg" />
                         </SwiperSlide>
                     </Swiper>
                 </div>
