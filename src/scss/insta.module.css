@@ -1,0 +1,60 @@
+
+
+/* 이미지 박스 스타일 */
+.slidebox{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.gallery{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400%;
+}
+.slidelist{
+    margin: 0;
+    padding: 0;
+}
+.slidelist li{
+    margin: 0 0.5rem;
+}
+.slidelist li img{
+    width: 200px;
+}
+@media(max-width:768px){
+    .slidelist li img {
+            width: 150px;
+    }
+}
+
+@keyframes slideoriginal{
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+    50.01%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes slideclone{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+.original{
+    animation: 20s linear 0s infinite normal forwards running slideoriginal;
+}
+.clone{
+    animation: 20s linear 0s infinite normal none running slideclone;
+}

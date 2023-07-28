@@ -9,3 +9,8 @@
     border-bottom: 1px solid #808080;
     padding-bottom: 0.3rem;
 }
+
+.p{
+    margin-bottom: 0;
+    line-height: 1.4rem;
+}
