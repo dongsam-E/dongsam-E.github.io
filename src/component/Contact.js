@@ -28,10 +28,24 @@ function Contact(props) {
         setText(e.target.value);
     }
 
+    function sebdEmail(){
+        emailjs.sendForm('service_donge', 'template_o9qtppm', form.current, '0QRf5iVdJ60_KDmIi')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    }
+
     const handleSubmit = (event) => {
         event.preventDefault();
         if (company !== '' && name !== '' && num !== '' && text !== ''){
+            sebdEmail()
             alert('메일이 전송되었습니다. 빠른 회신 드리겠습니다!')
+            setCompany("")
+            setName("")
+            setNum("")
+            setText("")
         }else{
             alert('모든 필수 입력값을 채워주세요.')
         }
@@ -40,17 +54,6 @@ function Contact(props) {
 
 
     const form = useRef();
-
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('service_donge', 'template_o9qtppm', form.current, '0QRf5iVdJ60_KDmIi')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
 
 
     return (
@@ -66,7 +69,7 @@ function Contact(props) {
                 </div>
                 {/* <div className={`${contact.sub}`}><p className={`mb-3`}>제안 직무를 선택해주세요</p></div> */}
                 <div>
-                    <form ref={form} onSubmit={sendEmail && handleSubmit} name="contact" id={`${contact.form}`}>
+                    <form ref={form} onSubmit={handleSubmit} name="contact" id={`${contact.form}`}>
                         <ul id="subform" className={`${contact.checkbox} p-0 row`}>
                             {
                                 props.info.contactdb.checkbox.map((v, x) =>{
@@ -145,7 +148,6 @@ function Contact(props) {
                                 className={`w-100 ${isFormValid ? contact.Active : contact.Disabled}`}
                                 type="submit"
                                 value="면접 제안하기"
-                                disabled={company.length<1 || name.length<1 || num.length<1 || text.length<1}
                             />
                         </div>
                     </form>
