@@ -13,9 +13,21 @@ function Interview(props) {
                             return(
                                 <>
                                     <Accordion.Item eventKey={v.key} key={x}>
-                                        <Accordion.Header>{v.title}</Accordion.Header>
+                                        <Accordion.Header>
+                                            <div>
+                                                {v.Q.split("<br>").map((v, i) => {
+                                                    return (
+                                                        <p className={`A${i} ${interview.p}`}>{v}</p>
+                                                    )
+                                                })}
+                                            </div>
+                                        </Accordion.Header>
                                         <Accordion.Body>
-                                            {v.con}
+                                            {v.A.split("<br>").map((v, i)=>{
+                                                return(
+                                                    <p className={`A${i} ${interview.p}`}>{v}</p>
+                                                )
+                                            })}
                                         </Accordion.Body>
                                     </Accordion.Item>
                                 </>
