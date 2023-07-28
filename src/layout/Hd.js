@@ -33,6 +33,7 @@ function Hd(props) {
                                 )
                             })
                         }
+                    
                         {
                             props.info.hddb.sns.map((val, x) => {
                                 return (
@@ -48,7 +49,7 @@ function Hd(props) {
                     </ul>
                 </div>
                 <h1 className={`m-0`} id={hd.logo}>
-                    <a href="">
+                    <a href="" className='d-block'>
                         <img src={`${scrollPosition < 10 ? "./img/SVG/logoEn2.svg" : "./img/SVG/logoKr.svg"}`} alt="" />
                     </a>
                 </h1>
@@ -65,15 +66,14 @@ function Hd(props) {
                         }
                     </ul>
                 </nav>
-                <div>
-                    <ul className={`m-0 p-0 d-flex`}>
+                <div className={`${hd.snsbox}`}>
+                    <ul className={`m-0 p-0 d-flex ${hd.snsBetween}`}>
                         {
                             props.info.hddb.sns.map((val, idx) => {
                                 return (
                                     <li className={`${val.adtitle} ${hd.snsAd}`} key={`sns`}>
-                                        <a href={val.adlink} className={`d-flex flex-column justify-content-center align-items-center ${scrollPosition < 10 ? "text-dark" : "text-white"}`}>
-                                            {/* <i className={`${val.cls} ${hd.sns}`}></i> */}
-                                            <img src={scrollPosition < 10 ? val.src0 : val.src1} alt="icon" />
+                                        <a href={val.adlink} className={`d-flex flex-column justify-content-center align-items-center`}>
+                                            <img className={`${hd.snsicon}`} src={scrollPosition < 10 ? val.src0 : val.src1} alt="icon" />
                                         </a>
                                     </li>
                                 )
