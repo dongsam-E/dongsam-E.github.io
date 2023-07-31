@@ -1,60 +1,88 @@
-
-
-/* 이미지 박스 스타일 */
-.slidebox{
-    position: relative;
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
+.section{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 3rem;
 }
-.gallery{
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400%;
+.box img{
+    width: 80px;
+    margin: 0.25rem;
 }
-.slidelist{
+.box a{
+    display: block;
+}
+
+.topimg{
+    justify-content: end;
+}
+.bottomimg{
+    justify-content: end;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    margin-right: 0.25rem;
+}
+.text a{
+    background-color: rgb(7, 79, 36);
+    border-radius: 25px;
+    padding: 0.25rem 1rem;
+    color: white;
+    font-size: 0.8rem;
+}
+.text p{
     margin: 0;
-    padding: 0;
-}
-.slidelist li{
-    margin: 0 0.5rem;
-}
-.slidelist li img{
-    width: 200px;
-}
-@media(max-width:768px){
-    .slidelist li img {
-            width: 150px;
-    }
+    font-size: 1.4rem;
+    color: rgb(7, 79, 36);
 }
 
-@keyframes slideoriginal{
-    0% {
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(100%);
-    }
-    50.01%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(0);
+.section{
+    position: relative;
+}
+.bgimg{
+    display: none;
+}
+/* a1.25 p2.3 */
+@media(min-width:450px){
+    .box img{
+        width: 100px;
     }
 }
-@keyframes slideclone{
-    0%{
-        transform: translateX(0%);
+@media(min-width:768px){
+    .box img{
+        width: 150px;
     }
-    100%{
-        transform: translateX(-200%);
+    .bgimg{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: block;
+    }
+    .bgimg img{
+        width: 300px;
+        height: auto;
+    }
+    .section{
+        max-width: 750px;
+        margin: 0 auto;
+        padding-top: 3rem;
     }
 }
-
-.original{
-    animation: 20s linear 0s infinite normal forwards running slideoriginal;
-}
-.clone{
-    animation: 20s linear 0s infinite normal none running slideclone;
+@media(min-width:992px){
+    .box img{
+        width: 200px;
+    }
+    .text a{
+        font-size: 1.25rem;
+    }
+    .text p{
+        font-size: 2.3rem;
+    }
+    .bgimg img{
+        width: 400px;
+    }
+    .section{
+        max-width: 1000px;
+    }
 }
