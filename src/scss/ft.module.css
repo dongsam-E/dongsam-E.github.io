@@ -1,0 +1,35 @@
+.sectionBg{
+    background-color: rgb(216, 212, 200);
+    height: 300px;
+}
+.sectionBg>div{
+    height: 100%;
+}
+.logo img{
+    width: 10rem;
+    height: auto;
+}
+
+.information p{
+    margin-bottom: 0;
+}
+.information .name{
+    font-size: 25px;
+    font-weight: 500;
+}
+.information .sub{
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+/* sns */
+.snslist ul{
+    margin: 0;
+    padding: 0;
+}
+.snslist li img{
+    width: 3rem;
+    margin: 0 0.25rem;
+}
