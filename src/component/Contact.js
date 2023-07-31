@@ -10,11 +10,7 @@ function Contact(props) {
     const [name, setName] = useState("");
     const [num, setNum] = useState("");
     const [text, setText] = useState("");
-    const [isFormValid, setIsFormValid] = useState(false);
 
-    const [checkboxCheck, setcheckboxCheck] = useState(false);
-    const [textCheck, setTextCheck] = useState(false);
-    
     const handleCompanyChange = (e) => {
         setCompany(e.target.value);
     }
@@ -28,7 +24,29 @@ function Contact(props) {
         setText(e.target.value);
     }
 
-    function sebdEmail(){
+    const [checkboxStates, setcheckboxStates] = useState({
+        FrontEnd : false,
+        publisher : false,
+        provider : false,
+        designer : false,
+    })
+    const handleCheckboxChange = (e) => {
+        const{name, checked} = e.target;
+        setcheckboxStates({
+            ...checkboxStates,
+            [name]: checked,
+        })
+    }
+    const isAnyCheckboxChecked = Object.values(checkboxStates).some((state) => state); // checkbox조건화
+    const isTextCheck = Object.values(text).length > 0
+
+    const [isFormValid, setIsFormValid] = useState(false); //폼 유효성 확인 ui
+    useEffect(() => {
+        const isFormValid = company !== '' && name !== '' && num !== '' && text !== '' && isAnyCheckboxChecked;
+        setIsFormValid(isFormValid);
+    }, [company, name, num, text, isAnyCheckboxChecked])
+
+    function sendEmail(){
         emailjs.sendForm('service_donge', 'template_o9qtppm', form.current, '0QRf5iVdJ60_KDmIi')
         .then((result) => {
             console.log(result.text);
@@ -39,13 +57,14 @@ function Contact(props) {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (company !== '' && name !== '' && num !== '' && text !== ''){
-            sebdEmail()
+        if (company !== '' && name !== '' && num !== '' && text !== '' && isAnyCheckboxChecked){
+            sendEmail()
             alert('메일이 전송되었습니다. 빠른 회신 드리겠습니다!')
             setCompany("")
             setName("")
             setNum("")
             setText("")
+            setcheckboxStates(false)
         }else{
             alert('모든 필수 입력값을 채워주세요.')
         }
@@ -67,30 +86,73 @@ function Contact(props) {
                     <div className={`${contact.icon0}`}><i class="bi bi-telephone-fill"></i> 010-2774-6352</div>
                     <div className={`${contact.icon1}`}><i class="bi bi-envelope-at-fill"></i> dong2dong32@gmail.com</div>
                 </div>
-                {/* <div className={`${contact.sub}`}><p className={`mb-3`}>제안 직무를 선택해주세요</p></div> */}
                 <div>
                     <form ref={form} onSubmit={handleSubmit} name="contact" id={`${contact.form}`}>
                         <ul id="subform" className={`${contact.checkbox} p-0 row`}>
-                            {
-                                props.info.contactdb.checkbox.map((v, x) =>{
-                                    return(
-                                        <li key={x} className={`py-1 col-6 col-md-3 d-flex`}>
-                                            <label className={`${contact.checkboxlist}`}>
-                                                <input
-                                                    type="checkbox"
-                                                    name={v.name}
-                                                    value={v.value}
-                                                    className={`d-none`}
-                                                />
-                                                <div className={`${contact.iconBox}`}>
-                                                    <span>{v.title}</span>
-                                                </div>
-                                            </label>
-                                        </li>
-                                    )
-                                })
-                            }
+                            <li className={`py-1 col-6 col-md-3 d-flex`}>
+                                <label className={`${contact.checkboxlist}`}>
+                                    <input
+                                        type="checkbox"
+                                        name="FrontEnd"
+                                        value="프론트엔드"
+                                        className={`d-none`}
+                                        checked={checkboxStates.FrontEnd}
+                                        onChange={handleCheckboxChange}
+                                    />
+                                    <div className={`${contact.iconBox}`}>
+                                        <span>프론트엔드</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li className={`py-1 col-6 col-md-3 d-flex`}>
+                                <label className={`${contact.checkboxlist}`}>
+                                    <input
+                                        type="checkbox"
+                                        name="publisher"
+                                        value="퍼블리셔"
+                                        className={`d-none`}
+                                        checked={checkboxStates.publisher}
+                                        onChange={handleCheckboxChange}
+                                    />
+                                    <div className={`${contact.iconBox}`}>
+                                        <span>퍼블리셔</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li className={`py-1 col-6 col-md-3 d-flex`}>
+                                <label className={`${contact.checkboxlist}`}>
+                                    <input
+                                        type="checkbox"
+                                        name="provider"
+                                        value="기획/마케팅"
+                                        className={`d-none`}
+                                        checked={checkboxStates.provider}
+                                        onChange={handleCheckboxChange}
+                                    />
+                                    <div className={`${contact.iconBox}`}>
+                                        <span>기획/마케팅</span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li className={`py-1 col-6 col-md-3 d-flex`}>
+                                <label className={`${contact.checkboxlist}`}>
+                                    <input
+                                        type="checkbox"
+                                        name="designer"
+                                        value="디자인"
+                                        className={`d-none`}
+                                        checked={checkboxStates.designer}
+                                        onChange={handleCheckboxChange}
+                                    />
+                                    <div className={`${contact.iconBox}`}>
+                                        <span>디자인</span>
+                                    </div>
+                                </label>
+                            </li>
                         </ul>
+                        <span className={`${contact.checkboxEx} ${isAnyCheckboxChecked ? contact.formNameExplain0 : contact.formNameExplain1}`}>
+                            제안 업무를 1개 이상 선택해주세요<br className={`${contact.checkboxExBr}`} />(다중선택 가능)
+                        </span>
                         <ul id={`${contact.mainform}`} className={`p-0 m-0`}>
                             <li className={`${contact.formsub}`}>
                                 <input
@@ -131,14 +193,11 @@ function Contact(props) {
                                     type="text"
                                     placeholder="제안 내용"
                                     name="text"
-                                    onChange={(e)=>{
-                                        setText(e.target.value);
-                                        setTextCheck(e.target.value.length>0)
-                                    }}
+                                    onChange={handleTextChange}
                                     value={text}
                                     required
                                 />
-                                <span className={`${textCheck ? contact.formNameExplain0 : contact.formNameExplain1}`}>
+                                <span className={`${isTextCheck ? contact.formNameExplain0 : contact.formNameExplain1}`}>
                                     간단한 제안 내용을 입력해주세요
                                 </span>
                             </li>
