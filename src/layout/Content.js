@@ -4,6 +4,7 @@ import Portfolio from '../component/Portfolio'
 import Interview from '../component/Interview'
 import Contact from '../component/Contact'
 import Insta from '../component/Insta'
+import Button from '../component/Button'
 
 function Content(props) {
     return (
@@ -14,6 +15,7 @@ function Content(props) {
             <Interview id="interview" info={props.info}></Interview>
             <Contact id="contact" info={props.info}></Contact>
             <Insta id="insta" info={props.info}></Insta>
+            <Button id="button"></Button>
         </div>
     )
 }
