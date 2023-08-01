@@ -39,6 +39,9 @@ function Contact(props) {
     }
     const isAnyCheckboxChecked = Object.values(checkboxStates).some((state) => state); // checkbox조건화
     const isTextCheck = Object.values(text).length > 0
+    const isNumCheck = Object.values(num).length > 0
+    const isNameCheck = Object.values(name).length > 0
+    const isCompanyCheck = Object.values(company).length > 0     // 필수요소 표시 ui
 
     const [isFormValid, setIsFormValid] = useState(false); //폼 유효성 확인 ui
     useEffect(() => {
@@ -164,6 +167,7 @@ function Contact(props) {
                                     value={company}
                                     required
                                 />
+                                <i className={`bi bi-asterisk ${contact.requiredIcon} ${isCompanyCheck ? contact.formNameExplain0 : contact.formNameExplain1}`}></i>
                             </li>
                             <li className={`${contact.formsub}`}>
                                 <input
@@ -175,6 +179,7 @@ function Contact(props) {
                                     value={name}
                                     required
                                 />
+                                <i className={`bi bi-asterisk ${contact.requiredIcon} ${isNameCheck ? contact.formNameExplain0 : contact.formNameExplain1}`}></i>
                             </li>
                             <li className={`${contact.formsub}`}>
                                 <input
@@ -186,6 +191,7 @@ function Contact(props) {
                                     value={num}
                                     required
                                 />
+                                <i className={`bi bi-asterisk ${contact.requiredIcon} ${isNumCheck ? contact.formNameExplain0 : contact.formNameExplain1}`}></i>
                             </li>
                             <li className={`${contact.formsub}`}>
                                 <input
@@ -197,9 +203,7 @@ function Contact(props) {
                                     value={text}
                                     required
                                 />
-                                <span className={`${isTextCheck ? contact.formNameExplain0 : contact.formNameExplain1}`}>
-                                    간단한 제안 내용을 입력해주세요
-                                </span>
+                                <i className={`bi bi-asterisk ${contact.requiredIcon} ${isTextCheck ? contact.formNameExplain0 : contact.formNameExplain1}`}></i>
                             </li>
                         </ul>
                         <div id={`submit`} className={`${contact.formsub} d-flex justify-content-end py-3`}>

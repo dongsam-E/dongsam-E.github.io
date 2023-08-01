@@ -115,6 +115,7 @@
 .formsub{
     width: 50vw;
     max-width: 500px;
+    position: relative;
 }
 @media(max-width:576px){
     .formsub{
@@ -136,7 +137,12 @@
     border-radius: 10px;
     border: 2px solid rgb(94, 198, 135);
 }
-
+.requiredIcon{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 0.5rem;
+}
 
 /* 하단 submit 폼태그 */
 .Disabled{
