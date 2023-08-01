@@ -21,10 +21,10 @@ function Ft(props) {
                 </div>
                 <div className={`${ft.snslist}`}>
                     <ul className={`d-flex justify-content-center`}>
-                        <li><a href=""><img src="./img/githubIcon.png" alt="" /></a></li>
-                        <li><a href=""><img src="./img/notionIcon1.png" alt="" /></a></li>
-                        <li><a href=""><img src="./img/instaIcon0.png" alt="" /></a></li>
-                        <li><a href=""><img src="./img/kakao2.png" alt="" /></a></li>
+                        <li><a href="https://github.com/dongsam-E" target="_blank"><img src="./img/githubIcon.png" alt="" /></a></li>
+                        <li><a href="https://www.notion.so/dongsam-e/f75c32b31cdb4f089e82d31577ac36f3?pvs=4" target="_blank"><img src="./img/notionIcon1.png" alt="" /></a></li>
+                        <li><a href="https://www.instagram.com/dongsam_e/" target="_blank"><img src="./img/instaIcon0.png" alt="" /></a></li>
+                        <li><a href="https://open.kakao.com/me/dongsam_e" target="_blank"><img src="./img/kakao2.png" alt="" /></a></li>
                     </ul>
                 </div>
             </div>

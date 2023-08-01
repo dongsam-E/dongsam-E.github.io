@@ -37,10 +37,10 @@ function Hd(props) {
                         {
                             props.info.hddb.sns.map((val, x) => {
                                 return (
-                                    <li key={x} className={`${val.adtitle} ${hd.snsAd} pt-5`}>
-                                        <a href={val.adlink} className={`d-flex flex-column justify-content-center align-items-center ${scrollPosition < 10 ? "text-dark" : "text-white"}`}>
-                                            <i className={`${val.cls} ${hd.sns} text-white`}></i>
-                                            <span className={`text-white`}>{val.adtitle}</span>
+                                    <li key={x} className={`${val.adtitle} ${hd.snsAd} pt-4`}>
+                                        <a href={val.adlink} target="_blank" className={`d-flex flex-column justify-content-center align-items-center text-white`}>
+                                            <img className={`${hd.hamsnsicon}`} src={val.src1} alt="icon" />
+                                            <span>{val.adtitle}</span>
                                         </a>
                                     </li>
                                 )
@@ -71,8 +71,8 @@ function Hd(props) {
                         {
                             props.info.hddb.sns.map((val, idx) => {
                                 return (
-                                    <li className={`${val.adtitle} ${hd.snsAd}`} key={`sns`}>
-                                        <a href={val.adlink} className={`d-flex flex-column justify-content-center align-items-center`}>
+                                    <li className={`${val.adtitle} ${hd.snsAd}`} key={`sns1`}>
+                                        <a href={val.adlink} target="_blank" className={`d-flex flex-column justify-content-center align-items-center`}>
                                             <img className={`${hd.snsicon}`} src={scrollPosition < 10 ? val.src0 : val.src1} alt="icon" />
                                         </a>
                                     </li>

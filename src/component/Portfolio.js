@@ -3,12 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import portfolio from '../scss/portfolio.module.css'
 
 import "swiper/css";
-import "swiper/css/pagination";
 import 'swiper/css/effect-fade';
 import 'swiper/css/effect-coverflow';
-import 'swiper/css/scrollbar';
+import 'swiper/css/navigation';
 
-import { EffectCoverflow, Keyboard, Navigation, Controller, EffectFade, Scrollbar } from "swiper";
+import { EffectCoverflow, Keyboard, Navigation, Controller, EffectFade } from "swiper";
 
 
 function Portfolio(props) {
@@ -17,10 +16,10 @@ function Portfolio(props) {
         <section id={props.id} className={`${portfolio.section}`}>
             <div className={`py-5`}>
                 <h2 className={`my-4 ${portfolio.name}`}>Portfolio</h2>
-                <div className={`pb-5`}>
+                <div className={`${portfolio.paddingbottom}`}>
                     <main className=' position-relative'>
                         <Swiper
-                            modules={[Keyboard, Controller]}
+                            modules={[Keyboard, Controller, Navigation]}
                             controller={{ control: controlledSwiper }}
                             slidesPerView={1}
                             spaceBetween={10}
@@ -42,10 +41,10 @@ function Portfolio(props) {
                             {
                                 props.info.portdb.card.map((v, x) => {
                                     return (
-                                        <SwiperSlide className={`${v.slidecls} ${portfolio.swiperslide}`}>
-                                            <div key={x} className={`${portfolio.box}`}>
+                                        <SwiperSlide key={"card0" + x} className={`${v.slidecls} ${portfolio.swiperslide}`}>
+                                            <div className={`${portfolio.box}`}>
                                                 <div className='d-flex justify-content-center'>
-                                                    <img className={`${v.imgcls} ${portfolio.imgtest}`} src={v.img} alt="dummyImg" />
+                                                    <img className={`${v.imgcls} ${portfolio.imgtest}`} src={v.img} alt="cardImg" />
                                                 </div>
                                             </div>
                                         </SwiperSlide>
@@ -54,7 +53,7 @@ function Portfolio(props) {
                             }
                         </Swiper>
                         <Swiper
-                            modules={[Controller, EffectFade, Scrollbar]}
+                            modules={[Controller, EffectFade]}
                             onSwiper={setControlledSwiper}
                             slidesPerView={1}
                             effect={'fade'}
@@ -63,16 +62,30 @@ function Portfolio(props) {
                             {
                                 props.info.portdb.card.map((v, x) => {
                                     return (
-                                        <SwiperSlide className={`${v.slidecls} ${portfolio.swiperslide} position-relative bg-white`}>
-                                            <div key={x} className={`${v.cradcls} ${portfolio.subcard}`}>
+                                        <SwiperSlide key={"card1" + x} className={`${v.slidecls} ${portfolio.swiperslide}`}>
+                                            <div className={`${v.cradcls} ${portfolio.subcard}`}>
                                                 <div className={`${portfolio.subtitle}`}>{v.subtitle}</div>
                                                 <div className={`${portfolio.titlebox} d-sm-flex`}>
                                                     <div className={`${portfolio.title}`}>{v.title}&nbsp;</div>
                                                     <div className={`${portfolio.title}`}>{v.title2}</div>
                                                 </div>
                                                 <div className={`${portfolio.hash}`}>{v.hash}</div>
-                                                <div className={`${portfolio.explain}`}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
-                                                <div id='more'><a className={`${portfolio.moreA}`} href=""></a></div>
+                                                <div className={portfolio.explain}>
+                                                    {v.explain.split("<br>").map((br, i) => {
+                                                        const strongSplit = br.split("<strong>");
+                                                        return(
+                                                            <p key={i} className={`explain${i} ${portfolio.explainText}`}>
+                                                                {strongSplit.map((v, idx) => {
+                                                                    if (idx % 2 === 0){
+                                                                        return v;
+                                                                    }else{
+                                                                        return <strong key={idx}>{v}</strong>
+                                                                    }
+                                                                })}
+                                                            </p>
+                                                        )
+                                                    })}
+                                                </div>
                                             </div>
                                         </SwiperSlide>
                                     )

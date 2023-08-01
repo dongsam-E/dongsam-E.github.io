@@ -27,9 +27,6 @@ ul, li {
     background-position: 15% 0;
   }
 }
-body #portfolio main #more a {
-  background-image: url(../img/btn_more.png);
-}
 body #interview .accordion-item {
   background-color: rgba(170, 210, 201, 0.25);
 }

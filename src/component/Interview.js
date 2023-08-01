@@ -15,17 +15,35 @@ function Interview(props) {
                                     <Accordion.Item eventKey={v.key} key={x}>
                                         <Accordion.Header>
                                             <div>
-                                                {v.Q.split("<br>").map((v, i) => {
+                                                {v.Q.split("<br>").map((br, i) => {
+                                                    const strongSplit = br.split("<strong>");
                                                     return (
-                                                        <p className={`A${i} ${interview.p}`}>{v}</p>
+                                                        <p key={"interview0" + i} className={`Q${i}  ${interview.p}`}>
+                                                            {strongSplit.map((v, idx) => {
+                                                                if (idx % 2 === 0) {
+                                                                    return v;
+                                                                } else {
+                                                                    return <strong key={idx}>{v}</strong>
+                                                                }
+                                                            })}
+                                                        </p>
                                                     )
                                                 })}
                                             </div>
                                         </Accordion.Header>
                                         <Accordion.Body>
-                                            {v.A.split("<br>").map((v, i)=>{
-                                                return(
-                                                    <p className={`A${i} ${interview.p}`}>{v}</p>
+                                            {v.A.split("<br>").map((br, i) => {
+                                                const strongSplit = br.split("<strong>");
+                                                return (
+                                                    <p key={"interview1" + i} className={`A${i} ${interview.p}`}>
+                                                        {strongSplit.map((v, idx) => {
+                                                            if (idx % 2 === 0) {
+                                                                return v;
+                                                            } else {
+                                                                return <strong key={idx}>{v}</strong>
+                                                            }
+                                                        })}
+                                                    </p>
                                                 )
                                             })}
                                         </Accordion.Body>
