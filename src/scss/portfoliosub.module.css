@@ -1,0 +1,197 @@
+.section{
+    background-color: rgb(216, 212, 200);
+}
+.name{
+    display: flex;
+    color: black;
+    font-size: 2.5rem;
+    margin: 0 auto;
+    width: fit-content;
+    border-bottom: 1px solid #808080;
+    padding-bottom: 0.3rem;
+}
+.paddingbottom{
+    padding-bottom: 3rem;
+}
+.swiperslide{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    display: inline-block;
+    width: 100%;
+}
+.cardImg{
+    background-color: transparent;
+    width: 70vw;
+}
+@media(min-width:992px){
+    .cardImg{
+        width: 50vw;
+    }
+}
+@media(min-width:1200px){
+    .cardImg{
+        width: 30vw;
+    }
+}
+
+
+/* subSwiper 안의 콘텐츠 */
+.subswiper{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 200px;
+}
+.subcard{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+.subtitle{
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: rgb(15, 107, 27);
+    padding-bottom: 0.2rem;
+}
+.title{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 0.1rem;
+    white-space: nowrap;
+
+}
+.hash{
+    color: black;
+    font-size: clamp(17px, 2vw, 1.2rem);
+    padding-bottom: 0.2rem;
+}
+.explain {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.explainText{
+    line-height: 1;
+}
+.moregit{
+    background-color: black;
+    color: white;
+    padding: 0.8rem 0.5rem;
+}
+
+
+/* 반응형 테스트 */
+.imgtest{
+    width: 50vw;
+}
+@media(max-width:1200px){
+    .imgtest {
+            width: 70vw;
+    }
+    .titlebox {
+        padding-bottom: 0;
+        line-height: 1.8rem;
+    }
+    .explain {
+        font-size: 1rem;
+    }
+}
+@media(max-width:1000px){
+    .subswiper{
+        width: 60vw;
+        top: 80%;
+    }
+    .subtitle {
+        font-size: 1rem;
+        padding-bottom: 0.2rem;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .explain {
+        font-size: 15px;
+    }
+}
+@media(max-width:768px){
+    .paddingbottom{
+        padding-bottom: 5rem;
+    }
+    .subswiper{
+        width: 70vw;
+        height: 60%;
+    }
+    .subtitle {
+        font-size: 13px;
+        padding-bottom: 0.2rem;
+    }
+
+    .titlebox {
+        line-height: 1.4rem;
+    }
+    .title {
+        font-size: 1.3rem;
+    }
+}
+@media(max-width:600px){
+    .subswiper{
+        height: 80%;
+    }
+    .subcard {
+        padding: 0 1rem;
+    }
+    .titlebox {
+        padding-bottom: 0;
+    }
+    .title {
+        font-size: 18px;
+    }
+}
+@media(max-width:450px){
+    .subswiper{
+        height: 100%;
+    }
+    .subtitle {
+        font-size: 15px;
+        padding-bottom: 0.2rem;
+    }
+    .titlebox{
+        padding-bottom: 0.2rem;
+    }
+    .hash {
+        display: none;
+    }
+}
+@media(max-width:400px){
+    .section{
+        padding-bottom: 2rem;
+    }
+    .imgtest {
+            width: 90vw;
+        }
+    .subswiper{
+        height: 100%;
+    }
+    .subtitle{
+        font-size: 13px;
+    }
+    .title{
+        font-size: 18px;
+    }
+}
+@media(max-width:350px){
+    .subtitle{
+        font-size: 15px;
+    }
+    .explain{
+        font-size: 13px;
+    }
+}
