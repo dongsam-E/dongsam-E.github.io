@@ -100,102 +100,31 @@
     "portdb": {
         "card": [
             {
-                "subtitle": "Web-App",
-                "title": "포트폴리오 용 홈페이지",
-                "explain": "첫 react 프로젝트로 코드 재사용과 유지보수에 용이하도록 <strong>컴포넌트를 분리하여 제작.<strong><br> 데이터 포멧을 <strong>json파일<strong>로 형성하여 가독성을 올리고 데이터수정을 빠르고 손쉽게 가능하도록 제작.",
-                "hash": "#react #scss",
-                "more": "홈페이지 바로가기",
-                "img": "/img/portfolioPage0.png",
-                "imgcls": "",
-                "cradcls": "",
-                "slidecls": "",
-                "gitmore": "깃 보러가기 ▶",
-                "urlmore": ""
+                "imgcls":"w-100"
+                ,"imgsrc":"/img/portfolioPage0.png"
             },
             {
-                "subtitle": "폼태그",
-                "title": "하드코딩 제작 폼태그",
-                "explain": "컴포넌트 템플릿을 쓰지 않고 하드코딩으로 제작함으로써 주니어 개발자의 <strong>기본 지식 및 이해력을 보여줌.<strong>",
-                "hash": "",
-                "more": "",
-                "img": "/img/portfolioPage1.png",
-                "imgcls": "",
-                "cradcls": "",
-                "slidecls": ""
-            },
-            {
-                "subtitle": "page2",
-                "title": "중간페이지",
-                "hash": "",
-                "explain": "",
-                "more": "",
-                "img": "/img/portfolioPage2.png",
-                "imgcls": "",
-                "cradcls": "",
-                "slidecls": ""
-            },
-            {
-                "subtitle": "page3",
-                "title": "하단페이지",
-                "explain": "",
-                "hash": "",
-                "more": "",
-                "img": "/img/portfolioPage3.png",
-                "imgcls": "",
-                "cradcls": "",
-                "slidecls": ""
+                "imgcls":"w-75"
+                ,"imgsrc":"/img/portfolioPage1.png"
             }
         ],
-        "card2": [
+        "explain":[
             {
-                "subtitle": "Web-App",
-                "title": "리액트로 만든 포트폴리오",
-                "hash": "#react #gitpage",
-                "more": "자세히보기",
-                "img": "https://dummyimage.com/1200X600/a8a8a8/ffffff",
-                "imgcls": "",
-                "cradcls": "py-3 px-5",
-                "slidecls": "pb-5"
-            },
-            {
-                "subtitle": "",
-                "title": "",
-                "hash": "",
-                "more": "",
-                "img": "https://dummyimage.com/1200X600/a8a8a8/ffffff",
-                "imgcls": "",
-                "cradcls": "py-3 px-5",
-                "slidecls": ""
-            },
-            {
-                "subtitle": "",
-                "title": "",
-                "hash": "",
-                "more": "",
-                "img": "https://dummyimage.com/1200X600/a8a8a8/ffffff",
-                "imgcls": "",
-                "cradcls": "",
-                "slidecls": ""
-            },
-            {
-                "subtitle": "",
-                "title": "",
-                "hash": "",
-                "more": "",
-                "img": "https://dummyimage.com/1200X600/a8a8a8/ffffff",
-                "imgcls": "",
-                "cradcls": "",
-                "slidecls": ""
-            },
-            {
-                "subtitle": "",
-                "title": "",
-                "hash": "",
-                "more": "",
-                "img": "https://dummyimage.com/1200X600/a8a8a8/ffffff",
-                "imgcls": "",
-                "cradcls": "",
-                "slidecls": ""
+                "keypointTitle": "KEYPOINT"
+                ,"keypointlist0": "첫 react 프로젝트로 코드 재사용과 유지보수에 용이하도록 <strong>컴포넌트를 분리하여 제작하였습니다.<strong>"
+                ,"keypointlist1": "<strong>폼태그를 하드코딩으로 제작<strong>하여 기본적인 코딩 실력을 보였고 폼태그에 대해 더욱 깊게 공부하였습니다."
+                ,"keypointlist2": "더 나아가 데이터 포멧을 <strong>json파일<strong>로 형성하여 가독성을 올리고 데이터수정을 빠르고 손쉽게 가능하도록 제작하였습니다."
+                ,"mainfunctionTitle": "MAIN FUNCTION"
+                ,"functionlist": "메일전송 폼태그, 간단한 자기소개, Github 및 SNS 링크, 프로젝트 콘텐츠"
+                ,"githubTitle": "GITHUB"
+                ,"githublink": "https://dongsam-e.github.io/"
+                ,"urlTitle": "URL"
+                ,"urllink": "https://dongsam-e.github.io/"
+                ,"frontendTitle": "FRONT-END"
+                ,"frontendlistimg0": "/img/react.png"
+                ,"frontendlistimg1": "/img/sass.png"
+                ,"dataformatTitle": "DATA-FORMAT"
+                ,"dataformat": "JSON"
             }
         ]
     },

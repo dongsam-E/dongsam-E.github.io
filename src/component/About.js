@@ -39,8 +39,8 @@ function About(props) {
                         <br /><p className={`m-0 ${about.text2}`}>선주현입니다.</p>
                     </div>
                     <div className={`${about.sub} d-flex flex-column`}>
-                        <p className={`m-0`}><i class="bi bi-record-circle-fill"></i>생년월일 : <span>97.12.15</span></p>
-                        <p className={`m-0`}><i class="bi bi-record-circle-fill"></i>학력사항 : <span>숙명여자대학교(졸)</span></p>
+                        <p className={`m-0`}><i class="bi bi-caret-right-fill"></i>생년월일 : <span>97.12.15</span></p>
+                        <p className={`m-0`}><i class="bi bi-caret-right-fill"></i>학력사항 : <span>숙명여자대학교(졸)</span></p>
                     </div>
                 </div>
             </div>

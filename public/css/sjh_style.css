@@ -46,4 +46,28 @@ body #interview .accordion-button:focus {
 }
 body #interview .accordion-button:not(.collapsed)::after {
   background-image: url(../img/SVG/interviewArrow.svg);
+}
+body #portfolio .swiper .swiper-button-prev {
+  background-image: url(../img/main_prev.png);
+  height: 100px;
+  opacity: 0.4;
+}
+body #portfolio .swiper .swiper-button-next {
+  background-image: url(../img/main_prev.png);
+  height: 100px;
+  rotate: 180deg;
+  opacity: 0.4;
+}
+body #portfolio .swiper .swiper-button-prev:hover,
+body #portfolio .swiper .swiper-button-next:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+body #portfolio .swiper .swiper-button-prev::after,
+body #portfolio .swiper .swiper-button-next::after {
+  display: none;
+}
+body #portfolio .swiper .swiper-pagination {
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=sjh_style.css.map */

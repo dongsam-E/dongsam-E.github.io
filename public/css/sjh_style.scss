@@ -49,5 +49,33 @@ body{
                 background-image: url(../img/SVG/interviewArrow.svg);
             }
     }
+    #portfolio{
+        .swiper{
+            .swiper-button-prev{
+                background-image: url(../img/main_prev.png);
+                height: 100px;
+                opacity: 0.4;
+            }
+            .swiper-button-next{
+                background-image: url(../img/main_prev.png);
+                height: 100px;
+                rotate: 180deg;
+                opacity: 0.4;
+            }
+            .swiper-button-prev:hover
+            , .swiper-button-next:hover{
+                opacity: 1;
+                transition: 0.5s;
+            }
+            .swiper-button-prev::after
+            , .swiper-button-next::after{
+                display: none;
+            }
+            .swiper-pagination{
+                font-weight: 800;
+                color: rgb(0, 0, 0, 0.5)
+            }
+        }
+    }
 }
 
