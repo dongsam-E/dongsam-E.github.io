@@ -1,5 +1,7 @@
 .sectionBg {
-    background: linear-gradient(to bottom, rgb(216, 212, 200), white);}
+    /* background: linear-gradient(to bottom, rgb(216, 212, 200), white); */
+    background-color: #d9e5dc;
+}
 .name{
     display: flex;
     color: rgb(32, 29, 29);

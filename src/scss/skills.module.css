@@ -1,5 +1,8 @@
 .sectionBg{
-    background: linear-gradient(to top, rgb(216, 212, 200), white);
+    /* background: linear-gradient(to top, rgb(216, 212, 200), white); */
+    background-color: #d9e5dc;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
 }
 .name{
     display: flex;

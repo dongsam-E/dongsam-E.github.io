@@ -30,6 +30,9 @@ ul, li {
 body #interview .accordion-item {
   background-color: rgba(170, 210, 201, 0.25);
 }
+body #interview .accordion-item .accordion-collapse {
+  background-color: #efefef;
+}
 body #interview .accordion-button {
   background-color: #f5f5f5;
   font-weight: 500;

@@ -27,6 +27,9 @@ body{
     #interview{
         .accordion-item {
                 background-color: rgb(170, 210, 201, 0.25);
+                .accordion-collapse {
+                        background-color: #efefef;
+                    }
             }
         
             .accordion-button {

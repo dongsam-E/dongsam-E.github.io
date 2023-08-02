@@ -1,3 +1,6 @@
+.sectionBg{
+    background-color: #f4f4f4;
+}
 .name{
     display: flex;
     color: black;
@@ -55,9 +58,9 @@
     padding-bottom: 0.25rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    background-color: #ebebeb;
-    border: 2px solid #ebebeb;
-    color: #646464;
+    background-color: #dbdbdb;
+    border: 2px solid #dbdbdb;
+    color: #737373;
     border-radius: 25px;
     transition: 0.3s;
     user-select: none;

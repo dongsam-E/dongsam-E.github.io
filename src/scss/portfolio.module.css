@@ -1,6 +1,7 @@
 .sectionBg{
-    background-color: rgb(216, 212, 200);
-    padding-top: 10rem;
+    /* background-color: rgb(216, 212, 200); */
+    background-color: #f4f4f4;
+    padding-top: 5rem;
     padding-bottom: 5rem;
 }
 .name {
