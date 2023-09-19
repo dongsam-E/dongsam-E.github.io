@@ -24,6 +24,131 @@ body{
             background-position: 15% 0;
         }
     }
+    #skills{
+        .anibox{
+            &.aos-animate{
+                .imgbox{
+                    &.htmlcss{
+                        .graph{
+                            &::before {
+                                width: 95%;
+                                transition: 2s;
+                            }
+                        }
+                    }
+                    &.scss{
+                        .graph{
+                            &::before {
+                                width: 80%;
+                                transition: 2s;
+                            }
+                        }
+                    }
+                    &.react{
+                        .graph{
+                            &::before {
+                                width: 70%;
+                                transition: 2s;
+                            }
+                        }
+                    }
+                    &.jquery{
+                        .graph{
+                            &::before {
+                                width: 90%;
+                                transition: 2s;
+                            }
+                        }
+                    }
+                    &.javascript{
+                        .graph{
+                            &::before {
+                                width: 80%;
+                                transition: 2s;
+                            }
+                        }
+                    }
+                    &.node{
+                        .graph{
+                            &::before {
+                                width: 60%;
+                                transition: 2s;
+                            }
+                        }
+                    }
+                    &.mysql{
+                        .graph{
+                            &::before {
+                                width: 65%;
+                                transition: 2s;
+                            }
+                        }
+                    }
+                    &.php{
+                        .graph{
+                            &::before {
+                                width: 45%;
+                                transition: 2s;
+                            }
+                        }
+                    }
+                    &.graphic{
+                        .graph{
+                            &::before {
+                                width: 75%;
+                                transition: 2s;
+                            }
+                        }
+                    }
+                }
+            }
+            .perbox{
+                width: fit-content;
+                h3{
+                    text-align: center;
+                    font-size: 1.5rem;
+                }
+                .imgbox{
+                    padding-bottom: 1rem;
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    &.frontimgbox, &.commuimgbox{
+                        img{
+                            width: 60px;
+                        }
+                    }
+                    &.backimgbox, &.etcimgbox {
+                        img {
+                            width: 70px;
+                        }
+                    }
+                    &.certiimgbox{
+                        img {
+                            width: 75px;
+                        }
+                    }
+    
+                    .graph{
+                        width: 50vw;
+                        max-width: 500px;
+                        height: 10px;
+                        background-color: #fff;
+                        position: relative;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 10px;
+                            background-color: #0a8e3f;
+                            width: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
     #interview{
         .accordion-item {
                 background-color: rgb(170, 210, 201, 0.25);
@@ -82,3 +207,6 @@ body{
     }
 }
 
+#front{
+
+}
