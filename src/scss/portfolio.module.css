@@ -22,6 +22,7 @@
     background-color: white;
     display: inline-block;
     padding: 1rem;
+    min-width: 405px;
 }
 .main{
     display: inline-block;
@@ -80,4 +81,10 @@
 }
 .slideimg{
     width: 900px;
+}
+
+@media(max-width:992px){
+    .portfolioCard{
+        width: 100%;
+    }
 }
