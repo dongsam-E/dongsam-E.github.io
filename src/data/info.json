@@ -173,6 +173,7 @@
                             }
                         ],
                         "explain": {
+                            "title" : "온가담 광고 싱글페이지",
                             "keypointTitle": "KEYPOINT",
                             "keypointlist0": "리액트로 제작한 <strong>싱글 광고페이지 입니다.<strong>",
                             "keypointlist1": "SNS섹션 사진 클릭 시 <strong>컴포넌트를 렌더링 하여 팝업창을 띄웁니다.<strong>",
@@ -205,6 +206,7 @@
                         ],
                         "explain":
                             {
+                                "title" : "자기소개 페이지",
                                 "keypointTitle": "KEYPOINT"
                                 ,"keypointlist0": "첫 react 프로젝트로 코드 재사용과 유지보수에 용이하도록 <strong>컴포넌트를 분리하여 제작하였습니다.<strong>"
                                 ,"keypointlist1": "<strong>폼태그를 하드코딩으로 제작<strong>하여 기본적인 코딩 실력을 보였고 폼태그에 대해 더욱 깊게 공부하였습니다."
@@ -235,6 +237,7 @@
                             }
                         ],
                         "explain": {
+                            "title" : "성남문화의집 리뉴얼",
                             "keypointTitle": "KEYPOINT",
                             "keypointlist0": "그누보드로 제작한 리뉴얼 홈페이지입니다.",
                             "keypointlist1": "latest skin을 이용하여 <strong>최근 게시물의 데이터가 메인페이지 안에 나올 수 있도록 제작하였습니다.<strong>",

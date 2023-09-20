@@ -40,7 +40,8 @@ function Portfolio(props) {
                                 </Swiper>
                                 <div className={`${portfolio.portfolioCard}`}>
                                     <div>
-                                        <div className={`${portfolio.explainlist} d-flex`}>
+                                        <div className={`pb-3 ${portfolio.title}`}>{vv.title}</div>
+                                        <div className={`d-flex`}>
                                             <div className={`${portfolio.listIcon}`}></div><p className={`${portfolio.extitle} pb-2`}>{vv.explain.keypointTitle}</p>
                                         </div>
                                         <ul className={`m-0 p-0 ${portfolio.main}`}>
