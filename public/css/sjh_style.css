@@ -3,7 +3,7 @@
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, em {
+h1, h2, h3, h4, h5, h6, p, span, em, div {
   font-family: "Pretendard";
   font-weight: 400;
 }
@@ -70,20 +70,21 @@ body #skills .anibox .perbox h3 {
   text-align: center;
   font-size: 1.5rem;
 }
+body #skills .anibox .perbox h3.bottomh3 {
+  font-size: 1.1rem !important;
+  height: 3rem;
+}
 body #skills .anibox .perbox .imgbox {
   padding-bottom: 1rem;
   display: flex;
   justify-content: start;
   align-items: center;
 }
-body #skills .anibox .perbox .imgbox.frontimgbox img, body #skills .anibox .perbox .imgbox.commuimgbox img {
+body #skills .anibox .perbox .imgbox.frontimgbox img, body #skills .anibox .perbox .imgbox.backimgbox img, body #skills .anibox .perbox .imgbox.etcimgbox img, body #skills .anibox .perbox .imgbox.certiimgbox img {
   width: 60px;
 }
-body #skills .anibox .perbox .imgbox.backimgbox img, body #skills .anibox .perbox .imgbox.etcimgbox img {
-  width: 70px;
-}
-body #skills .anibox .perbox .imgbox.certiimgbox img {
-  width: 75px;
+body #skills .anibox .perbox .imgbox.commuimgbox img {
+  width: 40px;
 }
 body #skills .anibox .perbox .imgbox .graph {
   width: 50vw;
@@ -101,27 +102,38 @@ body #skills .anibox .perbox .imgbox .graph::before {
   background-color: #0a8e3f;
   width: 0;
 }
-body #interview .accordion-item {
+body #interview {
+  padding: 4rem 0;
+}
+body #interview .accordion {
+  padding: 3rem 0;
+}
+body #interview .accordion .accordion-item {
+  border: none;
   background-color: rgba(170, 210, 201, 0.25);
 }
-body #interview .accordion-item .accordion-collapse {
-  background-color: #efefef;
+body #interview .accordion .accordion-item .accordion-collapse {
+  background-color: #f9f9f9;
 }
-body #interview .accordion-button {
-  background-color: #f5f5f5;
+body #interview .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+body #interview .accordion .accordion-button {
+  background-color: #fff;
   font-weight: 500;
+  border-bottom: 1px solid #333;
 }
-body #interview .accordion-button:not(.collapsed) {
+body #interview .accordion .accordion-button:not(.collapsed) {
   font-size: 1.1rem;
   font-weight: 700;
   color: black;
-  background-color: #f5f5f5;
-  box-shadow: 0 0 0 0.25rem rgba(0, 145, 117, 0.25);
+  background-color: #fff;
 }
-body #interview .accordion-button:focus {
-  box-shadow: 0 0 0 0.25rem rgba(0, 145, 117, 0.25);
+body #interview .accordion .accordion-button:focus {
+  box-shadow: none;
 }
-body #interview .accordion-button:not(.collapsed)::after {
+body #interview .accordion .accordion-button:not(.collapsed)::after {
   background-image: url(../img/SVG/interviewArrow.svg);
 }
 body #portfolio .swiper .swiper-button-prev {
