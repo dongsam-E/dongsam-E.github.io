@@ -24,7 +24,7 @@ function Insta(props) {
                         </a>
                     </div>
                     <div>
-                        <a href="https://www.instagram.com/p/CvWDIGdBXIB/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" target="_blank">
+                        <a href="" target="_blank">
                           <img src="./img/insta2.jpg" alt="" />
                         </a>
                     </div>

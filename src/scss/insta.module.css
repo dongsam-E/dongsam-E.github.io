@@ -1,10 +1,11 @@
 .sectionbg{
-    background-color: #f4f4f4;
+    background-color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
 }
 .section{
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 3rem;
 }
 .box img{
     width: 80px;
@@ -33,38 +34,57 @@
     padding: 0.25rem 1rem;
     color: white;
     font-size: 0.8rem;
+    font-weight: 100;
+}
+.text a span{
+    font-weight: 100;
 }
 .text p{
     margin: 0;
     font-size: 1.4rem;
     color: rgb(7, 79, 36);
+    font-weight: 100;
 }
 
 .section{
     position: relative;
 }
-.bgimg{
-    display: none;
+.bgimg {
+    position: absolute;
+    left: 0;
+    bottom: 80%;
+    display: block;
+}
+.bgimg img{
+    width: 100px;
+    height: auto;
 }
 /* a1.25 p2.3 */
+@media(min-width:400px){
+    .bgimg img {
+        width: 200px;
+
+    }
+}
 @media(min-width:450px){
     .box img{
         width: 100px;
     }
 }
+@media(min-width:600px){
+    .sectionbg{
+        padding-bottom: 11rem;
+    }
+    .bgimg {
+            bottom: 0;
+        }
+    .bgimg img {
+        width: 300px;
+    }
+}
 @media(min-width:768px){
     .box img{
         width: 150px;
-    }
-    .bgimg{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        display: block;
-    }
-    .bgimg img{
-        width: 300px;
-        height: auto;
     }
     .section{
         max-width: 750px;
