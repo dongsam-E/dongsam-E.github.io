@@ -15,8 +15,8 @@ function Portfolio(props) {
             {
                 props.info.portdb.map((vv, ii) => {
                     return (
-                        <div className='container py-3'>
-                            <div className={`d-lg-flex`}>
+                        <div className='container py-5'>
+                            <div className={`d-lg-flex py-3`}>
                                 <Swiper
                                     modules={[Pagination, Navigation]}
                                     navigation={true}
@@ -31,94 +31,109 @@ function Portfolio(props) {
                                     {
                                         vv.card.map((v, i) => {
                                             return (
-                                                <SwiperSlide className={`${portfolio.slidelist}`}>
-                                                    <img className={`${v.imgcls} ${portfolio.slideimg}`} src={v.imgsrc} alt="portfolioimg" />
+                                                <SwiperSlide className={`${portfolio.slidelist} d-flex align-items-start`}>
+                                                    <img className={`${portfolio.slideimg} w-75`} src={v.imgsrc} alt="portfolioimg" />
                                                 </SwiperSlide>
                                             )
                                         })
                                     }
                                 </Swiper>
-                                <div className={`${portfolio.portfolioCard}`}>
+                                <div className={`${portfolio.portfolioCard} py-4 py-lg-0`}>
                                     <div>
                                         <div className={`pb-3 ${portfolio.title}`}>{vv.title}</div>
-                                        <div className={`d-flex`}>
-                                            <div className={`${portfolio.listIcon}`}></div><p className={`${portfolio.extitle} pb-2`}>{vv.explain.keypointTitle}</p>
+                                        <div className={`${portfolio.subtitle}`}>
+                                            <div className={`${portfolio.explainlist} d-flex`}>
+                                                <p className={`${portfolio.extitle}`}>제작기간</p>
+                                            </div>
+                                            <div className={`${portfolio.excontents}`}><p className={`mb-0  ${portfolio.strongtxt}`}>{vv.explain.day}</p></div>
                                         </div>
-                                        <ul className={`m-0 p-0 ${portfolio.main}`}>
-                                            <li className={`d-flex`}>
-                                                <i className={`bi bi-caret-right-fill ${portfolio.bi}`}></i>
-                                                <p>
-                                                    {vv.explain.keypointlist0.split("<strong>").map((v, i) => {
-                                                        if (i % 2 === 0) {
-                                                            return v;
-                                                        } else {
-                                                            return <strong key={`keypointlist${i}`}>{v}</strong>
-                                                        }
-                                                    })}
-                                                </p>
-                                            </li>
-                                            <li className={`d-flex`}>
-                                                <i className={`bi bi-caret-right-fill ${portfolio.bi}`}></i>
-                                                <p>
-                                                    {vv.explain.keypointlist1.split("<strong>").map((v, i) => {
-                                                        if (i % 2 === 0) {
-                                                            return v;
-                                                        } else {
-                                                            return <strong key={`keypointlist${i}`}>{v}</strong>
-                                                        }
-                                                    })}
-                                                </p>
-                                            </li>
-                                            <li className={`d-flex`}>
-                                                <i className={`bi bi-caret-right-fill ${portfolio.bi}`}></i>
-                                                <p>
-                                                    {vv.explain.keypointlist2.split("<strong>").map((v, i) => {
-                                                        if (i % 2 === 0) {
-                                                            return v;
-                                                        } else {
-                                                            return <strong key={`keypointlist${i}`}>{v}</strong>
-                                                        }
-                                                    })}
-                                                </p>
-                                            </li>
-                                        </ul>
+                                        <div className={`${portfolio.subtitle}`}>
+                                            <div className={`${portfolio.explainlist} d-flex`}>
+                                                <p className={`${portfolio.extitle}`}>참여도</p>
+                                            </div>
+                                            <div className={`${portfolio.excontents}`}><p className={`mb-0  ${portfolio.strongtxt}`}>{vv.explain.percent}</p></div>
+                                        </div>
+                                        <div className={``}>
+                                            <div className={`d-flex`}>
+                                                <p className={`${portfolio.extitle}`}>주요기능</p>
+                                            </div>
+                                            <ul className={`m-0 p-0 ${portfolio.main}`}>
+                                                <li className={`d-flex mb-2`}>
+                                                    <div className={portfolio.plus}></div>
+                                                    <p className={`mb-0 ${portfolio.extext}`}>
+                                                        {vv.explain.keypointlist0.split("<strong>").map((v, i) => {
+                                                            if (i % 2 === 0) {
+                                                                return v;
+                                                            } else {
+                                                                return <strong key={`keypointlist${i}`}>{v}</strong>
+                                                            }
+                                                        })}
+                                                    </p>
+                                                </li>
+                                                <li className={`d-flex mb-2`}>
+                                                    <div className={portfolio.plus}></div>
+                                                    <p className={`mb-0 ${portfolio.extext}`}>
+                                                        {vv.explain.keypointlist1.split("<strong>").map((v, i) => {
+                                                            if (i % 2 === 0) {
+                                                                return v;
+                                                            } else {
+                                                                return <strong key={`keypointlist${i}`}>{v}</strong>
+                                                            }
+                                                        })}
+                                                    </p>
+                                                </li>
+                                                <li className={`d-flex`}>
+                                                    <div className={portfolio.plus}></div>
+                                                    <p className={`mb-0 ${portfolio.extext}`}>
+                                                        {vv.explain.keypointlist2.split("<strong>").map((v, i) => {
+                                                            if (i % 2 === 0) {
+                                                                return v;
+                                                            } else {
+                                                                return <strong key={`keypointlist${i}`}>{v}</strong>
+                                                            }
+                                                        })}
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                     <hr />
-                                    <div>
+                                    {/* 사용툴 */}
+                                    <div className={`${portfolio.subtitle}`}>
                                         <div className={`${portfolio.explainlist} d-flex`}>
-                                            <div className={`${portfolio.listIcon}`}></div><p className={`${portfolio.extitle}`}>{vv.explain.mainfunctionTitle}</p>
-                                        </div>
-                                        <div className={`${portfolio.excontents}`}><span>{vv.explain.functionlist}</span></div>
-                                    </div>
-                                    <div>
-                                        <div className={`${portfolio.explainlist} d-flex`}>
-                                            <div className={`${portfolio.listIcon}`}></div><p className={`${portfolio.extitle}`}>{vv.explain.githubTitle}</p>
-                                        </div>
-                                        <div className={`${portfolio.excontents}`}><a href={vv.explain.githublink} target="_blank" className={`${portfolio.linkstyle}`}>{vv.explain.githublink}</a></div>
-                                    </div>
-                                    <div>
-                                        <div className={`${portfolio.explainlist} d-flex`}>
-                                            <div className={`${portfolio.listIcon}`}></div><p className={`${portfolio.extitle}`}>{vv.explain.urlTitle}</p>
-                                        </div>
-                                        <div className={`${portfolio.excontents}`}><a href={vv.explain.urllink} target="_blank" className={`${portfolio.linkstyle}`}>{vv.explain.urllink}</a></div>
-                                    </div>
-                                    <div>
-                                        <div className={`${portfolio.explainlist} d-flex`}>
-                                            <div className={`${portfolio.listIcon}`}></div><p className={`${portfolio.extitle}`}>{vv.explain.frontendTitle}</p>
+                                            <p className={`${portfolio.extitle}`}>사용 툴</p>
                                         </div>
                                         <div className={`${portfolio.excontents}`}>
-                                            <div className={`${portfolio.frontendlogo}`}><img src={vv.explain.frontendlistimg0} alt="logo" /></div>
-                                            <div className={`${portfolio.frontendlogo}`}><img src={vv.explain.frontendlistimg1} alt="logo" /></div>
+                                            <div className={`${portfolio.frontendlogo}`}><img src={vv.explain.toolimg0} alt="" /></div>
+                                            <div className={`${portfolio.frontendlogo}`}><img src={vv.explain.toolimg1} alt="" /></div>
+                                            <div className={`${portfolio.frontendlogo}`}><img src={vv.explain.toolimg2} alt="" /></div>
+                                            <div className={`${portfolio.frontendlogo}`}><img src={vv.explain.toolimg3} alt="" /></div>
+                                            <div className={`${portfolio.frontendlogo}`}><img src={vv.explain.toolimg4} alt="" /></div>
                                         </div>
                                     </div>
-                                    <div>
+                                    {/* 사용언어 */}
+                                    <div className={`${portfolio.subtitle}`}>
                                         <div className={`${portfolio.explainlist} d-flex`}>
-                                            <div className={`${portfolio.listIcon}`}></div>
-                                            <p className={`${portfolio.extitle}`}>{vv.explain.dataformatTitle}</p>
+                                            <p className={`${portfolio.extitle}`}>사용 언어</p>
                                         </div>
                                         <div className={`${portfolio.excontents}`}>
-                                            <div className={`${portfolio.frontendlogo}`}><img className='w-75' src={vv.explain.dataformatimg0} alt="" /></div>
-                                            <div className={`${portfolio.frontendlogo}`}><img className='w-75' src={vv.explain.dataformatimg1} alt="" /></div>
+                                            <div className={`${portfolio.frontendlogo}`}><img src={vv.explain.langimg0} alt="" /></div>
+                                            <div className={`${portfolio.frontendlogo}`}><img src={vv.explain.langimg1} alt="" /></div>
+                                            <div className={`${portfolio.frontendlogo}`}><img src={vv.explain.langimg2} alt="" /></div>
+                                            <div className={`${portfolio.frontendlogo}`}><img src={vv.explain.langimg3} alt="" /></div>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    {/* 소스관리 / url / ui설계 */}
+                                    <div className={`d-flex flex-column flex-sm-row justify-content-center justify-content-sm-around text-center ${portfolio.subtitle}`}>
+                                        <div className='pb-3 pb-sm-0'>
+                                            <div className={`${portfolio.exbutton}`}><a href={vv.explain.githublink} target="_blank" className={`${portfolio.linkstyle}`}>소스관리</a></div>
+                                        </div>
+                                        <div className='pb-3 pb-sm-0'>
+                                            <div className={`${portfolio.exbutton}`}><a href={vv.explain.urllink} target="_blank" className={`${portfolio.linkstyle}`}>화면 미리보기</a></div>
+                                        </div>
+                                        <div>
+                                            <div className={`${portfolio.exbutton}`}><a href={vv.explain.figmalink} target="_blank" className={`${portfolio.linkstyle}`}>UI설계 보러가기</a></div>
                                         </div>
                                     </div>
                                 </div>
