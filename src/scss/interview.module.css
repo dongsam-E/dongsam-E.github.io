@@ -1,6 +1,6 @@
 .sectionBg {
     /* background: linear-gradient(to bottom, rgb(216, 212, 200), white); */
-    background-color: #d9e5dc;
+    background-color: #fff;
 }
 .name{
     display: flex;
@@ -12,7 +12,28 @@
     padding-bottom: 0.3rem;
 }
 
-.p{
+.a{
     margin-bottom: 0;
-    line-height: 1.4rem;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 300;
+    word-break: keep-all;
+}
+.q{
+    margin-bottom: 0;
+    font-size: 22px;
+    font-weight: 300;
+    word-break: keep-all;
+}
+.strong{
+    font-weight: 500;
+}
+
+@media(max-width:991px){
+    .q{
+        font-size: 18px;
+    }
+    .a{
+        font-size: 15px;
+    }
 }
