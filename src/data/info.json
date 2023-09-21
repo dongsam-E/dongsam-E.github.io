@@ -38,15 +38,18 @@
         "sns": [
             {
                 "adtitle": "Github",
-                "src0": "img/github_logo2.png",
-                "src1": "img/github_logo0light.png",
+                "src": "img/github_logo2.png",
                 "adlink": "https://github.com/dongsam-E"
             },
             {
                 "adtitle": "Notion",
-                "src0": "img/notionIcon2.png",
-                "src1": "img/notionIcon.png",
+                "src": "img/notionIcon2.png",
                 "adlink": "https://www.notion.so/dongsam-e/f75c32b31cdb4f089e82d31577ac36f3?pvs=4"
+            },
+            {
+                "adtitle": "Instagram",
+                "src": "img/insta.png",
+                "adlink": "https://www.instagram.com/dongsam_e/"
             }
         ]
     },
@@ -160,102 +163,97 @@
                         "title" : "온가담 싱글 광고페이지",
                         "card": [
                             {
-                                "imgcls": "w-100",
                                 "imgsrc": "/img/ongadamPage0.png"
                             },
                             {
-                                "imgcls": "w-75",
                                 "imgsrc": "/img/ongadamPage1.png"
                             },
                             {
-                                "imgcls": "w-75",
                                 "imgsrc": "/img/ongadamPage2.png"
                             }
                         ],
                         "explain": {
                             "title" : "온가담 광고 싱글페이지",
-                            "keypointTitle": "KEYPOINT",
+                            "day" : "25일",
+                            "percent": "디자인 100%, 기획 100%, 제작 90%",
                             "keypointlist0": "리액트로 제작한 <strong>싱글 광고페이지 입니다.<strong>",
                             "keypointlist1": "SNS섹션 사진 클릭 시 <strong>컴포넌트를 렌더링 하여 팝업창을 띄웁니다.<strong>",
                             "keypointlist2": "<strong>[Node.js] MySQL을 연동하여 RESTful API 서버를 구축하였습니다.<strong>",
-                            "mainfunctionTitle": "MAIN FUNCTION",
-                            "functionlist": "react-hook-form을 이용한 폼, 업체 소개 및 제품 광고",
-                            "githubTitle": "GITHUB",
                             "githublink": "https://github.com/dongsam-E/react_ongadam",
-                            "urlTitle": "URL",
                             "urllink": "http://sunjuhyeon.cafe24app.com/",
-                            "frontendTitle": "FRONT-END",
-                            "frontendlistimg0": "/img/react.png",
-                            "frontendlistimg1": "/img/sass.png",
-                            "dataformatTitle": "BACK-END",
-                            "dataformatimg0": "/img/skill/node.png",
-                            "dataformatimg1": "/img/skill/mysql.png"
+                            "figmalink": "https://www.figma.com/file/pNYd9HG1F1EVxJsRiokg2d/UI%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%84%A4%EA%B3%84-%ED%8F%89%EA%B0%80-ver.1_%EC%8B%B1%EA%B8%80%ED%8E%98%EC%9D%B4%EC%A7%80",
+                            "toolimg0": "/img/skill/photoshop.png",
+                            "toolimg1": "/img/skill/figma.png",
+                            "toolimg2": "/img/skill/vscode.png",
+                            "toolimg3": "/img/skill/heidisql.png",
+                            "toolimg4": "/img/skill/git.png",
+                            "langimg0": "/img/react.png",
+                            "langimg1": "/img/sass.png",
+                            "langimg2": "/img/skill/node.png",
+                            "langimg3": "/img/skill/mysql.png"
+                        }
+                    },
+                    {
+                        "title": "성남문화의집 리뉴얼",
+                        "card": [
+                            {
+                                "imgsrc": "/img/sungnamPage0.png"
+                            },
+                            {
+                                "imgsrc": "/img/portfolioPage1.png"
+                            }
+                        ],
+                        "explain": {
+                            "title" : "성남문화의집 리뉴얼",
+                            "day": "7일",
+                            "percent": "디자인을 제외한 기획에서 제작까지 단독작업 100%",
+                            "keypointlist0": "그누보드로 제작한 리뉴얼 홈페이지입니다.",
+                            "keypointlist1": "latest skin을 이용하여 <strong>최근 게시물의 데이터가 메인페이지 안에 나올 수 있도록 제작하였습니다.<strong>",
+                            "keypointlist2": "메인페이지 정보 수정 원할 시 게시판에 수정 및 글쓰기로 클라이언트가 손쉽게 관리 가능합니다.",
+                            "githublink": "https://github.com/dongsam-E/SungsamCulture_gnuboard",
+                            "urllink": "http://sunsunnyjh.cafe24.com/sir/",
+                            "figmalink": "https://www.figma.com/file/pNYd9HG1F1EVxJsRiokg2d/UI%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%84%A4%EA%B3%84-%ED%8F%89%EA%B0%80-ver.1_%EC%8B%B1%EA%B8%80%ED%8E%98%EC%9D%B4%EC%A7%80",
+                            "toolimg0": "/img/skill/photoshop.png",
+                            "toolimg1": "/img/skill/figma.png",
+                            "toolimg2": "/img/skill/vscode.png",
+                            "toolimg3": "/img/skill/workbench.png",
+                            "toolimg4": "/img/skill/git.png",
+                            "langimg0": "/img/skill/jquery.png",
+                            "langimg1": "/img/sass.png",
+                            "langimg2": "/img/skill/mysql.png",
+                            "langimg3": "/img/skill/php.png"
                         }
                     },
                     {
                         "title": "자기소개 페이지",
                         "card": [
                             {
-                                "imgcls":"w-100"
-                                ,"imgsrc":"/img/portfolioPage0.png"
+                                "imgsrc": "/img/portfolioPage0.png"
                             },
                             {
-                                "imgcls":"w-75"
-                                ,"imgsrc":"/img/portfolioPage1.png"
-                            }
-                        ],
-                        "explain":
-                            {
-                                "title" : "자기소개 페이지",
-                                "keypointTitle": "KEYPOINT"
-                                ,"keypointlist0": "첫 react 프로젝트로 코드 재사용과 유지보수에 용이하도록 <strong>컴포넌트를 분리하여 제작하였습니다.<strong>"
-                                ,"keypointlist1": "<strong>폼태그를 하드코딩으로 제작<strong>하여 기본적인 코딩 실력을 보였고 폼태그에 대해 더욱 깊게 공부하였습니다."
-                                ,"keypointlist2": "더 나아가 데이터 포멧을 <strong>json파일<strong>로 형성하여 가독성을 올리고 데이터수정을 빠르고 손쉽게 가능하도록 제작하였습니다."
-                                ,"mainfunctionTitle": "MAIN FUNCTION"
-                                ,"functionlist": "메일전송 폼태그, 간단한 자기소개, Github 및 SNS 링크, 프로젝트 콘텐츠"
-                                ,"githubTitle": "GITHUB"
-                                ,"githublink": "https://github.com/dongsam-E/sjh_portfolio"
-                                ,"urlTitle": "URL"
-                                ,"urllink": "https://dongsam-e.github.io/"
-                                ,"frontendTitle": "FRONT-END"
-                                ,"frontendlistimg0": "/img/react.png"
-                                ,"frontendlistimg1": "/img/sass.png"
-                                ,"dataformatTitle": "DATA-FORMAT"
-                                ,"dataformatimg0": "/img/json.png"
-                            }
-                    },
-                    {
-                        "title": "성남문화의집 리뉴얼",
-                        "card": [
-                            {
-                                "imgcls": "w-100",
-                                "imgsrc": "/img/sungnamPage0.png"
-                            },
-                            {
-                                "imgcls": "w-75",
                                 "imgsrc": "/img/portfolioPage1.png"
                             }
                         ],
                         "explain": {
-                            "title" : "성남문화의집 리뉴얼",
-                            "keypointTitle": "KEYPOINT",
-                            "keypointlist0": "그누보드로 제작한 리뉴얼 홈페이지입니다.",
-                            "keypointlist1": "latest skin을 이용하여 <strong>최근 게시물의 데이터가 메인페이지 안에 나올 수 있도록 제작하였습니다.<strong>",
-                            "keypointlist2": "메인페이지 정보 수정 원할 시 게시판에 수정 및 글쓰기로 클라이언트가 손쉽게 관리 가능합니다.",
-                            "mainfunctionTitle": "MAIN FUNCTION",
-                            "functionlist": "띠배너, 공지사항, 갤러리, 관련단체 최신글 나올수 있게 제작",
-                            "githubTitle": "GITHUB",
-                            "githublink": "https://dongsam-e.github.io/",
-                            "urlTitle": "URL",
-                            "urllink": "http://sunsunnyjh.cafe24.com/sir/",
-                            "frontendTitle": "FRONT-END",
-                            "frontendlistimg0": "/img/react.png",
-                            "frontendlistimg1": "/img/sass.png",
-                            "dataformatTitle": "BACK-END",
-                            "dataformatimg0": "/img/skill/php.png"
+                            "title": "자기소개 페이지",
+                            "day": "24일",
+                            "percent": "디자인 90%, 기획 90%, 제작 100%",
+                            "keypointlist0": "첫 react 프로젝트로 코드 재사용과 유지보수에 용이하도록 <strong>컴포넌트를 분리하여 제작하였습니다.<strong>",
+                            "keypointlist1": "<strong>폼태그를 하드코딩으로 제작<strong>하여 기본적인 코딩 실력을 보였고 폼태그에 대해 더욱 깊게 공부하였습니다.",
+                            "keypointlist2": "더 나아가 데이터 포멧을 <strong>json파일<strong>로 형성하여 가독성을 올리고 데이터수정을 빠르고 손쉽게 가능하도록 제작하였습니다.",
+                            "githublink": "https://github.com/dongsam-E/sjh_portfolio",
+                            "urllink": "https://dongsam-e.github.io/",
+                            "figmalink": "https://www.figma.com/file/pNYd9HG1F1EVxJsRiokg2d/UI%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%84%A4%EA%B3%84-%ED%8F%89%EA%B0%80-ver.1_%EC%8B%B1%EA%B8%80%ED%8E%98%EC%9D%B4%EC%A7%80",
+                            "toolimg0": "/img/skill/photoshop.png",
+                            "toolimg1": "/img/skill/figma.png",
+                            "toolimg2": "/img/skill/vscode.png",
+                            "toolimg3": "/img/skill/git.png",
+                            "langimg0": "/img/react.png",
+                            "langimg1": "/img/sass.png",
+                            "langimg2": "/img/json.png",
+                            "langimg3": ""
                         }
                     }
-       
     ],
     "interviewdb": {
         "accordion": [
