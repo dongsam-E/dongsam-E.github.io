@@ -18,21 +18,48 @@
 
 /* 설명카드 */
 .title{
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+.strongtxt{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+}
+.subtitle{
+    padding-bottom: 0.5rem;
 }
 .portfolioCard{
     position: relative;
-    background-color: white;
     display: inline-block;
-    padding: 1rem;
-    min-width: 405px;
+    padding: 0 1rem;
+    min-width: 445px;
+}
+@media(max-width:991px){
+    .portfolioCard{
+        padding-left: 5.5rem;
+        padding-right: 5.5rem;
+    }
+}
+@media(max-width:767px){
+    .portfolioCard{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+@media(max-width:575px){
+    .portfolioCard{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 .main{
     display: inline-block;
 }
 .main p{
-    line-height: 1.2rem;
+    line-height: 1rem;
+    font-size: 0.9rem;
 }
 .listIcon{
     width: 0.25rem;
@@ -41,10 +68,23 @@
     margin-right: 0.5rem;
 }
 .extitle{
-    color: rgb(10, 142, 63);
-    font-weight: 700;
+    color: rgb(128, 128, 128);
+    font-weight: 300;
     margin-bottom: 0;
+    font-size: 14px;
+    padding-bottom: 0.5rem;
 }
+.extext{
+    word-break: keep-all;
+}
+.plus::before{
+    content: "+";
+    padding-right: 0.25rem;
+    color: rgba(105, 169, 131, 0.6);
+    display: block;
+    line-height: 1rem;
+}
+
 .morelink{
     position: absolute;
     bottom: 10px;
@@ -56,25 +96,37 @@
     width: 80px;
 }
 .excontents{
-    margin-left: 0.8rem;
-    margin-bottom: 1rem;
     display: flex;
 }
 .frontendlogo{
-    width: 3.5rem;
+    width: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 0.5rem;
 }
 .frontendlogo img{
-    width: 3rem;
+    width: 100%;
 }
 .bi{
     margin-right: 0.5rem;
     color: rgb(10, 142, 63, 0.3);
 }
-.linkstyle:hover{
-    color: rgb(10, 142, 63);;
+
+.linkstyle{
+    display: block;
+}
+.exbutton{
+    border: 1px solid rgba(105, 169, 131, 0.6);
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+}
+.exbutton:hover{
+    background-color: #000;
+    border-color: #000;
+}
+.exbutton:hover .linkstyle{
+    color: #fff;
 }
 
 /* 스와이퍼 */
