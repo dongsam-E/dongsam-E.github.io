@@ -79,7 +79,7 @@ function Contact(props) {
 
 
     return (
-        <section id={props.id} className={`${contact.sectionBg}`}>
+        <section id={props.id} className={`${contact.sectionBg} py-5`}>
             <div className={`py-5 container`}>
                 <div>
                     <h2 className={`${contact.name}`}>Contact Me!</h2>
