@@ -18,12 +18,12 @@ function Interview(props) {
                                                 {v.Q.split("<br>").map((br, i) => {
                                                     const strongSplit = br.split("<strong>");
                                                     return (
-                                                        <p key={"interview0" + i} className={`Q${i}  ${interview.p}`}>
+                                                        <p key={"interview0" + i} className={`Q${i}  ${interview.q}`}>
                                                             {strongSplit.map((v, idx) => {
                                                                 if (idx % 2 === 0) {
                                                                     return v;
                                                                 } else {
-                                                                    return <strong key={idx}>{v}</strong>
+                                                                    return <strong key={idx} className={`${interview.strong}`}>{v}</strong>
                                                                 }
                                                             })}
                                                         </p>
@@ -35,12 +35,12 @@ function Interview(props) {
                                             {v.A.split("<br>").map((br, i) => {
                                                 const strongSplit = br.split("<strong>");
                                                 return (
-                                                    <p key={"interview1" + i} className={`A${i} ${interview.p}`}>
+                                                    <p key={"interview1" + i} className={`A${i} ${interview.a}`}>
                                                         {strongSplit.map((v, idx) => {
                                                             if (idx % 2 === 0) {
                                                                 return v;
                                                             } else {
-                                                                return <strong key={idx}>{v}</strong>
+                                                                return <strong key={idx} className={`${interview.strong}`}>{v}</strong>
                                                             }
                                                         })}
                                                     </p>
