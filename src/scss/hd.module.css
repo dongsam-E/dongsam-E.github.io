@@ -73,10 +73,12 @@ h1>a>img{
 .FirstS{
     font-size: clamp(1.1rem, 2vw, 1.5rem);
     padding: 0 clamp(1rem, 2vw, 3rem);
+    transition: 1s;
 }
 .AfterS{
     font-size: clamp(1rem, 2vw, 1.1rem);
     padding: 0 clamp(0.5rem, 2vw, 1.5rem);
+    transition: 1s;
 }
 
 /* 로고 */
@@ -90,8 +92,8 @@ h1>a>img{
     font-size: 2rem;
 }
 .snsicon{
-    width: 40px;
-    height: auto;  
+    width: auto;
+    height: 2rem;
 }
 .hamsnsicon{
     width: 50px;
@@ -103,7 +105,7 @@ h1>a>img{
     justify-content: end;
 }
 .snsBetween{
-    width: 6rem;
+    min-width: 120px;
     justify-content: space-between;
 }
 @media(max-width:768px){
@@ -132,12 +134,12 @@ h1>a>img{
 
 .AfterH {
     position: fixed;
-    background-color: rgba(124, 121, 115, 0.8);
     width: 100%;
     height: 4rem;
     top: 0;
     z-index: 2;
     transition: .75s;
+    backdrop-filter: blur(10px);
 }
 
 .AfterH svg path,
