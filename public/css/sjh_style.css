@@ -80,11 +80,11 @@ body #skills .anibox .perbox .imgbox {
   justify-content: start;
   align-items: center;
 }
-body #skills .anibox .perbox .imgbox.frontimgbox img, body #skills .anibox .perbox .imgbox.backimgbox img, body #skills .anibox .perbox .imgbox.etcimgbox img, body #skills .anibox .perbox .imgbox.certiimgbox img {
-  width: 60px;
-}
-body #skills .anibox .perbox .imgbox.commuimgbox img {
+body #skills .anibox .perbox .imgbox.frontimgbox img, body #skills .anibox .perbox .imgbox.backimgbox img, body #skills .anibox .perbox .imgbox.etcimgbox img, body #skills .anibox .perbox .imgbox.certiimgbox img, body #skills .anibox .perbox .imgbox.commuimgbox img {
   width: 40px;
+}
+body #skills .anibox .perbox .imgbox.certiimgbox img {
+  width: 60px;
 }
 body #skills .anibox .perbox .imgbox .graph {
   width: 50vw;
@@ -92,6 +92,7 @@ body #skills .anibox .perbox .imgbox .graph {
   height: 10px;
   background-color: #fff;
   position: relative;
+  border-radius: 10px;
 }
 body #skills .anibox .perbox .imgbox .graph::before {
   content: "";
@@ -99,7 +100,7 @@ body #skills .anibox .perbox .imgbox .graph::before {
   top: 0;
   left: 0;
   height: 10px;
-  background-color: #0a8e3f;
+  background: linear-gradient(to left, #0a8e3f, #d6f0a7);
   width: 0;
 }
 body #interview {

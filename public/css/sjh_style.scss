@@ -117,14 +117,14 @@ body{
                     display: flex;
                     justify-content: start;
                     align-items: center;
-                    &.frontimgbox, &.backimgbox, &.etcimgbox, &.certiimgbox{
-                        img{
-                            width: 60px;
-                        }
-                    }
-                    &.commuimgbox{
+                    &.frontimgbox, &.backimgbox, &.etcimgbox, &.certiimgbox, &.commuimgbox{
                         img{
                             width: 40px;
+                        }
+                    }
+                    &.certiimgbox{
+                        img{
+                            width: 60px;
                         }
                     }
     
@@ -134,13 +134,14 @@ body{
                         height: 10px;
                         background-color: #fff;
                         position: relative;
+                        border-radius: 10px;
                         &::before{
                             content: "";
                             position: absolute;
                             top: 0;
                             left: 0;
                             height: 10px;
-                            background-color: #0a8e3f;
+                            background: linear-gradient(to left, #0a8e3f, #d6f0a7);
                             width: 0;
                         }
                     }

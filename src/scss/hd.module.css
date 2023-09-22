@@ -149,10 +149,6 @@ h1>a>img{
     backdrop-filter: blur(10px);
 }
 
-.AfterH svg path,
-.ulblock svg path {
-    stroke: #fff;
-}
 
 
 .ulnone ul {
