@@ -39,16 +39,19 @@
             {
                 "adtitle": "Github",
                 "src": "img/github_logo2.png",
+                "srclight": "img/github_logo2light.png",
                 "adlink": "https://github.com/dongsam-E"
             },
             {
                 "adtitle": "Notion",
                 "src": "img/notionIcon2.png",
+                "srclight": "img/notionIconlight.png",
                 "adlink": "https://www.notion.so/dongsam-e/f75c32b31cdb4f089e82d31577ac36f3?pvs=4"
             },
             {
                 "adtitle": "Instagram",
                 "src": "img/insta.png",
+                "srclight": "img/instalight.png",
                 "adlink": "https://www.instagram.com/dongsam_e/"
             }
         ]

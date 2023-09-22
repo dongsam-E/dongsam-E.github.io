@@ -27,25 +27,26 @@ function Hd(props) {
                         {
                             props.info.hddb.navi.map((val, x) => {
                                 return (
-                                    <li key={x} className={`${val.cls} ${hd.hamLi}`}>
+                                    <div key={x} className={`${val.cls} ${hd.hamLi}`}>
                                         <a href={val.nm[1]} className={`${hd.hamA}`}>{val.nm[0]}</a>
-                                    </li>
+                                    </div>
                                 )
                             })
                         }
-                    
-                        {
-                            props.info.hddb.sns.map((val, x) => {
-                                return (
-                                    <li key={x} className={`${val.adtitle} ${hd.snsAd} pt-4`}>
-                                        <a href={val.adlink} target="_blank" className={`d-flex flex-column justify-content-center align-items-center text-white`}>
-                                            <img className={`${hd.hamsnsicon}`} src={val.src1} alt="icon" />
-                                            <span>{val.adtitle}</span>
-                                        </a>
-                                    </li>
-                                )
-                            })
-                        }
+                        <div className='d-flex'>
+                            {
+                                props.info.hddb.sns.map((val, x) => {
+                                    return (
+                                        <div key={x} className={`${val.adtitle} ${hd.snsAd} px-2`}>
+                                            <a href={val.adlink} target="_blank" className={`d-flex flex-column justify-content-center align-items-center text-white`}>
+                                                <img className={`${hd.hamsnsicon}`} src={val.srclight} alt="icon" />
+                                                <span className={`${hd.hamsnsicontxt}`}>{val.adtitle}</span>
+                                            </a>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
                     </ul>
                 </div>
                 <h1 className={`m-0`} id={hd.logo}>
