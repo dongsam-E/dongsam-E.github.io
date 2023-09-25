@@ -14,6 +14,9 @@ a {
   font-family: "Pretendard";
   font-weight: 400;
 }
+a:hover {
+  color: #0a8e3f;
+}
 
 ul, li {
   list-style: none;

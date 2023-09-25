@@ -11,6 +11,9 @@ a{
     color: #070707;
     font-family: 'Pretendard';
     font-weight: 400;
+    &:hover{
+        color: #0a8e3f;
+    }
 }
 ul, li{
     list-style: none;
