@@ -27,12 +27,12 @@ function About(props) {
                         </SwiperSlide>
                     </Swiper>
                 </div> */}
-                <div id={`${about.script}`} className={`d-flex flex-column align-items-center justify-content-center`}>
-                    <img className={`${about.icon}`} src="./img/doubleQuote0.png" alt="icon" />
+                <div id={`${about.script}`} className={`d-flex flex-column align-items-center justify-content-center col-lg-6`}>
+                    {/* <img className={`${about.icon}`} src="./img/doubleQuote0.png" alt="icon" /> */}
                     <div className={`${about.main} text-center`}>
                         <br /><div className={`m-0 ${about.highlight}`}>
 
-                            <p className={`m-0 ${about.text1} position-relative`}><span className={`position-absolute ${about.mark}`}>효율적인 서치능력,</span> <span className={`position-relative ${about.mark}`}>꾸준한 기록,</span><span className={`position-absolute ${about.mark}`}>신속한 속도</span></p>
+                            <p className={`m-0 ${about.text1} position-relative`}><span className={`position-relative ${about.mark}`}>효율적인 서치능력,</span> <span className={`position-relative ${about.mark}`}>꾸준한 기록,</span><span className={`position-relative ${about.mark}`}>신속한 속도</span></p>
                         </div>
                         <p className={`m-0 ${about.text0}`}>그리고 <span className={`${about.nonetext}`}>열린마음으로</span> <em className={`${about.em}`}>새로운 아이디어를 환영</em>하는 개발자</p>
                         <br /><p className={`m-0 ${about.text2}`}>선주현</p>
