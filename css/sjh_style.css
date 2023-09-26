@@ -52,6 +52,7 @@ body #aboutMe:before {
   bottom: 40px;
   background-image: url(../img/bg_gray.jpg);
   background-size: cover;
+  border-radius: 0 0 120px;
 }
 body #aboutMe .container {
   position: relative;
