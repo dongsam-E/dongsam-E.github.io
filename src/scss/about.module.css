@@ -26,74 +26,89 @@
     margin: 0 auto;
 } */
 
-#box{
+#box {
     display: flex;
     align-items: center;
     justify-content: end;
     height: 100%;
 }
-#imgSection{
+
+#imgSection {
     display: none;
 }
-@media(max-width:1399px){
-    #imgSection{
+
+@media(max-width:1399px) {
+    #imgSection {
         display: block;
         margin: 0 auto;
         max-width: 350px;
         width: 80vw;
         height: auto;
     }
-    .mySwiper{
+
+    .mySwiper {
         width: 100%;
         height: auto;
     }
-    #imgSection img{
+
+    #imgSection img {
         width: 100%;
         height: auto;
     }
 }
-@media(max-width:992px){
+
+@media(max-width:992px) {
     .icon {
         width: 25px !important;
         height: auto;
         margin: 0 auto;
     }
-    #imgSection{
+
+    #imgSection {
         display: block;
         margin: 0 auto;
         max-width: 250px;
         width: 80vw;
         height: auto;
     }
-    .mySwiper{
+
+    .mySwiper {
         width: 100%;
         height: auto;
     }
-    #imgSection img{
+
+    #imgSection img {
         width: 100%;
         height: auto;
     }
-    #box{
+
+    #box {
         flex-direction: column;
         justify-content: center;
     }
+
     .nonetext {
         display: none;
     }
+
     .sub {
         margin: 0 auto;
         padding-top: 1.5rem;
     }
+
     .main {
         text-align: center;
         line-height: 2rem;
     }
+
     .text0 {
         font-weight: 600;
     }
+
     .text1 {
         font-weight: 600;
     }
+
     .text2 {
         font-weight: 600;
     }
@@ -101,12 +116,13 @@
 
 
 /* bg img */
-.section{
+.section {
     height: calc(100vh - 150px);
     background-color: #f4f4f4;
 }
-@media(max-width:500px){
-    .section{
+
+@media(max-width:500px) {
+    .section {
         height: fit-content;
         padding-top: 5rem;
         padding-bottom: 2rem;
@@ -114,21 +130,24 @@
 }
 
 /* 자기pr 문구 */
-.icon{
+.icon {
     width: 30px;
     height: auto;
     padding-bottom: 0.5rem;
 }
-#script{
+
+#script {
     width: fit-content;
     max-width: 600px;
 }
-.text0{
+
+.text0 {
     font-size: clamp(1rem, 3vw, 1.5rem);
     display: inline-block;
     white-space: nowrap;
 }
-.text1{
+
+.text1 {
     font-weight: 400;
     display: inline-block;
     white-space: nowrap;
@@ -137,42 +156,53 @@
     color: #02421c;
     letter-spacing: -0.0085em;
 }
-.text2{
+
+.text2 {
     font-size: 73px;
     font-weight: 400;
     display: inline-block;
     white-space: nowrap;
 }
-.highlight{
+
+.highlight {
     position: relative;
     display: inline-block;
 }
-.mark{
+
+.mark {
+    color: #392797
+}
+
+.mark:before {
+    content: "";
     position: absolute;
-    display: inline-block;
     height: 50%;
     width: 100%;
     left: 0;
     top: 1rem;
-    background-color: rgb(94, 198, 135, 0.3);
-    border-radius: 25px;
+    background-color: #8071ca40;
 }
-.em{
+
+.em {
     color: rgb(31, 141, 75);
     font-weight: 700;
 }
-.sub{
+
+.sub {
     font-size: clamp(1rem, 3vw, 1.1rem);
 }
-.sub p{
+
+.sub p {
     font-weight: 600;
     padding: 0.25rem 0;
     display: inline-block;
 }
-.sub p span{
+
+.sub p span {
     font-weight: 400;
 }
-.sub p i{
+
+.sub p i {
     padding-right: 0.75rem;
     color: rgb(199, 206, 202);
 }
