@@ -212,7 +212,9 @@ body {
                 width: fit-content;
 
                 h3 {
-                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
                     font-size: 1.5rem;
 
                     &.bottomh3 {
@@ -232,14 +234,24 @@ body {
                     &.etcimgbox,
                     &.certiimgbox,
                     &.commuimgbox {
-                        img {
-                            width: 40px;
+                        .widthbox{
+                            width: 60px;
+                            display: flex;
+                            justify-content: center;
+                            img {
+                                height: 40px;
+                            }
                         }
                     }
 
                     &.certiimgbox {
-                        img {
+                        .widthbox{
                             width: 60px;
+                            display: flex;
+                            justify-content: center;
+                            img {
+                                height: 50px;
+                            }
                         }
                     }
 
@@ -247,9 +259,8 @@ body {
                         width: 50vw;
                         max-width: 500px;
                         height: 10px;
-                        background-color: #fff;
+                        background-color: #f9f9f9;
                         position: relative;
-                        border-radius: 10px;
 
                         &::before {
                             content: "";
@@ -257,9 +268,12 @@ body {
                             top: 0;
                             left: 0;
                             height: 10px;
-                            background: linear-gradient(to left, #0a8e3f, #d6f0a7);
+                            background: linear-gradient(to left, #654ea3, #eaafc8);
                             width: 0;
                         }
+                    }
+                    .percent{
+                        color: #654ea3;
                     }
                 }
             }

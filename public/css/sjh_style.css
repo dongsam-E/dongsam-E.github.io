@@ -118,7 +118,9 @@ body #aboutMe .container .imgSection .swiper .swiper-slide .aboutbg1 {
   width: fit-content;
 }
 #skills .anibox .perbox h3 {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
   font-size: 1.5rem;
 }
 #skills .anibox .perbox h3.bottomh3 {
@@ -131,19 +133,28 @@ body #aboutMe .container .imgSection .swiper .swiper-slide .aboutbg1 {
   justify-content: start;
   align-items: center;
 }
-#skills .anibox .perbox .imgbox.frontimgbox img, #skills .anibox .perbox .imgbox.backimgbox img, #skills .anibox .perbox .imgbox.etcimgbox img, #skills .anibox .perbox .imgbox.certiimgbox img, #skills .anibox .perbox .imgbox.commuimgbox img {
-  width: 40px;
-}
-#skills .anibox .perbox .imgbox.certiimgbox img {
+#skills .anibox .perbox .imgbox.frontimgbox .widthbox, #skills .anibox .perbox .imgbox.backimgbox .widthbox, #skills .anibox .perbox .imgbox.etcimgbox .widthbox, #skills .anibox .perbox .imgbox.certiimgbox .widthbox, #skills .anibox .perbox .imgbox.commuimgbox .widthbox {
   width: 60px;
+  display: flex;
+  justify-content: center;
+}
+#skills .anibox .perbox .imgbox.frontimgbox .widthbox img, #skills .anibox .perbox .imgbox.backimgbox .widthbox img, #skills .anibox .perbox .imgbox.etcimgbox .widthbox img, #skills .anibox .perbox .imgbox.certiimgbox .widthbox img, #skills .anibox .perbox .imgbox.commuimgbox .widthbox img {
+  height: 40px;
+}
+#skills .anibox .perbox .imgbox.certiimgbox .widthbox {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+}
+#skills .anibox .perbox .imgbox.certiimgbox .widthbox img {
+  height: 50px;
 }
 #skills .anibox .perbox .imgbox .graph {
   width: 50vw;
   max-width: 500px;
   height: 10px;
-  background-color: #fff;
+  background-color: #f9f9f9;
   position: relative;
-  border-radius: 10px;
 }
 #skills .anibox .perbox .imgbox .graph::before {
   content: "";
@@ -151,8 +162,11 @@ body #aboutMe .container .imgSection .swiper .swiper-slide .aboutbg1 {
   top: 0;
   left: 0;
   height: 10px;
-  background: linear-gradient(to left, #0a8e3f, #d6f0a7);
+  background: linear-gradient(to left, #654ea3, #eaafc8);
   width: 0;
+}
+#skills .anibox .perbox .imgbox .percent {
+  color: #654ea3;
 }
 
 #interview {

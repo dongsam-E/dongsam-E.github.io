@@ -14,52 +14,45 @@ function Skills(props) {
             <h2 className={`my-4 ${skills.name}`}>My Skills</h2>
             <div className={`anibox container d-flex flex-column align-items-center py-5`} data-aos="">
                 <div class="perbox">
-                    <h3>FrontEnd</h3>
-                    <div>
                         {
                             props.info.skillsdb.FrontEnd.map((v, i) => {
                                 return(
                                     <div className={`imgbox frontimgbox ${v.title}`}>
-                                        <img src={v.img} alt="logo" key={i} />
+                                        <div className="widthbox">
+                                            <img src={v.img} alt="logo" key={i} />
+                                        </div>
                                         <div className={`${v.graph} mx-4`}></div>
-                                        <span>{v.percent}</span>
+                                        <span className="percent">{v.percent}</span>
                                     </div>
                                 )
                             })
                         }
-                    </div>
-                </div>
-                <div class="perbox">
-                    <h3>BackEnd</h3>
-                    <div>
                         {
                             props.info.skillsdb.BackEnd.map((v, i) => {
                                 return(
                                     <div className={`imgbox backimgbox ${v.title}`}>
-                                        <img src={v.img} alt="logo" key={i} />
+                                        <div className="widthbox">
+                                            <img src={v.img} alt="logo" key={i} />
+                                        </div>
                                         <div className={`${v.graph} mx-4`}></div>
-                                        <span>{v.percent}</span>
+                                        <span className="percent">{v.percent}</span>
                                     </div>
                                 )
                             })
                         }
-                    </div>
-                </div>
-                <div class="perbox">
-                    <h3>Graphic</h3>
-                    <div>
                         {
                             props.info.skillsdb.Etc.map((v, i) => {
                                 return (
                                     <div className={`imgbox etcimgbox ${v.title}`}>
-                                        <img src={v.img} alt="logo" key={i} />
+                                        <div className="widthbox">
+                                            <img src={v.img} alt="logo" key={i} />
+                                        </div>
                                         <div className={`${v.graph} mx-4`}></div>
-                                        <span>{v.percent}</span>
+                                        <span className="percent">{v.percent}</span>
                                     </div>
                                 )
                             })
                         }
-                    </div>
                 </div>
                 <div className="d-flex flex-column flex-sm-row align-items-center justify-content-center">
                     <div class="perbox pt-3 px-3">
@@ -69,7 +62,9 @@ function Skills(props) {
                                 props.info.skillsdb.Commu.map((v, i) => {
                                     return(
                                         <div className={`imgbox commuimgbox px-2 ${v.title}`}>
-                                            <img src={v.img} alt="logo" key={i} />
+                                            <div className="widthbox">
+                                                <img src={v.img} alt="logo" key={i} />
+                                            </div>
                                         </div>
                                     )
                                 })
@@ -83,7 +78,9 @@ function Skills(props) {
                                 props.info.skillsdb.Certi.map((v, i) => {
                                     return(
                                         <div className="imgbox certiimgbox px-2">
-                                            <img src={v.img} alt="logo" key={i} />
+                                            <div className="widthbox">
+                                                <img src={v.img} alt="logo" key={i} />
+                                            </div>
                                         </div>
                                     )
                                 })

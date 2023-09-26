@@ -8,7 +8,7 @@
     align-items: center;
 }
 .main{
-    background-color: rgba(105, 169, 131, 0.6);
+    background-color: #ece6ee;
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -23,7 +23,7 @@
 }
 .arrow{
     font-size: 1.8rem;
-    color: rgba(105, 169, 131, 0.6);
+    color: #ece6ee;
 }
 
 .bg:hover .main{
