@@ -102,7 +102,6 @@
 
 .text0 {
     font-size: clamp(1rem, 3vw, 1.5rem);
-    display: inline-block;
     white-space: nowrap;
 }
 
@@ -114,6 +113,8 @@
     font-size: 31px;
     color: #02421c;
     letter-spacing: -0.0085em;
+
+
 }
 
 .text2 {
@@ -129,7 +130,8 @@
 }
 
 .mark {
-    color: #392797
+    color: #392797;
+    width: fit-content;
 }
 
 .doubleQuote:before {

@@ -29,7 +29,7 @@
     margin-right: 0.25rem;
 }
 .text a{
-    background-color: rgb(7, 79, 36);
+    background: linear-gradient(to right, #654ea3, #eaafc8);
     border-radius: 25px;
     padding: 0.25rem 1rem;
     color: white;
@@ -42,7 +42,7 @@
 .text p{
     margin: 0;
     font-size: 1.4rem;
-    color: rgb(7, 79, 36);
+    color: #654ea3;
     font-weight: 100;
 }
 
