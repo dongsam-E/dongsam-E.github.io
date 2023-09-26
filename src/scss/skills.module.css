@@ -1,10 +1,11 @@
-.sectionBg{
+.sectionBg {
     /* background: linear-gradient(to top, rgb(216, 212, 200), white); */
-    background-color: #d9e5dc;
+    background-color: #dfdbf2;
     padding-top: 3rem;
     padding-bottom: 5rem;
 }
-.name{
+
+.name {
     display: flex;
     color: black;
     font-size: 2.5rem;
@@ -13,7 +14,8 @@
     border-bottom: 1px solid #808080;
     padding-bottom: 0.3rem;
 }
-.title{
+
+.title {
     color: rgb(59, 61, 59);
     display: inline-block;
     width: 100%;
@@ -22,7 +24,8 @@
     font-weight: 800;
     font-size: 1.5rem;
 }
-.box{
+
+.box {
     display: flex;
     flex-direction: column;
     max-width: 15rem;
@@ -33,23 +36,26 @@
     height: fit-content;
     box-shadow: 3px 3px 10px rgb(32, 32, 32, 0.5);
 }
-.con{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-content: center;
-        height: 36rem;
-        max-height: fit-content;
+
+.con {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 36rem;
+    max-height: fit-content;
 }
-@media(max-width : 576px){
-    .con{
+
+@media(max-width : 576px) {
+    .con {
         flex-wrap: nowrap;
         height: fit-content;
         align-items: center;
     }
 }
-@media(min-width : 1200px){
-    .con{
+
+@media(min-width : 1200px) {
+    .con {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -57,7 +63,7 @@
     }
 }
 
-.ani:hover{
+.ani:hover {
     transform: scale(1.05);
     transition: 0.2s;
 }

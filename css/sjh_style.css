@@ -3,7 +3,16 @@
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, em, div {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+em,
+div {
   font-family: "Pretendard";
   font-weight: 400;
 }
@@ -18,8 +27,13 @@ a:hover {
   color: #0a8e3f;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
+}
+
+.afterdeco:after {
+  content: "|";
 }
 
 @media (min-width: 1400px) {

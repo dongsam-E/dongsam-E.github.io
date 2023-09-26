@@ -33,53 +33,12 @@
     height: 100%;
 }
 
-#imgSection {
-    display: none;
-}
-
-@media(max-width:1399px) {
-    #imgSection {
-        display: block;
-        margin: 0 auto;
-        max-width: 350px;
-        width: 80vw;
-        height: auto;
-    }
-
-    .mySwiper {
-        width: 100%;
-        height: auto;
-    }
-
-    #imgSection img {
-        width: 100%;
-        height: auto;
-    }
-}
 
 @media(max-width:992px) {
     .icon {
         width: 25px !important;
         height: auto;
         margin: 0 auto;
-    }
-
-    #imgSection {
-        display: block;
-        margin: 0 auto;
-        max-width: 250px;
-        width: 80vw;
-        height: auto;
-    }
-
-    .mySwiper {
-        width: 100%;
-        height: auto;
-    }
-
-    #imgSection img {
-        width: 100%;
-        height: auto;
     }
 
     #box {
@@ -118,7 +77,7 @@
 /* bg img */
 .section {
     height: calc(100vh - 150px);
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
 }
 
 @media(max-width:500px) {
@@ -148,11 +107,11 @@
 }
 
 .text1 {
-    font-weight: 400;
+    font-weight: 200;
     display: inline-block;
     white-space: nowrap;
     position: relative;
-    font-size: 29px;
+    font-size: 31px;
     color: #02421c;
     letter-spacing: -0.0085em;
 }
@@ -173,6 +132,20 @@
     color: #392797
 }
 
+.doubleQuote:before {
+    content: "";
+    background-image: url(../../img/doubleQuote0.png);
+    display: block;
+    max-width: 45px;
+    max-height: 45px;
+    width: 15vw;
+    height: 15vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 .mark:before {
     content: "";
     position: absolute;
@@ -184,8 +157,8 @@
 }
 
 .em {
-    color: rgb(31, 141, 75);
-    font-weight: 700;
+    color: rgb(75, 57, 164);
+    /* font-weight: 700; */
 }
 
 .sub {
