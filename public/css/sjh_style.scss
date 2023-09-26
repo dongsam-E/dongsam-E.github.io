@@ -19,13 +19,16 @@ ul, li{
     list-style: none;
 }
 body{
-    #aboutMe{
-        @media(min-width:1400px){
-            background-image: url(../img/aboutimg2.png);
-            background-repeat: no-repeat;
-            background-size: auto 100%;
-            background-position: 15% 0;
-        }
+    #aboutMe{background-image: url(../img/sunjuhyeon.png);
+        background-repeat: no-repeat;
+        background-size: auto 87%;
+        background-position: 29% 169%;
+        // @media(min-width:1400px){
+        //     background-image: url(../img/sunjuhyeon.png);
+        //     background-repeat: no-repeat;
+        //     background-size: auto 87%;
+        //     background-position: 29% 169%;
+        // }
     }
     #skills{
         .anibox{

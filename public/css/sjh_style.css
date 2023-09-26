@@ -22,13 +22,11 @@ ul, li {
   list-style: none;
 }
 
-@media (min-width: 1400px) {
-  body #aboutMe {
-    background-image: url(../img/aboutimg2.png);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: 15% 0;
-  }
+body #aboutMe {
+  background-image: url(../img/sunjuhyeon.png);
+  background-repeat: no-repeat;
+  background-size: auto 87%;
+  background-position: 29% 169%;
 }
 body #skills .anibox.aos-animate .imgbox.htmlcss .graph::before {
   width: 95%;

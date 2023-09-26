@@ -8,7 +8,7 @@ function About(props) {
     return (
         <section id={props.id} className={`${about.section}`}>
             <div id={`${about.box}`} className={`container`}>
-                <div id={`${about.imgSection}`}>
+                {/* <div id={`${about.imgSection}`}>
                     <Swiper
                         modules={[Autoplay]}
                         slidesPerView={1}
@@ -20,25 +20,24 @@ function About(props) {
                         className="mySwiper d-flex align-items-center"
                     >
                         <SwiperSlide>
-                            <img src="./img/aboutimg.jpeg" alt="aboutimg" />
+                            <img src="./img/sunjuhyeon.png" alt="aboutimg" />
                         </SwiperSlide>
                         <SwiperSlide>
                             <img src="./img/aboutimgfade.jpeg" alt="aboutimg" />
                         </SwiperSlide>
                     </Swiper>
-                </div>
-                <div id={`${about.script}`} className={`d-flex flex-column justify-content-center`}>
+                </div> */}
+                <div id={`${about.script}`} className={`d-flex flex-column align-items-center justify-content-center`}>
                     <img className={`${about.icon}`} src="./img/doubleQuote0.png" alt="icon" />
-                    <div className={`${about.main}`}>
-                        <p className={`m-0 ${about.text0}`}>안녕하세요.</p>
+                    <div className={`${about.main} text-center`}>
                         <br /><div className={`m-0 ${about.highlight}`}>
-                            <p className={`m-0 ${about.text1}`}>효율적인 서치능력, 꾸준한 기록, 신속한 속도</p>
-                            <div className={`${about.mark}`}></div>
+
+                            <p className={`m-0 ${about.text1} position-relative`}><span className='position-absolute mark'>효율적인 서치능력,</span> <span className='position-absolute mark'>꾸준한 기록,</span><span className='position-absolute mark'>신속한 속도</span></p>
                         </div>
                         <p className={`m-0 ${about.text0}`}>그리고 <span className={`${about.nonetext}`}>열린마음으로</span> <em className={`${about.em}`}>새로운 아이디어를 환영</em>하는 개발자</p>
-                        <br /><p className={`m-0 ${about.text2}`}>선주현입니다.</p>
+                        <br /><p className={`m-0 ${about.text2}`}>선주현</p>
                     </div>
-                    <div className={`${about.sub} d-flex flex-column`}>
+                    <div className={`${about.sub} d-flex flex-column text-center`}>
                         <p className={`m-0`}><i class="bi bi-caret-right-fill"></i>생년월일 : <span>97.12.15</span></p>
                         <p className={`m-0`}><i class="bi bi-caret-right-fill"></i>학력사항 : <span>숙명여자대학교(졸)</span></p>
                     </div>
