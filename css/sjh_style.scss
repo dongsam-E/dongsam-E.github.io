@@ -1,25 +1,48 @@
-*{
+* {
     font-family: 'Pretendard';
     font-weight: 400;
 }
-h1, h2, h3, h4, h5, h6, p, span, em, div{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+em,
+div {
     font-family: 'Pretendard';
     font-weight: 400;
 }
-a{
+
+a {
     text-decoration: none;
     color: #070707;
     font-family: 'Pretendard';
     font-weight: 400;
-    &:hover{
+
+    &:hover {
         color: #0a8e3f;
     }
 }
-ul, li{
+
+ul,
+li {
     list-style: none;
 }
-body{
-    #aboutMe{background-image: url(../img/sunjuhyeon.png);
+
+.afterdeco:after {
+    content: "|";
+    font-size: 12px;
+    color: #666;
+    margin: 0 5px
+}
+
+body {
+    #aboutMe {
+        background-image: url(../img/sunjuhyeon.png);
         background-repeat: no-repeat;
         background-size: auto 87%;
         background-position: 29% 169%;
@@ -30,76 +53,85 @@ body{
         //     background-position: 29% 169%;
         // }
     }
-    #skills{
-        .anibox{
-            &.aos-animate{
-                .imgbox{
-                    &.htmlcss{
-                        .graph{
+
+    #skills {
+        .anibox {
+            &.aos-animate {
+                .imgbox {
+                    &.htmlcss {
+                        .graph {
                             &::before {
                                 width: 95%;
                                 transition: 2s;
                             }
                         }
                     }
-                    &.scss{
-                        .graph{
+
+                    &.scss {
+                        .graph {
                             &::before {
                                 width: 80%;
                                 transition: 2s;
                             }
                         }
                     }
-                    &.react{
-                        .graph{
+
+                    &.react {
+                        .graph {
                             &::before {
                                 width: 70%;
                                 transition: 2s;
                             }
                         }
                     }
-                    &.jquery{
-                        .graph{
+
+                    &.jquery {
+                        .graph {
                             &::before {
                                 width: 90%;
                                 transition: 2s;
                             }
                         }
                     }
-                    &.javascript{
-                        .graph{
+
+                    &.javascript {
+                        .graph {
                             &::before {
                                 width: 80%;
                                 transition: 2s;
                             }
                         }
                     }
-                    &.node{
-                        .graph{
+
+                    &.node {
+                        .graph {
                             &::before {
                                 width: 60%;
                                 transition: 2s;
                             }
                         }
                     }
-                    &.mysql{
-                        .graph{
+
+                    &.mysql {
+                        .graph {
                             &::before {
                                 width: 65%;
                                 transition: 2s;
                             }
                         }
                     }
-                    &.php{
-                        .graph{
+
+                    &.php {
+                        .graph {
                             &::before {
                                 width: 45%;
                                 transition: 2s;
                             }
                         }
                     }
-                    &.graphic{
-                        .graph{
+
+                    &.graphic {
+                        .graph {
                             &::before {
                                 width: 75%;
                                 transition: 2s;
@@ -108,40 +140,51 @@ body{
                     }
                 }
             }
-            .perbox{
+
+            .perbox {
                 width: fit-content;
-                h3{
+
+                h3 {
                     text-align: center;
                     font-size: 1.5rem;
-                    &.bottomh3{
+
+                    &.bottomh3 {
                         font-size: 1.1rem !important;
                         height: 3rem;
                     }
                 }
-                .imgbox{
+
+                .imgbox {
                     padding-bottom: 1rem;
                     display: flex;
                     justify-content: start;
                     align-items: center;
-                    &.frontimgbox, &.backimgbox, &.etcimgbox, &.certiimgbox, &.commuimgbox{
-                        img{
+
+                    &.frontimgbox,
+                    &.backimgbox,
+                    &.etcimgbox,
+                    &.certiimgbox,
+                    &.commuimgbox {
+                        img {
                             width: 40px;
                         }
                     }
-                    &.certiimgbox{
-                        img{
+
+                    &.certiimgbox {
+                        img {
                             width: 60px;
                         }
                     }
-    
-                    .graph{
+
+                    .graph {
                         width: 50vw;
                         max-width: 500px;
                         height: 10px;
                         background-color: #fff;
                         position: relative;
                         border-radius: 10px;
-                        &::before{
+
+                        &::before {
                             content: "";
                             position: absolute;
                             top: 0;
@@ -155,66 +198,77 @@ body{
             }
         }
     }
-    #interview{
+
+    #interview {
         padding: 4rem 0;
-        .accordion{
+
+        .accordion {
             padding: 3rem 0;
+
             .accordion-item {
-                    border: none;
-                    background-color: rgb(170, 210, 201, 0.25);
-                    .accordion-collapse {
-                            background-color: #f9f9f9;
-                            .accordion-body{
-                                padding-top: 3rem;
-                                padding-bottom: 3rem;
-                            }
-                        }
+                border: none;
+                background-color: rgb(170, 210, 201, 0.25);
+
+                .accordion-collapse {
+                    background-color: #f9f9f9;
+
+                    .accordion-body {
+                        padding-top: 3rem;
+                        padding-bottom: 3rem;
+                    }
                 }
-            
-                .accordion-button {
-                    background-color: #fff;
-                    font-weight: 500;
-                    border-bottom: 1px solid #333;
-                }
-            
-                .accordion-button:not(.collapsed) {
-                    font-size: 1.1rem;
-                    font-weight: 700;
-                    color: black;
-                    background-color: #fff;
-                }
-            
-                .accordion-button:focus {
-                    box-shadow: none;
-                }
-                .accordion-button:not(.collapsed)::after{
-                    background-image: url(../img/SVG/interviewArrow.svg);
-                }
+            }
+
+            .accordion-button {
+                background-color: #fff;
+                font-weight: 500;
+                border-bottom: 1px solid #333;
+            }
+
+            .accordion-button:not(.collapsed) {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: black;
+                background-color: #fff;
+            }
+
+            .accordion-button:focus {
+                box-shadow: none;
+            }
+
+            .accordion-button:not(.collapsed)::after {
+                background-image: url(../img/SVG/interviewArrow.svg);
+            }
         }
     }
-    #portfolio{
-        .swiper{
-            .swiper-button-prev{
+
+    #portfolio {
+        .swiper {
+            .swiper-button-prev {
                 background-image: url(../img/main_prev.png);
                 height: 100px;
                 opacity: 0.4;
             }
-            .swiper-button-next{
+
+            .swiper-button-next {
                 background-image: url(../img/main_prev.png);
                 height: 100px;
                 rotate: 180deg;
                 opacity: 0.4;
             }
-            .swiper-button-prev:hover
-            , .swiper-button-next:hover{
+
+            .swiper-button-prev:hover,
+            .swiper-button-next:hover {
                 opacity: 1;
                 transition: 0.5s;
             }
-            .swiper-button-prev::after
-            , .swiper-button-next::after{
+
+            .swiper-button-prev::after,
+            .swiper-button-next::after {
                 display: none;
             }
-            .swiper-pagination{
+
+            .swiper-pagination {
                 font-weight: 800;
                 color: rgb(0, 0, 0, 0.5)
             }
@@ -222,6 +276,4 @@ body{
     }
 }
 
-#front{
-
-}
+#front {}
