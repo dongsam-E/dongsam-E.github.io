@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4681112d.css",
+    "main.js": "/static/js/main.574f947f.js",
+    "static/media/doubleQuote0.png": "/static/media/doubleQuote0.aa5a795a02f1bf50cb21.png",
+    "index.html": "/index.html",
+    "main.4681112d.css.map": "/static/css/main.4681112d.css.map",
+    "main.574f947f.js.map": "/static/js/main.574f947f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4681112d.css",
+    "static/js/main.574f947f.js"
+  ]
+}
