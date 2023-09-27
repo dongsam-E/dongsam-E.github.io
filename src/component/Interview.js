@@ -11,14 +11,13 @@ function Interview(props) {
                     {
                         props.info.interviewdb.accordion.map((v, x) => {
                             return(
-                                <>
-                                    <Accordion.Item eventKey={v.key} key={x}>
+                                    <Accordion.Item eventKey={v.key} key={`interview${x}`}>
                                         <Accordion.Header>
                                             <div>
                                                 {v.Q.split("<br>").map((br, i) => {
                                                     const strongSplit = br.split("<strong>");
                                                     return (
-                                                        <p key={"interview0" + i} className={`Q${i}  ${interview.q}`}>
+                                                        <p key={`head${i}`} className={`Q${i}  ${interview.q}`}>
                                                             {strongSplit.map((v, idx) => {
                                                                 if (idx % 2 === 0) {
                                                                     return v;
@@ -35,7 +34,7 @@ function Interview(props) {
                                             {v.A.split("<br>").map((br, i) => {
                                                 const strongSplit = br.split("<strong>");
                                                 return (
-                                                    <p key={"interview1" + i} className={`A${i} ${interview.a}`}>
+                                                    <p key={`body${i}`} className={`A${i} ${interview.a}`}>
                                                         {strongSplit.map((v, idx) => {
                                                             if (idx % 2 === 0) {
                                                                 return v;
@@ -48,7 +47,6 @@ function Interview(props) {
                                             })}
                                         </Accordion.Body>
                                     </Accordion.Item>
-                                </>
                             )
                         })
                     }

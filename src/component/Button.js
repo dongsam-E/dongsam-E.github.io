@@ -24,7 +24,7 @@ function Button(props) {
 
     return toggleBtn ? (
         <div id={props.id} onClick={goToTop} className={`${button.bg}`}>
-            <i class={`bi bi-chevron-up ${button.arrow}`}></i>
+            <i className={`bi bi-chevron-up ${button.arrow}`}></i>
             <div className={`${button.main}`}>
                 <span>TOP</span>
             </div>

@@ -175,6 +175,11 @@ body .sunimg .imgSection .swiper .swiper-slide .aboutbg1 {
 #skills .anibox .perbox .imgbox.frontimgbox .widthbox img, #skills .anibox .perbox .imgbox.backimgbox .widthbox img, #skills .anibox .perbox .imgbox.etcimgbox .widthbox img, #skills .anibox .perbox .imgbox.certiimgbox .widthbox img, #skills .anibox .perbox .imgbox.commuimgbox .widthbox img {
   height: 40px;
 }
+@media (max-width: 500px) {
+  #skills .anibox .perbox .imgbox.frontimgbox .widthbox img, #skills .anibox .perbox .imgbox.backimgbox .widthbox img, #skills .anibox .perbox .imgbox.etcimgbox .widthbox img, #skills .anibox .perbox .imgbox.certiimgbox .widthbox img, #skills .anibox .perbox .imgbox.commuimgbox .widthbox img {
+    height: 30px !important;
+  }
+}
 #skills .anibox .perbox .imgbox.certiimgbox .widthbox {
   width: 60px;
   display: flex;
@@ -186,7 +191,7 @@ body .sunimg .imgSection .swiper .swiper-slide .aboutbg1 {
 #skills .anibox .perbox .imgbox .graph {
   width: 50vw;
   max-width: 500px;
-  height: 10px;
+  height: 7px;
   background-color: #f9f9f9;
   position: relative;
 }
@@ -195,7 +200,7 @@ body .sunimg .imgSection .swiper .swiper-slide .aboutbg1 {
   position: absolute;
   top: 0;
   left: 0;
-  height: 10px;
+  height: 7px;
   background: linear-gradient(to left, #654ea3, #eaafc8);
   width: 0;
 }

@@ -290,6 +290,9 @@ body {
 
                         img {
                             height: 40px;
+                            @media(max-width:500px){
+                                height: 30px !important;
+                            }
                         }
                     }
                 }
@@ -309,7 +312,7 @@ body {
                 .graph {
                     width: 50vw;
                     max-width: 500px;
-                    height: 10px;
+                    height: 7px;
                     background-color: #f9f9f9;
                     position: relative;
 
@@ -318,7 +321,7 @@ body {
                         position: absolute;
                         top: 0;
                         left: 0;
-                        height: 10px;
+                        height: 7px;
                         background: linear-gradient(to left, #654ea3, #eaafc8);
                         width: 0;
                     }

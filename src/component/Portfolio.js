@@ -15,7 +15,7 @@ function Portfolio(props) {
             {
                 props.info.portdb.map((vv, ii) => {
                     return (
-                        <div className='container py-5'>
+                        <div key={`port${ii}`} className='container py-5'>
                             <div className={`d-lg-flex py-3`}>
                                 <Swiper
                                     modules={[Pagination, Navigation]}
@@ -31,7 +31,7 @@ function Portfolio(props) {
                                     {
                                         vv.card.map((v, i) => {
                                             return (
-                                                <SwiperSlide className={`${portfolio.slidelist} d-flex align-items-start`}>
+                                                <SwiperSlide key={`portslide${i}`} className={`${portfolio.slidelist} d-flex align-items-start`}>
                                                     <img className={`${portfolio.slideimg} w-75`} src={v.imgsrc} alt="portfolioimg" />
                                                 </SwiperSlide>
                                             )

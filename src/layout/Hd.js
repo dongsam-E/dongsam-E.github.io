@@ -21,7 +21,7 @@ function Hd(props) {
                     }}>
                     {/* <img className={`position-relative ${hd.hamImg} `} src={`${!isToggled ? "./img/SVG/hamMenuOn.svg" : "./img/SVG/hamMenuClose.svg"}`} alt="hamMenu" /> */}
                     <svg className={`position-relative ${hd.hamImg}`} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d={`${!isToggled ? "M3 12H21M3 5H12H21M3 19H12H21" : "M5 5L12.0711 12.0711L19.1421 19.1421" + "M19 5L11.9289 12.0711L4.85786 19.1421"}`} stroke={`${!isToggled ? "#000" : "#fff"}`} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d={`${!isToggled ? "M3 12H21M3 5H12H21M3 19H12H21" : "M5 5L12.0711 12.0711L19.1421 19.1421" + "M19 5L11.9289 12.0711L4.85786 19.1421"}`} stroke={`${!isToggled ? "#000" : "#fff"}`} strokeWidth="2" strokeLinecap="round" strokeinejoin="round" />
                     </svg>
                     <ul className={`${hd.hamMenu}  position-absolute d-flex flex-column align-items-center justify-content-center p-0 m-0`}>
                         {
@@ -72,7 +72,7 @@ function Hd(props) {
                         {
                             props.info.hddb.sns.map((val, idx) => {
                                 return (
-                                    <li className={`${val.adtitle} ${hd.snsAd}`} key={`sns1`}>
+                                    <li key={idx} className={`${val.adtitle} ${hd.snsAd}`}>
                                         <a href={val.adlink} target="_blank" className={`d-flex flex-column justify-content-center align-items-center`}>
                                             <img className={`${hd.snsicon}`} src={val.src} alt="icon" />
                                         </a>

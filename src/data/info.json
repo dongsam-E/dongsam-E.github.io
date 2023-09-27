@@ -197,6 +197,36 @@
                         }
                     },
                     {
+                        "title": "자기소개 페이지",
+                        "card": [
+                            {
+                                "imgsrc": "/img/portfolioPage0.png"
+                            },
+                            {
+                                "imgsrc": "/img/portfolioPage1.png"
+                            }
+                        ],
+                        "explain": {
+                            "title": "자기소개 페이지",
+                            "day": "24일",
+                            "percent": "디자인 90%, 기획 90%, 제작 100%",
+                            "keypointlist0": "첫 react 프로젝트로 코드 재사용과 유지보수에 용이하도록 <strong>컴포넌트를 분리하여 제작하였습니다.<strong>",
+                            "keypointlist1": "<strong>폼태그를 하드코딩으로 제작<strong>하여 기본적인 코딩 실력을 보였고 폼태그에 대해 더욱 깊게 공부하였습니다.",
+                            "keypointlist2": "더 나아가 데이터 포멧을 <strong>json파일<strong>로 형성하여 가독성을 올리고 데이터수정을 빠르고 손쉽게 가능하도록 제작하였습니다.",
+                            "githublink": "https://github.com/dongsam-E/dongsam-E.github.io",
+                            "urllink": "https://dongsam-e.github.io/",
+                            "figmalink": "https://www.figma.com/file/pNYd9HG1F1EVxJsRiokg2d/UI%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%84%A4%EA%B3%84-%ED%8F%89%EA%B0%80-ver.1_%EC%8B%B1%EA%B8%80%ED%8E%98%EC%9D%B4%EC%A7%80",
+                            "toolimg0": "/img/skill/photoshop.png",
+                            "toolimg1": "/img/skill/figma.png",
+                            "toolimg2": "/img/skill/vscode.png",
+                            "toolimg3": "/img/skill/git.png",
+                            "langimg0": "/img/react.png",
+                            "langimg1": "/img/sass.png",
+                            "langimg2": "/img/json.png",
+                            "langimg3": ""
+                        }
+                    },
+                    {
                         "title": "성남문화의집 리뉴얼",
                         "card": [
                             {
@@ -225,36 +255,6 @@
                             "langimg1": "/img/sass.png",
                             "langimg2": "/img/skill/mysql.png",
                             "langimg3": "/img/skill/php.png"
-                        }
-                    },
-                    {
-                        "title": "자기소개 페이지",
-                        "card": [
-                            {
-                                "imgsrc": "/img/portfolioPage0.png"
-                            },
-                            {
-                                "imgsrc": "/img/portfolioPage1.png"
-                            }
-                        ],
-                        "explain": {
-                            "title": "자기소개 페이지",
-                            "day": "24일",
-                            "percent": "디자인 90%, 기획 90%, 제작 100%",
-                            "keypointlist0": "첫 react 프로젝트로 코드 재사용과 유지보수에 용이하도록 <strong>컴포넌트를 분리하여 제작하였습니다.<strong>",
-                            "keypointlist1": "<strong>폼태그를 하드코딩으로 제작<strong>하여 기본적인 코딩 실력을 보였고 폼태그에 대해 더욱 깊게 공부하였습니다.",
-                            "keypointlist2": "더 나아가 데이터 포멧을 <strong>json파일<strong>로 형성하여 가독성을 올리고 데이터수정을 빠르고 손쉽게 가능하도록 제작하였습니다.",
-                            "githublink": "https://github.com/dongsam-E/sjh_portfolio",
-                            "urllink": "https://dongsam-e.github.io/",
-                            "figmalink": "https://www.figma.com/file/pNYd9HG1F1EVxJsRiokg2d/UI%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%84%A4%EA%B3%84-%ED%8F%89%EA%B0%80-ver.1_%EC%8B%B1%EA%B8%80%ED%8E%98%EC%9D%B4%EC%A7%80",
-                            "toolimg0": "/img/skill/photoshop.png",
-                            "toolimg1": "/img/skill/figma.png",
-                            "toolimg2": "/img/skill/vscode.png",
-                            "toolimg3": "/img/skill/git.png",
-                            "langimg0": "/img/react.png",
-                            "langimg1": "/img/sass.png",
-                            "langimg2": "/img/json.png",
-                            "langimg3": ""
                         }
                     }
     ],

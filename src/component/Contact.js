@@ -86,8 +86,8 @@ function Contact(props) {
                     <span className={`${contact.sub}`}>아래의 폼을 사용하여 <br/>편리하게 메일을 보내보세요</span>
                 </div>
                 <div className={`${contact.iconlist}`}>
-                    <div className={`${contact.icon0}`}><i class="bi bi-telephone-fill"></i> 010-2774-6352</div>
-                    <div className={`${contact.icon1}`}><i class="bi bi-envelope-at-fill"></i> dong2dong32@gmail.com</div>
+                    <div className={`${contact.icon0}`}><i className="bi bi-telephone-fill"></i> 010-2774-6352</div>
+                    <div className={`${contact.icon1}`}><i className="bi bi-envelope-at-fill"></i> dong2dong32@gmail.com</div>
                 </div>
                 <div>
                     <form ref={form} onSubmit={handleSubmit} name="contact" id={`${contact.form}`}>
