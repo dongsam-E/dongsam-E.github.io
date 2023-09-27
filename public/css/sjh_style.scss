@@ -281,7 +281,6 @@ body {
                 &.frontimgbox,
                 &.backimgbox,
                 &.etcimgbox,
-                &.certiimgbox,
                 &.commuimgbox {
                     .widthbox {
                         width: 60px;
@@ -304,7 +303,7 @@ body {
                         justify-content: center;
 
                         img {
-                            height: 50px;
+                            height: 55px;
                         }
                     }
                 }

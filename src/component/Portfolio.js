@@ -130,7 +130,7 @@ function Portfolio(props) {
                                             <div className={`${portfolio.exbutton}`}><a href={vv.explain.githublink} target="_blank" className={`${portfolio.linkstyle}`}>소스관리</a></div>
                                         </div>
                                         <div className='pb-3 pb-sm-0 px-0 px-sm-2'>
-                                            <div className={`${portfolio.exbutton}`}><a href={vv.explain.urllink} target="_blank" className={`${portfolio.linkstyle}`}>화면 미리보기</a></div>
+                                            <div className={`${portfolio.exbutton}`}><a href={vv.explain.urllink} target="_blank" className={`${portfolio.linkstyle}`}>페이지 보기</a></div>
                                         </div>
                                         <div className='px-0 px-sm-2'>
                                             <div className={`${portfolio.exbutton}`}><a href={vv.explain.figmalink} target="_blank" className={`${portfolio.linkstyle}`}>UI설계 보러가기</a></div>

@@ -101,7 +101,7 @@
 }
 
 .text0 {
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
     white-space: nowrap;
 }
 
@@ -123,6 +123,12 @@
     display: inline-block;
     white-space: nowrap;
     line-height: 73px;
+}
+@media(max-width:768px){
+    .text2{
+        font-size: 50px;
+        line-height: 50px;
+    }
 }
 
 .highlight {
