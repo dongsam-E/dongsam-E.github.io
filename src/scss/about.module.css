@@ -98,6 +98,7 @@
 #script {
     width: fit-content;
     max-width: 600px;
+    padding-top: 1rem;
 }
 
 .text0 {
