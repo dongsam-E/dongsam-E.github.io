@@ -24,7 +24,7 @@ a {
     font-weight: 400;
 
     &:hover {
-        color: #0a8e3f;
+        color: #654EA3;
     }
 }
 
@@ -51,310 +51,362 @@ body {
             display: block;
             position: absolute;
             left: 0;
-            width: 48.5%;
+            width: calc(50% - 60px);
             top: 0;
-            bottom: 0;
+            height: calc(100% - 60px);
             background-image: url(../img/bg_gray.jpg);
             background-size: cover;
+            border-radius: 0 0 120px 0;
 
+            @media (max-width:991px) {
+                display: none;
+
+            }
 
 
         }
 
+        #m-me{
+            &.aboutbg1{
+                background-image: url(../img/sunjuhyeon_2.png);
+                background-repeat: no-repeat;
+                background-size: 115%;
+                background-position: center -24%;
+                height: 36vw;
+                width: 36vw;
+                border-radius: 50%;
+                margin: 0 auto;
+                margin-top: 0px;
+                background-color: #f9f9f9;
+                margin-top: -1rem !important;
 
-        .container {
+                @media(max-width:576px){
+                    height: 45vw !important;
+                    width: 45vw !important;
+                }
+            }
+        }
+
+        }
+
+
+        .sunimg {
             position: relative;
-            .imgSection{
-                .swiper{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    .swiper-slide{
-                        .aboutbg0{
+
+            .imgSection {
+                .swiper {
+                    // position: absolute;
+                    // bottom: 0;
+                    // left: 0;
+                    // width: 100%;
+                    // height: 100%;
+
+                    .swiper-slide {
+                        .aboutbg0 {
                             background-image: url(../img/sunjuhyeon.png);
                             background-repeat: no-repeat;
-                            background-size: auto 87%;
-                            background-position: 29% 169%;
-                            height: 100%;
+                            background-size: 100%;
+                            background-position: 100% bottom;
+                            height: 0;
+                            max-width: 422px;
+                            padding-bottom: 132%;
+                            width: 100%;
+
+                            @media (max-width:1440px) {
+                                background-size: auto 85%;
+
+                            }
+
                         }
-                        .aboutbg1{
+
+                        .aboutbg1 {
                             background-image: url(../img/sunjuhyeon_2.png);
                             background-repeat: no-repeat;
-                            background-size: auto 87%;
-                            background-position: 29% 169%;
-                            height: 100%;
+                            background-size: 100%;
+                            background-position: 100% bottom;
+                            height: 0;
+                            max-width: 455px;
+                            padding-bottom: 132%;
+                            width: 100%;
+
+                            @media (max-width:1440px) {
+                                background-size: auto 85%;
+
+                            }
                         }
                     }
                 }
             }
-         
-                // background-image: url(../img/sunjuhyeon.png);
-                // background-repeat: no-repeat;
-                // background-size: auto 87%;
-                // background-position: 29% 169%;
-                // animation: bgimg 4s infinite;
-            }
-            // &:after{
-            //     content: "";
-            //     position: absolute;
-            //         width: 100%;
-            //         left: 0;
-            //         top: 0;
-            //         height: 100%;
-            //         background-image: url(../img/sunjuhyeon.png);
-            //         background-repeat: no-repeat;
-            //         background-size: auto 87%;
-            //         background-position: 29% 169%;
-            //         animation: bgimg 4s infinite;
-            // }
 
-
+            // background-image: url(../img/sunjuhyeon.png);
+            // background-repeat: no-repeat;
+            // background-size: auto 87%;
+            // background-position: 29% 169%;
+            // animation: bgimg 4s infinite;
         }
 
-        // @media(min-width:1400px){
-        //     background-image: url(../img/sunjuhyeon.png);
-        //     background-repeat: no-repeat;
-        //     background-size: auto 87%;
-        //     background-position: 29% 169%;
+        // &:after{
+        //     content: "";
+        //     position: absolute;
+        //         width: 100%;
+        //         left: 0;
+        //         top: 0;
+        //         height: 100%;
+        //         background-image: url(../img/sunjuhyeon.png);
+        //         background-repeat: no-repeat;
+        //         background-size: auto 87%;
+        //         background-position: 29% 169%;
+        //         animation: bgimg 4s infinite;
         // }
+
+
     }
 
-    #skills {
-        .anibox {
-            &.aos-animate {
-                .imgbox {
-                    &.htmlcss {
-                        .graph {
-                            &::before {
-                                width: 95%;
-                                transition: 2s;
-                            }
-                        }
-                    }
+    // @media(min-width:1400px){
+    //     background-image: url(../img/sunjuhyeon.png);
+    //     background-repeat: no-repeat;
+    //     background-size: auto 87%;
+    //     background-position: 29% 169%;
+    // }
 
-                    &.scss {
-                        .graph {
-                            &::before {
-                                width: 80%;
-                                transition: 2s;
-                            }
-                        }
-                    }
 
-                    &.react {
-                        .graph {
-                            &::before {
-                                width: 70%;
-                                transition: 2s;
-                            }
-                        }
-                    }
-
-                    &.jquery {
-                        .graph {
-                            &::before {
-                                width: 90%;
-                                transition: 2s;
-                            }
-                        }
-                    }
-
-                    &.javascript {
-                        .graph {
-                            &::before {
-                                width: 80%;
-                                transition: 2s;
-                            }
-                        }
-                    }
-
-                    &.node {
-                        .graph {
-                            &::before {
-                                width: 60%;
-                                transition: 2s;
-                            }
-                        }
-                    }
-
-                    &.mysql {
-                        .graph {
-                            &::before {
-                                width: 65%;
-                                transition: 2s;
-                            }
-                        }
-                    }
-
-                    &.php {
-                        .graph {
-                            &::before {
-                                width: 45%;
-                                transition: 2s;
-                            }
-                        }
-                    }
-
-                    &.graphic {
-                        .graph {
-                            &::before {
-                                width: 75%;
-                                transition: 2s;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .perbox {
-                width: fit-content;
-
-                h3 {
-                    display: flex;
-                    justify-content: center;
-                    align-items: end;
-                    font-size: 1.5rem;
-
-                    &.bottomh3 {
-                        font-size: 1.1rem !important;
-                        height: 3rem;
-                    }
-                }
-
-                .imgbox {
-                    padding-bottom: 1rem;
-                    display: flex;
-                    justify-content: start;
-                    align-items: center;
-
-                    &.frontimgbox,
-                    &.backimgbox,
-                    &.etcimgbox,
-                    &.certiimgbox,
-                    &.commuimgbox {
-                        .widthbox{
-                            width: 60px;
-                            display: flex;
-                            justify-content: center;
-                            img {
-                                height: 40px;
-                            }
-                        }
-                    }
-
-                    &.certiimgbox {
-                        .widthbox{
-                            width: 60px;
-                            display: flex;
-                            justify-content: center;
-                            img {
-                                height: 50px;
-                            }
-                        }
-                    }
-
+#skills {
+    .anibox {
+        &.aos-animate {
+            .imgbox {
+                &.htmlcss {
                     .graph {
-                        width: 50vw;
-                        max-width: 500px;
-                        height: 10px;
-                        background-color: #f9f9f9;
-                        position: relative;
-
                         &::before {
-                            content: "";
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            height: 10px;
-                            background: linear-gradient(to left, #654ea3, #eaafc8);
-                            width: 0;
+                            width: 95%;
+                            transition: 2s;
                         }
                     }
-                    .percent{
-                        color: #654ea3;
+                }
+
+                &.scss {
+                    .graph {
+                        &::before {
+                            width: 80%;
+                            transition: 2s;
+                        }
+                    }
+                }
+
+                &.react {
+                    .graph {
+                        &::before {
+                            width: 70%;
+                            transition: 2s;
+                        }
+                    }
+                }
+
+                &.jquery {
+                    .graph {
+                        &::before {
+                            width: 90%;
+                            transition: 2s;
+                        }
+                    }
+                }
+
+                &.javascript {
+                    .graph {
+                        &::before {
+                            width: 80%;
+                            transition: 2s;
+                        }
+                    }
+                }
+
+                &.node {
+                    .graph {
+                        &::before {
+                            width: 60%;
+                            transition: 2s;
+                        }
+                    }
+                }
+
+                &.mysql {
+                    .graph {
+                        &::before {
+                            width: 65%;
+                            transition: 2s;
+                        }
+                    }
+                }
+
+                &.php {
+                    .graph {
+                        &::before {
+                            width: 45%;
+                            transition: 2s;
+                        }
+                    }
+                }
+
+                &.graphic {
+                    .graph {
+                        &::before {
+                            width: 75%;
+                            transition: 2s;
+                        }
                     }
                 }
             }
         }
-    }
 
-    #interview {
-        padding: 4rem 0;
+        .perbox {
+            width: fit-content;
 
-        .accordion {
-            padding: 3rem 0;
+            h3 {
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                font-size: 1.5rem;
 
-            .accordion-item {
-                border: none;
-                background-color: rgb(170, 210, 201, 0.25);
+                &.bottomh3 {
+                    font-size: 1.1rem !important;
+                    height: 3rem;
+                }
+            }
 
-                .accordion-collapse {
+            .imgbox {
+                padding-bottom: 1rem;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                &.frontimgbox,
+                &.backimgbox,
+                &.etcimgbox,
+                &.certiimgbox,
+                &.commuimgbox {
+                    .widthbox {
+                        width: 60px;
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            height: 40px;
+                        }
+                    }
+                }
+
+                &.certiimgbox {
+                    .widthbox {
+                        width: 60px;
+                        display: flex;
+                        justify-content: center;
+
+                        img {
+                            height: 50px;
+                        }
+                    }
+                }
+
+                .graph {
+                    width: 50vw;
+                    max-width: 500px;
+                    height: 10px;
                     background-color: #f9f9f9;
+                    position: relative;
 
-                    .accordion-body {
-                        padding-top: 3rem;
-                        padding-bottom: 3rem;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 10px;
+                        background: linear-gradient(to left, #654ea3, #eaafc8);
+                        width: 0;
                     }
                 }
-            }
 
-            .accordion-button {
-                background-color: #fff;
-                font-weight: 500;
-                border-bottom: 1px solid #333;
-            }
-
-            .accordion-button:not(.collapsed) {
-                font-size: 1.1rem;
-                font-weight: 700;
-                color: black;
-                background-color: #fff;
-            }
-
-            .accordion-button:focus {
-                box-shadow: none;
-            }
-
-            .accordion-button:not(.collapsed)::after {
-                background-image: url(../img/SVG/interviewArrow.svg);
+                .percent {
+                    color: #654ea3;
+                }
             }
         }
     }
+}
 
-    #portfolio {
-        .swiper {
-            .swiper-button-prev {
-                background-image: url(../img/main_prev.png);
-                height: 100px;
-                opacity: 0.4;
-            }
+#interview {
+    padding: 4rem 0;
 
-            .swiper-button-next {
-                background-image: url(../img/main_prev.png);
-                height: 100px;
-                rotate: 180deg;
-                opacity: 0.4;
-            }
+    .accordion {
+        padding: 3rem 0;
 
-            .swiper-button-prev:hover,
-            .swiper-button-next:hover {
-                opacity: 1;
-                transition: 0.5s;
-            }
+        .accordion-item {
+            border: none;
+            background-color: rgb(170, 210, 201, 0.25);
 
-            .swiper-button-prev::after,
-            .swiper-button-next::after {
-                display: none;
-            }
+            .accordion-collapse {
+                background-color: #f9f9f9;
 
-            .swiper-pagination {
-                font-weight: 800;
-                color: rgb(0, 0, 0, 0.5)
+                .accordion-body {
+                    padding-top: 3rem;
+                    padding-bottom: 3rem;
+                }
             }
         }
+
+        .accordion-button {
+            background-color: #fff;
+            font-weight: 500;
+            border-bottom: 1px solid #333;
+        }
+
+        .accordion-button:not(.collapsed) {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: black;
+            background-color: #fff;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url(../img/SVG/interviewArrow.svg);
+        }
     }
+}
+
+#portfolio {
+    .swiper {
+        .swiper-button-prev {
+            background-image: url(../img/main_prev.png);
+            height: 100px;
+            opacity: 0.4;
+        }
+
+        .swiper-button-next {
+            background-image: url(../img/main_prev.png);
+            height: 100px;
+            rotate: 180deg;
+            opacity: 0.4;
+        }
+
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            display: none;
+        }
+
+        .swiper-pagination {
+            font-weight: 800;
+            color: rgb(0, 0, 0, 0.5)
+        }
+    }
+}
 
 
 // @keyframes bgimg {
