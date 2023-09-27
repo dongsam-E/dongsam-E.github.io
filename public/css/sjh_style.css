@@ -39,6 +39,10 @@ li {
   margin: 0 5px;
 }
 
+body #hd {
+  position: relative;
+  z-index: 150;
+}
 body #aboutMe {
   position: relative;
 }

@@ -13,7 +13,7 @@ function Hd(props) {
     });
 
     return (
-        <header id={props.id} className=''>
+        <header id={props.id}>
             <div isToggled={isToggled} className={`fixed-top d-flex justify-content-around align-items-center px-2 ${scrollPosition < 10 ? hd.FirstH : hd.AfterH}`}>
                 <div className={`${hd.toggle} ${!isToggled ? `${hd.ulnone}` : `${hd.ulblock}`}`}
                     onClick={() => {

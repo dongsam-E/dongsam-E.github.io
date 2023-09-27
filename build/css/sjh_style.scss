@@ -41,7 +41,10 @@ li {
 }
 
 body {
-
+    #hd{
+        position: relative;
+        z-index: 150;
+    }
 
     #aboutMe {
         position: relative;
