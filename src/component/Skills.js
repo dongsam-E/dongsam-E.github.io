@@ -56,7 +56,7 @@ function Skills(props) {
                 </div>
                 <div className="d-flex flex-column flex-sm-row align-items-center justify-content-center">
                     <div class="perbox pt-3 px-3">
-                        <h3 className="bottomh3">프로젝트 보고 및 <br /> 협업 가능한 커뮤니케이션 툴</h3>
+                        <h3 className="bottomh3 text-center">프로젝트 보고 및 <br /> 협업 가능한 커뮤니케이션 툴</h3>
                         <div className="d-flex align-items-center justify-content-center">
                             {
                                 props.info.skillsdb.Commu.map((v, i) => {
