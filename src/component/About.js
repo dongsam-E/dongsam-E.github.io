@@ -15,10 +15,10 @@ function About(props) {
                         modules={[EffectFade, Autoplay]}
                         slidesPerView={1}
                         loop={true}
-                        // autoplay={{
-                        //     delay: 4000,
-                        //     disableOnInteraction: false,
-                        // }}
+                        autoplay={{
+                            delay: 4000,
+                            disableOnInteraction: false,
+                        }}
                         effect={'fade'}
                         fadeEffect={{
                             crossFade: true
