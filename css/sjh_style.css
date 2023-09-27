@@ -228,7 +228,7 @@ body .sunimg .imgSection .swiper .swiper-slide .aboutbg1 {
 #interview .accordion .accordion-button:not(.collapsed) {
   font-size: 1.1rem;
   font-weight: 700;
-  color: black;
+  color: #41309b;
   background-color: #fff;
 }
 #interview .accordion .accordion-button:focus {
