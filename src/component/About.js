@@ -23,7 +23,7 @@ function About(props) {
                         fadeEffect={{
                             crossFade: true
                         }}
-                        className="mySwiper d-flex align-items-center"
+                        className="mySwiper d-flex align-items-center d-none d-lg-block"
                     >
                         <SwiperSlide >
                             <div className='aboutbg0 ms-lg-auto'></div>
