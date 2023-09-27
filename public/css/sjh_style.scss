@@ -66,6 +66,29 @@ body {
 
         }
 
+        #m-me{
+            &.aboutbg1{
+                background-image: url(../img/sunjuhyeon_2.png);
+                background-repeat: no-repeat;
+                background-size: 115%;
+                background-position: center -24%;
+                height: 36vw;
+                width: 36vw;
+                border-radius: 50%;
+                margin: 0 auto;
+                margin-top: 0px;
+                background-color: #f9f9f9;
+                margin-top: -1rem !important;
+
+                @media(max-width:576px){
+                    height: 45vw !important;
+                    width: 45vw !important;
+                }
+            }
+        }
+
+        }
+
 
         .sunimg {
             position: relative;
@@ -145,7 +168,7 @@ body {
     //     background-size: auto 87%;
     //     background-position: 29% 169%;
     // }
-}
+
 
 #skills {
     .anibox {
