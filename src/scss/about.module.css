@@ -137,7 +137,7 @@
 
 .doubleQuote:before {
     content: "";
-    background-image: url(../../img/doubleQuote0.png);
+    background-image: url(/public/img/doubleQuote0.png);
     display: block;
     max-width: 45px;
     max-height: 45px;
