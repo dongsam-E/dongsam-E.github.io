@@ -167,16 +167,16 @@ body .sunimg .imgSection .swiper .swiper-slide .aboutbg1 {
   justify-content: start;
   align-items: center;
 }
-#skills .anibox .perbox .imgbox.frontimgbox .widthbox, #skills .anibox .perbox .imgbox.backimgbox .widthbox, #skills .anibox .perbox .imgbox.etcimgbox .widthbox, #skills .anibox .perbox .imgbox.certiimgbox .widthbox, #skills .anibox .perbox .imgbox.commuimgbox .widthbox {
+#skills .anibox .perbox .imgbox.frontimgbox .widthbox, #skills .anibox .perbox .imgbox.backimgbox .widthbox, #skills .anibox .perbox .imgbox.etcimgbox .widthbox, #skills .anibox .perbox .imgbox.commuimgbox .widthbox {
   width: 60px;
   display: flex;
   justify-content: center;
 }
-#skills .anibox .perbox .imgbox.frontimgbox .widthbox img, #skills .anibox .perbox .imgbox.backimgbox .widthbox img, #skills .anibox .perbox .imgbox.etcimgbox .widthbox img, #skills .anibox .perbox .imgbox.certiimgbox .widthbox img, #skills .anibox .perbox .imgbox.commuimgbox .widthbox img {
+#skills .anibox .perbox .imgbox.frontimgbox .widthbox img, #skills .anibox .perbox .imgbox.backimgbox .widthbox img, #skills .anibox .perbox .imgbox.etcimgbox .widthbox img, #skills .anibox .perbox .imgbox.commuimgbox .widthbox img {
   height: 40px;
 }
 @media (max-width: 500px) {
-  #skills .anibox .perbox .imgbox.frontimgbox .widthbox img, #skills .anibox .perbox .imgbox.backimgbox .widthbox img, #skills .anibox .perbox .imgbox.etcimgbox .widthbox img, #skills .anibox .perbox .imgbox.certiimgbox .widthbox img, #skills .anibox .perbox .imgbox.commuimgbox .widthbox img {
+  #skills .anibox .perbox .imgbox.frontimgbox .widthbox img, #skills .anibox .perbox .imgbox.backimgbox .widthbox img, #skills .anibox .perbox .imgbox.etcimgbox .widthbox img, #skills .anibox .perbox .imgbox.commuimgbox .widthbox img {
     height: 30px !important;
   }
 }
@@ -186,7 +186,7 @@ body .sunimg .imgSection .swiper .swiper-slide .aboutbg1 {
   justify-content: center;
 }
 #skills .anibox .perbox .imgbox.certiimgbox .widthbox img {
-  height: 50px;
+  height: 55px;
 }
 #skills .anibox .perbox .imgbox .graph {
   width: 50vw;
