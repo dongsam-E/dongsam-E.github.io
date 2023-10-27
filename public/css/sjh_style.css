@@ -128,6 +128,10 @@ body .sunimg .imgSection .swiper .swiper-slide .aboutbg1 {
   width: 70%;
   transition: 2s;
 }
+#skills .anibox.aos-animate .imgbox.typescript .graph::before {
+  width: 70%;
+  transition: 2s;
+}
 #skills .anibox.aos-animate .imgbox.jquery .graph::before {
   width: 90%;
   transition: 2s;

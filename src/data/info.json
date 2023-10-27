@@ -106,6 +106,12 @@
                 "img": "/img/skill/react.png",
                 "percent": "70%",
                 "graph": "graph"
+            },
+            {
+                "title": "typescript",
+                "img": "/img/skill/typescript.png",
+                "percent": "70%",
+                "graph": "graph"
             }
         ],
         "BackEnd": [
@@ -163,7 +169,7 @@
     },
     "portdb": [
                     {
-                        "title" : "온가담 싱글 광고페이지",
+                        "title" : "온가담 브랜드 광고 SPA",
                         "card": [
                             {
                                 "imgsrc": "/img/ongadamPage0.png"
@@ -176,10 +182,10 @@
                             }
                         ],
                         "explain": {
-                            "title" : "온가담 광고 싱글페이지",
+                            "title" : "온가담 브랜드 광고 SPA",
                             "day" : "25일",
                             "percent": "디자인 100%, 기획 100%, 제작 90%",
-                            "keypointlist0": "리액트로 제작한 <strong>싱글 광고페이지 입니다.<strong>",
+                            "keypointlist0": "리액트로 제작한 <strong>SPA 입니다.<strong>",
                             "keypointlist1": "SNS섹션 사진 클릭 시 <strong>컴포넌트를 렌더링 하여 팝업창을 띄웁니다.<strong>",
                             "keypointlist2": "<strong>[Node.js] MySQL을 연동하여 RESTful API 서버를 구축하였습니다.<strong>",
                             "githublink": "https://github.com/dongsam-E/react_ongadam",
@@ -194,6 +200,40 @@
                             "langimg1": "/img/sass.png",
                             "langimg2": "/img/skill/node.png",
                             "langimg3": "/img/skill/mysql.png"
+                        }
+                    },
+                    {
+                        "title" : "주얼리 브랜드 '킨트' 리뉴얼 SPA",
+                        "card": [
+                            {
+                                "imgsrc": "/img/kintPage0.png"
+                            },
+                            {
+                                "imgsrc": "/img/kintPage1.png"
+                            },
+                            {
+                                "imgsrc": "/img/kintPage2.png"
+                            }
+                        ],
+                        "explain": {
+                            "title" : "주얼리 브랜드 '킨트' 리뉴얼 SPA",
+                            "day" : "14일",
+                            "percent": "디자인 100%, 기획 100%, 제작 100%",
+                            "keypointlist0": "타입스크립트를 공부하며 제작한 <strong>SPA 입니다.<strong>",
+                            "keypointlist1": "리액트에 타입스크립트를 더하여 <strong>생산성과 코드의 안정성을 확보하였습니다.<strong>",
+                            "keypointlist2": "자주 쓰는 상품 타입을 따로 생성하여 재사용성을 높였습니다.",
+                            "githublink": "https://github.com/dongsam-E/kint",
+                            "urllink": "http://sunjuhyeon.cafe24app.com/kint/",
+                            "figmalink": "https://www.figma.com/file/n26XMeU2y7M8xO7BsWM9Vv/%ED%82%A8%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?type=design&node-id=0%3A1&mode=design&t=C68R5iSrhAh2sJqB-1",
+                            "toolimg0": "/img/skill/photoshop.png",
+                            "toolimg1": "/img/skill/figma.png",
+                            "toolimg2": "/img/skill/vscode.png",
+                            "toolimg3": "/img/skill/git.png",
+                            "toolimg4": "",
+                            "langimg0": "/img/react.png",
+                            "langimg1": "/img/skill/typescript.png",
+                            "langimg2": "/img/sass.png",
+                            "langimg3": "/img/skill/node.png"
                         }
                     },
                     {
