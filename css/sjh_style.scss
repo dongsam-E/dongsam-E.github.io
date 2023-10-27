@@ -204,6 +204,15 @@ body {
                     }
                 }
 
+                &.typescript {
+                    .graph {
+                        &::before {
+                            width: 70%;
+                            transition: 2s;
+                        }
+                    }
+                }
+
                 &.jquery {
                     .graph {
                         &::before {
